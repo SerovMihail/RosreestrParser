@@ -1,54 +1,20 @@
 /** settings */
-var casper = require('casper').create({
-    verbose: true,                  // log messages will be printed out to the console
-    //logLevel: 'debug',
-    pageSettings: {
-        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
-    }
-    ,
-    onWaitTimeout: function () {
-        saveAnError("Ошибка по таймауту", counter);
-    },
-});
+var casperSettings = require('./Modules/casperSettingsModule');
 
-
-casper.options.waitTimeout = 120000;
-casper.options.viewportSize = { width: 1024, height: 800 };
-
-//var baseDir = "C:\\Users\\roskvartal-pc\\Desktop\\RosReestrProject\\";
-var baseDir = ".\\";
-var onlineRequestsErrorFolderName = "OnlineRequestErrors1\\";
-var onlineRequestsDebugFolderName = "OnlineRequestDebug1\\";
-var logFileName = "OnlineRequests1.log";
-var debugLogFileName = 'OnlineDebugRequests1.log';
-
-/** clear folders */
-var fs = require('fs');
-//var toDeleteErrorFolder = baseDir + onlineRequestsErrorFolderName;
-var toDeleteDebugFolder = baseDir + onlineRequestsDebugFolderName;
-
-// var timeFromCreated = undefined;
-// fs.stat('C:\\Users\\roskvartal-pc\\Desktop\\RosReestrProject\\1',
-//     function (err, stats) {
-//         timeFromCreated = stats.birthtime.getTime();
-//     });
-
-//     var weekInMs = 604800000;
-
-// console.log('timeCreated ' + timeFromCreated + '\n');
-// console.log('timeCreated + week ms' + (timeFromCreated + weekInMs ) + '\n');
-
-// if (timeFromCreated && (timeFromCreated + weekInMs) < new Date().getTime())
-//     fs.removeTree(toDeleteDebugFolder);
-//fs.removeTree(toDeleteErrorFolder);
-fs.removeTree(toDeleteDebugFolder);
+var casper = require('casper').create(casperSettings);
 
 /** error handlers */
+casper.options.onWaitTimeout = function () {
+    saveAnError("Ошибка по таймауту", counter);
+};
+
 casper.on('error', function (msg, backtrace) {
     saveAnError('Непредвиденная ошибка ' + msg, counter);
 });
 
-//console.log("\n\n-------------------------------- \n search arguments:");
+var folders = require('./Modules/foldersModule').getFolders();
+
+
 
 function saveAnError(errorText, counter) {
 
@@ -93,51 +59,21 @@ function takeDebugScreenShot(text, counter) {
 /** arguments processing */
 // casper.echo("Casper CLI passed options:");
 // require("utils").dump(casper.cli.options);
-var searchData = {};
 
-if (casper.cli.has("region") && casper.cli.get("region")) {
-    //console.log('\t- search by "region"');
-    searchData.region = casper.cli.get("region");
-}
+var searchData = require('./Modules/argsModule').getArgs();
 
-if (casper.cli.has("zone") && casper.cli.get("zone")) {
-    //console.log('\t- search by "zone"');
-    searchData.zone = casper.cli.get("zone");
-}
 
-if (casper.cli.has("street") && casper.cli.get("street") !== "") {
-    //console.log('\t- search by "street"');
-    searchData.street = casper.cli.get("street");
-}
-
-if (casper.cli.has("houseNumber") && casper.cli.get("houseNumber") !== "") {
-    //console.log('\t- search by "houseNumber"');
-    searchData.houseNumber = casper.cli.get("houseNumber");
-}
-
-if (casper.cli.has("apartmentNumber") && casper.cli.get("apartmentNumber") !== "") {
-    //console.log('in appartment number');
-    searchData.apartmentNumber = casper.cli.get("apartmentNumber");
-}
-
-if (casper.cli.has("building") && casper.cli.get("building") !== "") {
-    //console.log('in appartment number');
-    searchData.building = casper.cli.get("building");
-}
+var vars = require('./Modules/varsModule').getVars();
 
 
 
 
-for (var i in searchData) {
-    if (typeof searchData[i] === 'string')
-        searchData[i] = searchData[i].replace("\\", " ");
 
-    //console.log(searchData[i])
-}
+
 
 /** variables */
-var counter = 1; // screenshot index variable
-var accessKey = undefined;
+// var counter = 1; // screenshot index variable
+// var accessKey = undefined;
 
 
 
@@ -233,7 +169,7 @@ casper.waitForSelector(".portlet-title", function () {
     takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", counter++)
 });
 
-var cadastralArray = [];
+//var cadastralArray = [];
 
 casper.then(iteratePagination);
 
@@ -273,11 +209,7 @@ function iteratePagination() {
 }
 
 
-casper.thenOpen('https://rosreestr.ru/site/'
-    // , function () {
-    //     //console.log('\nstart processing https://rosreestr.ru/site/\n');
-    // }
-);
+casper.thenOpen('https://rosreestr.ru/site/');
 
 
 // Открываем сайт, переходим по ссылке на личный кабинет
@@ -408,8 +340,8 @@ casper.wait(5000, function () {
     casper.then(iterateCadastralArray);
 });
 
-var currentCadastralIndex = 0;
-var tableRows = [];
+// var currentCadastralIndex = 0;
+// var tableRows = [];
 
 function saveToDebugLog(text) {
 
@@ -593,7 +525,7 @@ function iterateCadastralArray() {
 
     }, function () {
 
-        takeDebugScreenShot('BEFORE another time', counter++);        
+        takeDebugScreenShot('BEFORE another time', counter++);
 
         afterReloadAuth();
 
@@ -645,7 +577,7 @@ function afterReloadAuth() {
         location.reload();
     });
 
-    takeDebugScreenShot('after reload', counter++);    
+    takeDebugScreenShot('after reload', counter++);
 
     casper.waitForSelector('.blockGrey', function () {
 
@@ -682,7 +614,7 @@ function afterReloadAuth() {
             });
         });
 
-    }, function() {
+    }, function () {
         takeDebugScreenShot('cant find grey block after error', counter++);
         console.log(JSON.stringify(tableRows, "", 4));
         casper.exit(1);
