@@ -6,3 +6,13 @@
 region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
 houseNumber: 82 | building: undefined 
  ------------------------------ 
+Непредвиденная ошибка ReferenceError: Can't find variable: iterateCadastralArray 2 июля 2018 г., 16:22:44 GMT+3
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 16:23:16 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+Непредвиденная ошибка ReferenceError: Can't find variable: iterateCadastralArray 2 июля 2018 г., 16:24:11 GMT+3

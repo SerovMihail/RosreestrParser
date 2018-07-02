@@ -1,6 +1,9 @@
 // Modules
 var fs = require('fs');
 
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 
 // Casper settings
 var casper = require('casper').create({
@@ -10,27 +13,36 @@ var casper = require('casper').create({
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
     },
     onWaitTimeout: function () {
-        saveAnError("Ошибка по таймауту", vars.counter++);
+        saveAnError("Ошибка по таймауту");
     }
 });
 casper.options.waitTimeout = 120000;
 casper.options.viewportSize = { width: 1024, height: 800 };
 
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 
 /** error handlers */
 casper.on('error', function (msg, backtrace) {
-    saveAnError('Непредвиденная ошибка ' + msg, vars.counter++);
+    saveAnError('Непредвиденная ошибка', msg);
 });
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 
 
 var folders = require('./Modules/foldersModule').getFolders();
-//console.log('folders', JSON.stringify(folders, "", 4));
 
 var searchData = require('./Modules/argsModule').getArgs(casper);
-//console.log('searchData', JSON.stringify(searchData, "", 4));
 
 var vars = require('./Modules/varsModule').getVars();
-// console.log('vars', JSON.stringify(vars, "", 4));
+
+
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 
 // casper SCRIPT
 casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/', function() {
@@ -120,44 +132,7 @@ casper.waitForSelector(".portlet-title", function () {
     takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++)
 });
 
-
-
 casper.then(iteratePagination);
-
-function iteratePagination() {
-
-    casper.wait(1000, function () {
-
-        takeDebugScreenShot("В итерации страниц с данными", vars.counter++)
-
-        var newArr = casper.evaluate(function () {
-
-            return [].map.call(__utils__.findAll('tbody td.td:nth-child(2)'), function (node) {
-                return node.innerText;
-            });
-
-        });
-
-        vars.cadastralArray = vars.cadastralArray.concat(newArr);
-
-        casper.waitFor(function check() {
-            return this.evaluate(function () {
-                return document.querySelectorAll('.brdnav0')[3].onclick !== null;
-            });
-        }, function then() {    // step to execute when check() is ok
-            //console.log('selector doent null');
-            casper.evaluate(function () {
-                document.querySelectorAll('.brdnav0')[2].click();
-            });
-            casper.then(iteratePagination);
-        }, function timeout() { // step to execute if check has failed
-            takeDebugScreenShot("селектор пуст", vars.counter++)
-        }, 3000);
-
-    });
-
-}
-
 
 casper.thenOpen('https://rosreestr.ru/site/');
 
@@ -198,7 +173,7 @@ casper.waitForSelector('.datalist-wrap', function () {
 // Идём в "Мои ключи"
 casper.waitForSelector('.finances', function () {
 
-    //console.log('\nauthentification completed\n');
+    
 
     casper.evaluate(function () {
         $("div:contains('Мои ключи')").click();
@@ -223,9 +198,7 @@ casper.waitForSelector('.kadastral-results-search', function () {
 
 
 // Переходим на сайт реестра
-casper.waitForSelector('.view-all', function () {
-
-    //console.log('\nkey received\n');
+casper.waitForSelector('.view-all', function () {   
 
     casper.evaluate(function () {
         document.querySelector('.view-all').removeAttribute("target");
@@ -297,8 +270,8 @@ casper.wait(5000, function () {
     
     console.log(JSON.stringify(vars.tableRows, "", 4));
 
-    saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4))
-    saveToDebugLog(JSON.stringify(vars.tableRows, "", 4))
+    saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4));
+    saveToDebugLog(JSON.stringify(vars.tableRows, "", 4));
 
     takeDebugScreenShot('Finish', vars.counter++);
 });
@@ -306,35 +279,23 @@ casper.wait(5000, function () {
 
 casper.run();
 
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
+
 
 /** FUNCTIONS */
 
 
+function saveAnError(errorText, message) {
 
-function saveAnError(errorText, counter) {
+    if(vars.env === "DEBUG")
+        takeErrorScreenShot(errorText, vars.counter++);
 
     var errorTime = new Date().toLocaleString("ru");
+    logMessage(errorText + message, errorTime);    
 
-    logMessage(errorText, errorTime);
-    takeErrorScreenShot(errorText, errorTime, vars.counter);
-
-    if (errorText === "Ошибка по таймауту" && vars.currentCadastralIndex !== 0) {
-        casper.evaluate(function () {
-            $('.v-Notification').click();
-        });
-
-        afterReloadAuth();
-    }
-
-    obj = {};
-
-    if (errorText === "Ошибка по таймауту") {
-        obj.message = "Ошибка произошла на этапе аунтентификации";
-    }
-
-    if (errorText === "Непредвиденная ошибка") {
-        obj.message = "Ошибка произошла на ..";
-    }
+    handleError(errorText);
 }
 
 function newRecordIntoLog(searchData) {
@@ -346,256 +307,353 @@ function newRecordIntoLog(searchData) {
     fs.write(folders.baseDir + folders.logFile, text, "a");
 }
 
+// Сохраняем максимум информации. Проблема + месадж + время
 function logMessage(text, time) {
     fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
 }
 
-function takeErrorScreenShot(screenShotName, time, counter) {
+// сохраняем только порядковый номер
+function takeErrorScreenShot(screenShotName, counter) {
 
-    var screenShotName = folders.ErrorFolder + screenShotName + " " + counter + '.png'; //folders.baseDir + 
-
+    var screenShotName = folders.ErrorFolder + screenShotName + " " + counter + '.png'; 
     casper.capture(screenShotName);
+
     //console.log('screenShotName', screenShotName);
 }
 
 function takeDebugScreenShot(text, counter) {
-    var screenShotName = folders.DebugFolder + counter + " " + text + '.png'; //folders.baseDir +  
-    //console.log(screenShotName);
+
+    var screenShotName = folders.DebugFolder + counter + " " + text + '.png'; //folders.baseDir +      
     casper.capture(screenShotName);
     //console.log('screenShotName', screenShotName);
 }
 
 
-// function iterateCadastralArray() {
+function iterateCadastralArray() {
 
-//     saveToDebugLog('nnew iterate cadastral');
+    saveToDebugLog('nnew iterate cadastral');
 
-//     // Выбираю "Поиск объектов недвижимости"
-//     //casper.waitForSelector('.navigationPanel', function () {
-//     //casper.wait(7000, function () {
+    // Выбираю "Поиск объектов недвижимости"
+    //casper.waitForSelector('.navigationPanel', function () {
+    //casper.wait(7000, function () {
 
-//     //console.log('navigationPanek');
-//     // casper.evaluate(function () {
-//     //     document.querySelector('.v-button-caption').click();
-//     // });
+    //console.log('navigationPanek');
+    // casper.evaluate(function () {
+    //     document.querySelector('.v-button-caption').click();
+    // });
 
-//     //casper.waitForSelector('.v-filterselect-button', function () {
-//     //casper.wait(15000, function () {
-//     casper.waitForSelector('.v-embedded', function () {
+    //casper.waitForSelector('.v-filterselect-button', function () {
+    //casper.wait(15000, function () {
+    casper.waitForSelector('.v-embedded', function () {
 
-//         takeDebugScreenShot('До заполнения данных', vars.counter++);
+        takeDebugScreenShot('До заполнения данных', vars.counter++);
 
-//         saveToDebugLog('search cadastral index ' + vars.currentCadastralIndex + ' ' + vars.cadastralArray[vars.currentCadastralIndex]);
+        saveToDebugLog('search cadastral index ' + vars.currentCadastralIndex + ' ' + vars.cadastralArray[vars.currentCadastralIndex]);
 
-//         casper.evaluate(function (cadastralNumber) {
+        casper.evaluate(function (cadastralNumber) {
 
-//             if (cadastralNumber)
-//                 $('.v-textfield').slice(0, 1).focus().val(cadastralNumber);
+            if (cadastralNumber)
+                $('.v-textfield').slice(0, 1).focus().val(cadastralNumber);
 
-//         }, vars.cadastralArray[vars.currentCadastralIndex]);
+        }, vars.cadastralArray[vars.currentCadastralIndex]);
 
 
-//         if (searchData.region) {
-//             //console.log(searchData.region);
+        if (searchData.region) {
+            //console.log(searchData.region);
 
-//             casper.evaluate(function (region) {
-//                 document.querySelectorAll('.v-filterselect-button')[0].click();
-//                 $(".v-filterselect-input").slice(0, 1).select().val(region).keyup(); // ЗНАЧЕНИЕ СЮДА        
-//             }, searchData.region);
+            casper.evaluate(function (region) {
+                document.querySelectorAll('.v-filterselect-button')[0].click();
+                $(".v-filterselect-input").slice(0, 1).select().val(region).keyup(); // ЗНАЧЕНИЕ СЮДА        
+            }, searchData.region);
 
-//             //casper.wait(2000, function () {
-//             casper.waitForSelector('.v-filterselect-suggestmenu', function () {
+            //casper.wait(2000, function () {
+            casper.waitForSelector('.v-filterselect-suggestmenu', function () {
 
-//                 casper.evaluate(function () {
-//                     $('.gwt-MenuItem').first().click();
-//                 });
+                casper.evaluate(function () {
+                    $('.gwt-MenuItem').first().click();
+                });
 
-//                 casper.wait(5000, function () {
-//                     casper.evaluate(function () {
-//                         $("span:contains('Найти')").click();
-//                     });
+                casper.wait(5000, function () {
+                    casper.evaluate(function () {
+                        $("span:contains('Найти')").click();
+                    });
 
-//                     takeDebugScreenShot('После нажатия на найти', vars.counter++);
+                    takeDebugScreenShot('После нажатия на найти', vars.counter++);
 
-//                     //casper.wait(2000, function () {
-//                     casper.waitForSelector('.v-table-body', function () {
+                    //casper.wait(2000, function () {
+                    casper.waitForSelector('.v-table-body', function () {
 
-//                         takeDebugScreenShot('Таблица появилась', vars.counter++);
+                        takeDebugScreenShot('Таблица появилась', vars.counter++);
 
-//                         casper.wait(5000, function () {
-//                             var row = casper.evaluate(function (index) {
+                        casper.wait(5000, function () {
+                            var row = casper.evaluate(function (index) {
 
-//                                 $('.v-window-modalitycurtain').hide();
-//                                 $('.popupContent').hide();
+                                $('.v-window-modalitycurtain').hide();
+                                $('.popupContent').hide();
 
-//                                 return $.map($('.v-table-row, .v-table-row-odd'), function (value, key) {
-//                                     var rowObject = {};
+                                return $.map($('.v-table-row, .v-table-row-odd'), function (value, key) {
+                                    var rowObject = {};
 
-//                                     rowObject.number = index + 1;
-//                                     rowObject.cadastralNumber = value.childNodes[0].innerText.replace(/[\r\n]+/g, '');
-//                                     rowObject.address = value.childNodes[1].innerText.replace(/[\r\n]+/g, '');
-//                                     rowObject.objectType = value.childNodes[2].innerText.replace(/[\r\n]+/g, '');
-//                                     rowObject.area = value.childNodes[3].innerText.replace(/[\r\n]+/g, '');
-//                                     rowObject.isLoaded = false;
+                                    rowObject.number = index + 1;
+                                    rowObject.cadastralNumber = value.childNodes[0].innerText.replace(/[\r\n]+/g, '');
+                                    rowObject.address = value.childNodes[1].innerText.replace(/[\r\n]+/g, '');
+                                    rowObject.objectType = value.childNodes[2].innerText.replace(/[\r\n]+/g, '');
+                                    rowObject.area = value.childNodes[3].innerText.replace(/[\r\n]+/g, '');
+                                    rowObject.isLoaded = false;
 
-//                                     return rowObject;
-//                                 });
+                                    return rowObject;
+                                });
 
 
-//                             }, currentCadastralIndex);
+                            }, currentCadastralIndex);
 
-//                             vars.tableRows = vars.tableRows.concat(row);
+                            vars.tableRows = vars.tableRows.concat(row);
 
-//                             casper.evaluate(function () {
-//                                 $('.v-table-row, .v-table-row-odd').slice(0, 1).trigger('mouseup');
-//                             });
+                            casper.evaluate(function () {
+                                $('.v-table-row, .v-table-row-odd').slice(0, 1).trigger('mouseup');
+                            });
 
-//                             casper.waitForSelector('.v-radiobutton', function success() {
+                            casper.waitForSelector('.v-radiobutton', function success() {
 
-//                                 casper.wait(3000, function () {
-//                                     if (casper.exists("body")) {
-//                                         takeDebugScreenShot('Появилась страница с кнопкой на запрос', vars.counter++);
+                                casper.wait(3000, function () {
+                                    if (casper.exists("body")) {
+                                        takeDebugScreenShot('Появилась страница с кнопкой на запрос', vars.counter++);
 
-//                                     }
+                                    }
 
-//                                     casper.wait(2000, function () {
+                                    casper.wait(2000, function () {
 
-//                                         casper.evaluate(function () {
-//                                             $('span:contains("Отправить запрос")').click();
-//                                         });
+                                        casper.evaluate(function () {
+                                            $('span:contains("Отправить запрос")').click();
+                                        });
 
-//                                         vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
 
-//                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
+                                        casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
-//                                             if (casper.exists("body")) {
-//                                                 takeDebugScreenShot('Появился попап', vars.counter++);
-//                                                 ////console.log('screenshots/Появился попАп ' + vars.counter++ + '.png');
-//                                             }
+                                            if (casper.exists("body")) {
+                                                takeDebugScreenShot('Появился попап', vars.counter++);
+                                                ////console.log('screenshots/Появился попАп ' + vars.counter++ + '.png');
+                                            }
 
-//                                             vars.tableRows[vars.currentCadastralIndex].isLoaded = true;
+                                            vars.tableRows[vars.currentCadastralIndex].isLoaded = true;
 
-//                                             casper.wait(5000, function () {
+                                            casper.wait(5000, function () {
 
-//                                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = casper.evaluate(function () {
-//                                                     return $('.tipFont b').first()[0].innerText;
-//                                                 });
+                                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = casper.evaluate(function () {
+                                                    return $('.tipFont b').first()[0].innerText;
+                                                });
 
-//                                                 takeDebugScreenShot('Появился текст', vars.counter++);
+                                                takeDebugScreenShot('Появился текст', vars.counter++);
 
-//                                                 casper.evaluate(function () {
-//                                                     $('span:contains("Продолжить работу")').click();
-//                                                 });
+                                                casper.evaluate(function () {
+                                                    $('span:contains("Продолжить работу")').click();
+                                                });
 
-//                                                 //casper.waitForSelector('.navigationPanel', function () {
-//                                                 casper.wait(5000, function () {
-//                                                     //лcasper.wait(3000, function () {
-//                                                     if (casper.exists("body")) {
-//                                                         takeDebugScreenShot('нажал на продолжить работу', vars.counter++);
-//                                                         ////console.log('screenshots/Нажал на Продолжить работу' + vars.counter++ + '.png');
-//                                                     }
+                                                //casper.waitForSelector('.navigationPanel', function () {
+                                                casper.wait(5000, function () {
+                                                    //лcasper.wait(3000, function () {
+                                                    if (casper.exists("body")) {
+                                                        takeDebugScreenShot('нажал на продолжить работу', vars.counter++);
+                                                        ////console.log('screenshots/Нажал на Продолжить работу' + vars.counter++ + '.png');
+                                                    }
 
-//                                                     casper.evaluate(function () {
-//                                                         document.querySelector('.v-button-caption').click();
-//                                                     });
+                                                    casper.evaluate(function () {
+                                                        document.querySelector('.v-button-caption').click();
+                                                    });
 
-//                                                     vars.currentCadastralIndex++;
+                                                    vars.currentCadastralIndex++;
 
-//                                                     saveToDebugLog('currentCadastralIndex: ' + vars.currentCadastralIndex + " | cadastralArray.length + 1: " + (vars.cadastralArray.length + 1));
-//                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length)
-//                                                         casper.then(iterateCadastralArray);
-//                                                 }, function () {
-//                                                     saveToDebugLog('navigation panel doesnt exist');
-//                                                     takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
-//                                                 }, 15000);
+                                                    saveToDebugLog('currentCadastralIndex: ' + vars.currentCadastralIndex + " | cadastralArray.length + 1: " + (vars.cadastralArray.length + 1));
+                                                    if (vars.currentCadastralIndex < vars.cadastralArray.length)
+                                                        casper.then(iterateCadastralArray);
+                                                }, function () {
+                                                    saveToDebugLog('navigation panel doesnt exist');
+                                                    takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
+                                                }, 15000);
 
-//                                             });
-//                                         });
-//                                     });
-//                                 });
+                                            });
+                                        });
+                                    });
+                                });
 
-//                             }, function () {
+                            }, function () {
 
 
-//                                 casper.evaluate(function () {
-//                                     document.querySelector('.v-button-caption').click();
-//                                 });
-//                                 vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
-//                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
-//                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'NULLED';
-//                                 vars.currentCadastralIndex++;
+                                casper.evaluate(function () {
+                                    document.querySelector('.v-button-caption').click();
+                                });
+                                vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
+                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'NULLED';
+                                vars.currentCadastralIndex++;
 
-//                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
-//                                 if (vars.currentCadastralIndex < vars.cadastralArray.length)
-//                                     casper.then(iterateCadastralArray);
+                                takeDebugScreenShot('Поиск в нулевом', vars.counter++);
+                                if (vars.currentCadastralIndex < vars.cadastralArray.length)
+                                    casper.then(iterateCadastralArray);
 
-//                             }, 30000);
-//                         });
-//                     });
-//                 });
-//             });
-//         }
-//         //});
+                            }, 30000);
+                        });
+                    });
+                });
+            });
+        }
+        //});
 
-//         // });
+        // });
 
-//     }, function () {
+    }, function () {
 
-//         takeDebugScreenShot('BEFORE another time', vars.counter++);
+        takeDebugScreenShot('BEFORE another time', vars.counter++);
 
-//         afterReloadAuth();
+        afterReloadAuth();
 
-//     }, 30000);
-// }
+    }, 30000);
+}
 
-// function afterReloadAuth() {
+function afterReloadAuth() {
 
-//     takeDebugScreenShot('start in afterReloadAuth', vars.counter++);
+    takeDebugScreenShot('start in afterReloadAuth', vars.counter++);
 
-//     casper.evaluate(function () {
-//         location.reload();
-//     });
+    casper.evaluate(function () {
+        location.reload();
+    });
 
-//     takeDebugScreenShot('after reload', vars.counter++);
+    takeDebugScreenShot('after reload', vars.counter++);
 
-//     casper.waitForSelector('.blockGrey', function () {
+    casper.waitForSelector('.blockGrey', function () {
 
-//         casper.wait(5000, function () {
+        casper.wait(5000, function () {
 
-//             takeDebugScreenShot('greyBlockExist', vars.counter++);
+            takeDebugScreenShot('greyBlockExist', vars.counter++);
 
-//             var keyParts = vars.accessKey.split('-');
+            var keyParts = vars.accessKey.split('-');
 
-//             casper.evaluate(function (val) {
+            casper.evaluate(function (val) {
 
-//                 for (var i = 0; i < 5; i++) {
-//                     document.querySelectorAll('.v-textfield')[i].value = val[i];
-//                     $('.v-textfield').slice(i, i + 1).trigger("change");
-//                 }
+                for (var i = 0; i < 5; i++) {
+                    document.querySelectorAll('.v-textfield')[i].value = val[i];
+                    $('.v-textfield').slice(i, i + 1).trigger("change");
+                }
 
-//                 document.querySelector('.v-button-wrap').click();
+                document.querySelector('.v-button-wrap').click();
 
-//             }, keyParts);
+            }, keyParts);
 
 
 
-//             casper.wait(5000, function () {
+            casper.wait(5000, function () {
 
-//                 takeDebugScreenShot('keyWriten and accepted', vars.counter++);
+                takeDebugScreenShot('keyWriten and accepted', vars.counter++);
 
-//                 casper.evaluate(function () {
-//                     document.querySelector('.v-button-caption').click();
-//                 });
+                casper.evaluate(function () {
+                    document.querySelector('.v-button-caption').click();
+                });
 
-//                 takeDebugScreenShot('AFTER another time', vars.counter++);
+                takeDebugScreenShot('AFTER another time', vars.counter++);
 
-//                 casper.then(iterateCadastralArray);
-//             });
-//         });
+                casper.then(iterateCadastralArray);
+            });
+        });
 
-//     }, function () {
-//         takeDebugScreenShot('cant find grey block after error', vars.counter++);
-//         console.log(JSON.stringify(vars.tableRows, "", 4));
-//         casper.exit(1);
-//     });
-// }
+    }, function () {
+        takeDebugScreenShot('cant find grey block after error', vars.counter++);
+
+
+        addBadResponseToResults();
+
+
+        console.log(JSON.stringify(vars.tableRows, "", 4));
+        casper.exit(1);
+    });
+}
+
+// должна быть после casper.then(iteratePagination);
+function iteratePagination() {
+
+    casper.wait(1000, function () {
+
+        takeDebugScreenShot("В итерации страниц с данными", vars.counter++)
+
+        var newArr = casper.evaluate(function () {
+
+            return [].map.call(__utils__.findAll('tbody td.td:nth-child(2)'), function (node) {
+                return node.innerText;
+            });
+
+        });
+
+        vars.cadastralArray = vars.cadastralArray.concat(newArr);
+
+        casper.waitFor(function check() {
+            return this.evaluate(function () {
+                return document.querySelectorAll('.brdnav0')[3].onclick !== null;
+            });
+        }, function then() {    // step to execute when check() is ok
+            
+            casper.evaluate(function () {
+                document.querySelectorAll('.brdnav0')[2].click();
+            });
+            casper.then(iteratePagination);
+        }, function timeout() { // step to execute if check has failed
+            takeDebugScreenShot("селектор пуст", vars.counter++)
+        }, 3000);
+
+    });
+
+}
+
+function debugConsoleLog(text) {
+    if(vars.env === "DEBUG")
+        console.log(text);
+} 
+
+function debugConsoleLogStringify(text) {
+    if(vars.env === "DEBUG")
+        console.log(JSON.stringify(text, "", 4));        
+} 
+
+function handleError(errorText) {
+
+    // Если долгая загрузка, то пытаемся реанимировать
+    if (errorText === "Ошибка по таймауту" && vars.currentCadastralIndex !== 0) {
+
+        casper.evaluate(function () {
+            $('.v-Notification').click();
+        });
+
+        casper.wait(5000, function() {
+            afterReloadAuth();
+        });        
+
+    } else {
+        obj = {};
+
+        if (errorText === "Ошибка по таймауту") {
+            obj.message = "Ошибка произошла на этапе аунтентификации. Перезагрузите задачу.";
+        }
+    
+        if (errorText === "Непредвиденная ошибка") {
+            obj.message = "Произошла непредвиденная ошибка. Перезагрузите задачу.";
+        }
+
+        console.log(JSON.stringify(obj, "", 4)); 
+
+        casper.exit(1);
+    }
+
+   
+}
+
+function addBadResponseToResults() {
+
+    if(vars.cadastralArray.length > vars.tableRows.length) {
+
+        for (var i = vars.currentCadastralIndex; i < vars.cadastralArray.length; i++) {
+            vars.tableRows.push({
+                cadastralNumber:  vars.cadastralArray[vars.currentCadastralIndex],
+                isLoaded: false 
+            });
+        }
+    }
+}

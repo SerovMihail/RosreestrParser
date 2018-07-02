@@ -4,9 +4,13 @@ exports.getVars = function () {
 
     return {
         counter: 1, // screenshot index variable
-        accessKey: undefined,
-        cadastralArray: [],
         currentCadastralIndex: 0,
-        tableRows: []
+
+        cadastralArray: [],
+        tableRows: [],
+        
+        accessKey: undefined,              
+        
+        env: "DEBUG" // "PROD"
     }
 };
