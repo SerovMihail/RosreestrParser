@@ -7,7 +7,7 @@ exports.getFolders = function () {
     var scriptName = currentFolder.split('\\').pop().split('.')[0];
 
     var foldersData = {
-        dirName: currentFolder,
+        baseDir: currentFolder,
         scriptName: scriptName,
         ErrorFolder: "\\" + scriptName + "Errors\\",
         DebugFolder: "\\" + scriptName + "Debug\\",

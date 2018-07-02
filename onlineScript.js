@@ -5,11 +5,11 @@ var casper = require('casper').create(casperSettings);
 
 /** error handlers */
 casper.options.onWaitTimeout = function () {
-    saveAnError("Ошибка по таймауту", counter);
+    saveAnError("Ошибка по таймауту", vars.counter++);
 };
 
 casper.on('error', function (msg, backtrace) {
-    saveAnError('Непредвиденная ошибка ' + msg, counter);
+    saveAnError('Непредвиденная ошибка ' + msg, vars.counter++);
 });
 
 var folders = require('./Modules/foldersModule').getFolders();
@@ -21,9 +21,9 @@ function saveAnError(errorText, counter) {
     var errorTime = new Date().toLocaleString("ru");
 
     logMessage(errorText, errorTime);
-    createErrorScreenShot(errorText, errorTime, counter);
+    createErrorScreenShot(errorText, errorTime, vars.counter++);
 
-    if (errorText === "Ошибка по таймауту" && currentCadastralIndex !== 0) {
+    if (errorText === "Ошибка по таймауту" && vars.currentCadastralIndex !== 0) {
         casper.evaluate(function () {
             $('.v-Notification')[0].click();
         });
@@ -40,18 +40,18 @@ function saveAnError(errorText, counter) {
 // }
 
 function logMessage(text, time) {
-    fs.write(baseDir + logFileName, text + " " + time + "\n", "a");
+    fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
 }
 
 function createErrorScreenShot(screenShotName, time, counter) {
 
-    var screenShotName = baseDir + onlineRequestsErrorFolderName + screenShotName + " " + counter + '.png';
+    var screenShotName = folders.baseDir + folders.ErrorFolder + screenShotName + " " + counter + '.png';
     //console.log(screenShotName);
     casper.capture(screenShotName);
 }
 
 function takeDebugScreenShot(text, counter) {
-    var screenShotName = baseDir + onlineRequestsDebugFolderName + counter + " " + text + '.png';
+    var screenShotName = folders.baseDir + folders.DebugFolder + counter + " " + text + '.png';
     //console.log(screenShotName);
     casper.capture(screenShotName);
 }
@@ -155,7 +155,7 @@ casper.wait(1000, function () {
 
     }, searchData.zone, searchData.street, searchData.houseNumber, searchData.building);
 
-    takeDebugScreenShot("После заполнения поисковых данных", counter++)
+    takeDebugScreenShot("После заполнения поисковых данных", vars.counter++)
 
 });
 
@@ -166,7 +166,7 @@ casper.waitForSelector(".portlet-title", function () {
         return document.querySelector('#pg_stats b:first-child').innerHTML.replace(new RegExp('&nbsp;', 'g'), '');
     });
 
-    takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", counter++)
+    takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++)
 });
 
 //var cadastralArray = [];
@@ -177,7 +177,7 @@ function iteratePagination() {
 
     casper.wait(1000, function () {
 
-        takeDebugScreenShot("В итерации страниц с данными", counter++)
+        takeDebugScreenShot("В итерации страниц с данными", vars.counter++)
 
         var newArr = casper.evaluate(function () {
 
@@ -200,7 +200,7 @@ function iteratePagination() {
             });
             casper.then(iteratePagination);
         }, function timeout() { // step to execute if check has failed
-            takeDebugScreenShot("селектор пуст", counter++)
+            takeDebugScreenShot("селектор пуст", vars.counter++)
         }, 3000);
 
     });
@@ -214,9 +214,9 @@ casper.thenOpen('https://rosreestr.ru/site/');
 
 // Открываем сайт, переходим по ссылке на личный кабинет
 casper.waitForSelector('#page_header', function () {
-    //casper.capture('screenshots/' + counter++ + '.png');
+    //casper.capture('screenshots/' + vars.counter++ + '.png');
     this.mouse.click('a[href$="https://rosreestr.ru/wps/portal/p/PrivateOffice"]');
-    //casper.capture('screenshots/' + counter++ + '.png');
+    //casper.capture('screenshots/' + vars.counter++ + '.png');
 });
 
 // Ждём все редиректы и заполняем данные.
@@ -238,10 +238,12 @@ casper.waitForUrl("https://esia.gosuslugi.ru/idp/rlogin?cc=bp", function () {
 casper.waitForSelector('.datalist-wrap', function () {
 
     casper.evaluate(function () {
-        $("div:contains('Парсамян Ирэн Арутюновна ')").click();
+        //$("div:contains('Парсамян Ирэн Арутюновна ')").click();
+        $("table.not-hover tr:first-child").click(); //Парсамян Ирэн Арутюновна
+        //$("table.not-hover tr:last-child").click()
     });
 
-    takeDebugScreenShot('выбираем исполнителя по имени', counter++);
+    takeDebugScreenShot('выбираем исполнителя по имени', vars.counter++);
 });
 
 // Идём в "Мои ключи"
@@ -253,7 +255,7 @@ casper.waitForSelector('.finances', function () {
         $("div:contains('Мои ключи')").click();
     });
 
-    takeDebugScreenShot('Идём в Мои ключи', counter++);
+    takeDebugScreenShot('Идём в Мои ключи', vars.counter++);
 });
 
 // Запоминаем ключ
@@ -267,7 +269,7 @@ casper.waitForSelector('.kadastral-results-search', function () {
         $("a.logo").click();
     });
 
-    takeDebugScreenShot('Запоминаем ключ', counter++);
+    takeDebugScreenShot('Запоминаем ключ', vars.counter++);
 });
 
 
@@ -281,7 +283,7 @@ casper.waitForSelector('.view-all', function () {
         document.querySelector('.view-all').click();
     });
 
-    takeDebugScreenShot('Переходим на сайт реестра', counter++);
+    takeDebugScreenShot('Переходим на сайт реестра', vars.counter++);
 });
 
 
@@ -292,7 +294,7 @@ casper.waitForSelector('.eservice_box', function () {
         document.querySelector('a[href$="https://rosreestr.ru/wps/portal/p/cc_present/EGRN_1"]').click();
     });
 
-    takeDebugScreenShot('Переходим на получение сведений ЕГРН', counter++);
+    takeDebugScreenShot('Переходим на получение сведений ЕГРН', vars.counter++);
 });
 
 // Запрос посредством доступа к ФГИС ЕГРН
@@ -302,7 +304,7 @@ casper.waitForSelector('.menu-navigation-list', function () {
         document.querySelector('a[href$="/wps/portal/p/cc_present/ir_egrn"]').click();
     });
 
-    takeDebugScreenShot('Запрос к ФГИС ЕГРН', counter++);
+    takeDebugScreenShot('Запрос к ФГИС ЕГРН', vars.counter++);
 });
 
 
@@ -323,7 +325,7 @@ casper.waitForSelector('.blockGrey', function () {
     }, keyParts);
 
 
-    takeDebugScreenShot('Заполняю ключ для доступа', counter++);
+    takeDebugScreenShot('Заполняю ключ для доступа', vars.counter++);
 
 });
 
@@ -335,13 +337,15 @@ casper.wait(5000, function () {
 
 casper.wait(5000, function () {
 
-    takeDebugScreenShot('После выбора поиска но до итерации', counter++);
+    takeDebugScreenShot('После выбора поиска но до итерации', vars.counter++);
 
     casper.then(iterateCadastralArray);
 });
 
 // var currentCadastralIndex = 0;
 // var tableRows = [];
+
+
 
 function saveToDebugLog(text) {
 
@@ -367,7 +371,7 @@ function iterateCadastralArray() {
     //casper.wait(15000, function () {
     casper.waitForSelector('.v-embedded', function () {
 
-        takeDebugScreenShot('До заполнения данных', counter++);
+        takeDebugScreenShot('До заполнения данных', vars.counter++);
 
         saveToDebugLog('search cadastral index ' + currentCadastralIndex + ' ' + cadastralArray[currentCadastralIndex]);
 
@@ -399,12 +403,12 @@ function iterateCadastralArray() {
                         $("span:contains('Найти')").click();
                     });
 
-                    takeDebugScreenShot('После нажатия на найти', counter++);
+                    takeDebugScreenShot('После нажатия на найти', vars.counter++);
 
                     //casper.wait(2000, function () {
                     casper.waitForSelector('.v-table-body', function () {
 
-                        takeDebugScreenShot('Таблица появилась', counter++);
+                        takeDebugScreenShot('Таблица появилась', vars.counter++);
 
                         casper.wait(5000, function () {
                             var row = casper.evaluate(function (index) {
@@ -438,7 +442,7 @@ function iterateCadastralArray() {
 
                                 casper.wait(3000, function () {
                                     if (casper.exists("body")) {
-                                        takeDebugScreenShot('Появилась страница с кнопкой на запрос', counter++);
+                                        takeDebugScreenShot('Появилась страница с кнопкой на запрос', vars.counter++);
 
                                     }
 
@@ -453,8 +457,8 @@ function iterateCadastralArray() {
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
                                             if (casper.exists("body")) {
-                                                takeDebugScreenShot('Появился попап', counter++);
-                                                ////console.log('screenshots/Появился попАп ' + counter++ + '.png');
+                                                takeDebugScreenShot('Появился попап', vars.counter++);
+                                                ////console.log('screenshots/Появился попАп ' + vars.counter++ + '.png');
                                             }
 
                                             tableRows[currentCadastralIndex].isLoaded = true;
@@ -465,7 +469,7 @@ function iterateCadastralArray() {
                                                     return $('.tipFont b').first()[0].innerText;
                                                 });
 
-                                                takeDebugScreenShot('Появился текст', counter++);
+                                                takeDebugScreenShot('Появился текст', vars.counter++);
 
                                                 casper.evaluate(function () {
                                                     $('span:contains("Продолжить работу")').click();
@@ -475,8 +479,8 @@ function iterateCadastralArray() {
                                                 casper.wait(5000, function () {
                                                     //лcasper.wait(3000, function () {
                                                     if (casper.exists("body")) {
-                                                        takeDebugScreenShot('нажал на продолжить работу', counter++);
-                                                        ////console.log('screenshots/Нажал на Продолжить работу' + counter++ + '.png');
+                                                        takeDebugScreenShot('нажал на продолжить работу', vars.counter++);
+                                                        ////console.log('screenshots/Нажал на Продолжить работу' + vars.counter++ + '.png');
                                                     }
 
                                                     casper.evaluate(function () {
@@ -490,7 +494,7 @@ function iterateCadastralArray() {
                                                         casper.then(iterateCadastralArray);
                                                 }, function () {
                                                     saveToDebugLog('navigation panel doesnt exist');
-                                                    takeDebugScreenShot('Панель навигации не найдена', counter++);
+                                                    takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
                                                 }, 15000);
 
                                             });
@@ -509,7 +513,7 @@ function iterateCadastralArray() {
                                 tableRows[currentCadastralIndex].numberOfRequest = 'NULLED';
                                 currentCadastralIndex++;
 
-                                takeDebugScreenShot('Поиск в нулевом', counter++);
+                                takeDebugScreenShot('Поиск в нулевом', vars.counter++);
                                 if (currentCadastralIndex < cadastralArray.length)
                                     casper.then(iterateCadastralArray);
 
@@ -525,7 +529,7 @@ function iterateCadastralArray() {
 
     }, function () {
 
-        takeDebugScreenShot('BEFORE another time', counter++);
+        takeDebugScreenShot('BEFORE another time', vars.counter++);
 
         afterReloadAuth();
 
@@ -533,7 +537,7 @@ function iterateCadastralArray() {
 
         //     casper.wait(5000, function () {
 
-        //         takeDebugScreenShot('greyBlockExist', counter++);
+        //         takeDebugScreenShot('greyBlockExist', vars.counter++);
 
         //         var keyParts = accessKey.split('-');
 
@@ -552,13 +556,13 @@ function iterateCadastralArray() {
 
         //         casper.wait(5000, function () {
 
-        //             takeDebugScreenShot('keyWriten and accepted', counter++);
+        //             takeDebugScreenShot('keyWriten and accepted', vars.counter++);
 
         //             casper.evaluate(function () {
         //                 document.querySelector('.v-button-caption').click();
         //             });
 
-        //             takeDebugScreenShot('AFTER another time', counter++);
+        //             takeDebugScreenShot('AFTER another time', vars.counter++);
 
         //             casper.then(iterateCadastralArray);
         //         });
@@ -571,19 +575,19 @@ function iterateCadastralArray() {
 
 function afterReloadAuth() {
 
-    takeDebugScreenShot('start in afterReloadAuth', counter++);
+    takeDebugScreenShot('start in afterReloadAuth', vars.counter++);
 
     casper.evaluate(function () {
         location.reload();
     });
 
-    takeDebugScreenShot('after reload', counter++);
+    takeDebugScreenShot('after reload', vars.counter++);
 
     casper.waitForSelector('.blockGrey', function () {
 
         casper.wait(5000, function () {
 
-            takeDebugScreenShot('greyBlockExist', counter++);
+            takeDebugScreenShot('greyBlockExist', vars.counter++);
 
             var keyParts = accessKey.split('-');
 
@@ -602,20 +606,20 @@ function afterReloadAuth() {
 
             casper.wait(5000, function () {
 
-                takeDebugScreenShot('keyWriten and accepted', counter++);
+                takeDebugScreenShot('keyWriten and accepted', vars.counter++);
 
                 casper.evaluate(function () {
                     document.querySelector('.v-button-caption').click();
                 });
 
-                takeDebugScreenShot('AFTER another time', counter++);
+                takeDebugScreenShot('AFTER another time', vars.counter++);
 
                 casper.then(iterateCadastralArray);
             });
         });
 
     }, function () {
-        takeDebugScreenShot('cant find grey block after error', counter++);
+        takeDebugScreenShot('cant find grey block after error', vars.counter++);
         console.log(JSON.stringify(tableRows, "", 4));
         casper.exit(1);
     });
@@ -631,7 +635,7 @@ casper.wait(5000, function () {
     saveToDebugLog(JSON.stringify(cadastralArray, "", 4))
     saveToDebugLog(JSON.stringify(tableRows, "", 4))
 
-    takeDebugScreenShot('Финиш', counter++);
+    takeDebugScreenShot('Финиш', vars.counter++);
 });
 
 
