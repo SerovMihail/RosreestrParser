@@ -1,14 +1,23 @@
+// Modules
 var fs = require('fs');
-/** settings */
-var casperSettings = require('./Modules/casperSettingsModule');
 
-var casper = require('casper').create(casperSettings);
+
+// Casper settings
+var casper = require('casper').create({
+    verbose: true,                  // log messages will be printed out to the console
+    //logLevel: 'debug',
+    pageSettings: {
+        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'
+    },
+    onWaitTimeout: function () {
+        saveAnError("Ошибка по таймауту", vars.counter++);
+    }
+});
+casper.options.waitTimeout = 120000;
+casper.options.viewportSize = { width: 1024, height: 800 };
+
 
 /** error handlers */
-casper.options.onWaitTimeout = function () {
-    saveAnError("Ошибка по таймауту", vars.counter++);
-};
-
 casper.on('error', function (msg, backtrace) {
     saveAnError('Непредвиденная ошибка ' + msg, vars.counter++);
 });
@@ -23,12 +32,14 @@ var searchData = require('./Modules/argsModule').getArgs(casper);
 var vars = require('./Modules/varsModule').getVars();
 // console.log('vars', JSON.stringify(vars, "", 4));
 
-
-casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/');
+// casper SCRIPT
+casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/', function() {
+    newRecordIntoLog(searchData);
+});
 
 // Открываем сайт, переходим по ссылке на личный кабинет
-casper.waitForSelector('.portlet-body', function () {  
-    
+casper.waitForSelector('.portlet-body', function () {
+
     casper.evaluate(function (region) {
         document.querySelector('#adress').checked = true;
 
@@ -49,7 +60,7 @@ casper.waitForSelector('.portlet-body', function () {
             regionInput.dispatchEvent(evt);
         }
 
-    }, searchData.region); 
+    }, searchData.region);
 });
 
 casper.wait(1000, function () {
@@ -110,6 +121,7 @@ casper.waitForSelector(".portlet-title", function () {
 });
 
 
+
 casper.then(iteratePagination);
 
 function iteratePagination() {
@@ -139,13 +151,13 @@ function iteratePagination() {
             });
             casper.then(iteratePagination);
         }, function timeout() { // step to execute if check has failed
-            takeDebugScreenShot("селектор пуст", vars.counter++)            
+            takeDebugScreenShot("селектор пуст", vars.counter++)
         }, 3000);
 
     });
 
-
 }
+
 
 casper.thenOpen('https://rosreestr.ru/site/');
 
@@ -282,44 +294,66 @@ casper.wait(5000, function () {
 
 casper.wait(5000, function () {
 
-    // console.log("finish");
-    // console.log(JSON.stringify(cadastralArray, "", 4));
-    // console.log('\n\n\n -------------------- \n\n\n');
+    
     console.log(JSON.stringify(vars.tableRows, "", 4));
 
     saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4))
     saveToDebugLog(JSON.stringify(vars.tableRows, "", 4))
 
-    takeDebugScreenShot('Финиш', vars.counter++);
+    takeDebugScreenShot('Finish', vars.counter++);
 });
 
 
 casper.run();
+
+
+/** FUNCTIONS */
+
+
 
 function saveAnError(errorText, counter) {
 
     var errorTime = new Date().toLocaleString("ru");
 
     logMessage(errorText, errorTime);
-    createErrorScreenShot(errorText, errorTime, vars.counter);
+    takeErrorScreenShot(errorText, errorTime, vars.counter);
 
     if (errorText === "Ошибка по таймауту" && vars.currentCadastralIndex !== 0) {
         casper.evaluate(function () {
-            $('.v-Notification')[0].click();
+            $('.v-Notification').click();
         });
 
         afterReloadAuth();
-    }    
+    }
+
+    obj = {};
+
+    if (errorText === "Ошибка по таймауту") {
+        obj.message = "Ошибка произошла на этапе аунтентификации";
+    }
+
+    if (errorText === "Непредвиденная ошибка") {
+        obj.message = "Ошибка произошла на ..";
+    }
+}
+
+function newRecordIntoLog(searchData) {
+
+    var twoLine = " \n ------------------------------ \n";
+    var fullAddress = "region: " + searchData.region + " | zone: " + searchData.zone + " | street : " + searchData.street + "\nhouseNumber: " + searchData.houseNumber + " | building: " + searchData.building;
+    var text = "\n\n" +  twoLine + new Date().toLocaleString("ru") + "\n"  + fullAddress + twoLine;   
+
+    fs.write(folders.baseDir + folders.logFile, text, "a");
 }
 
 function logMessage(text, time) {
     fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
 }
 
-function createErrorScreenShot(screenShotName, time, counter) {
+function takeErrorScreenShot(screenShotName, time, counter) {
 
-    var screenShotName = folders.ErrorFolder +  screenShotName + " " + counter + '.png'; //folders.baseDir + 
-    
+    var screenShotName = folders.ErrorFolder + screenShotName + " " + counter + '.png'; //folders.baseDir + 
+
     casper.capture(screenShotName);
     //console.log('screenShotName', screenShotName);
 }
@@ -331,249 +365,237 @@ function takeDebugScreenShot(text, counter) {
     //console.log('screenShotName', screenShotName);
 }
 
-function saveToDebugLog(text) {
 
-    var time = new Date();
+// function iterateCadastralArray() {
 
-    fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
-}
+//     saveToDebugLog('nnew iterate cadastral');
 
+//     // Выбираю "Поиск объектов недвижимости"
+//     //casper.waitForSelector('.navigationPanel', function () {
+//     //casper.wait(7000, function () {
 
+//     //console.log('navigationPanek');
+//     // casper.evaluate(function () {
+//     //     document.querySelector('.v-button-caption').click();
+//     // });
 
+//     //casper.waitForSelector('.v-filterselect-button', function () {
+//     //casper.wait(15000, function () {
+//     casper.waitForSelector('.v-embedded', function () {
 
+//         takeDebugScreenShot('До заполнения данных', vars.counter++);
 
+//         saveToDebugLog('search cadastral index ' + vars.currentCadastralIndex + ' ' + vars.cadastralArray[vars.currentCadastralIndex]);
 
+//         casper.evaluate(function (cadastralNumber) {
 
-function iterateCadastralArray() {
+//             if (cadastralNumber)
+//                 $('.v-textfield').slice(0, 1).focus().val(cadastralNumber);
 
-    saveToDebugLog('nnew iterate cadastral');
+//         }, vars.cadastralArray[vars.currentCadastralIndex]);
 
-    // Выбираю "Поиск объектов недвижимости"
-    //casper.waitForSelector('.navigationPanel', function () {
-    //casper.wait(7000, function () {
 
-    //console.log('navigationPanek');
-    // casper.evaluate(function () {
-    //     document.querySelector('.v-button-caption').click();
-    // });
+//         if (searchData.region) {
+//             //console.log(searchData.region);
 
-    //casper.waitForSelector('.v-filterselect-button', function () {
-    //casper.wait(15000, function () {
-    casper.waitForSelector('.v-embedded', function () {
+//             casper.evaluate(function (region) {
+//                 document.querySelectorAll('.v-filterselect-button')[0].click();
+//                 $(".v-filterselect-input").slice(0, 1).select().val(region).keyup(); // ЗНАЧЕНИЕ СЮДА        
+//             }, searchData.region);
 
-        takeDebugScreenShot('До заполнения данных', vars.counter++);
+//             //casper.wait(2000, function () {
+//             casper.waitForSelector('.v-filterselect-suggestmenu', function () {
 
-        saveToDebugLog('search cadastral index ' + vars.currentCadastralIndex + ' ' + vars.cadastralArray[vars.currentCadastralIndex]);
+//                 casper.evaluate(function () {
+//                     $('.gwt-MenuItem').first().click();
+//                 });
 
-        casper.evaluate(function (cadastralNumber) {
+//                 casper.wait(5000, function () {
+//                     casper.evaluate(function () {
+//                         $("span:contains('Найти')").click();
+//                     });
 
-            if (cadastralNumber)
-                $('.v-textfield').slice(0, 1).focus().val(cadastralNumber);
+//                     takeDebugScreenShot('После нажатия на найти', vars.counter++);
 
-        }, vars.cadastralArray[vars.currentCadastralIndex]);
+//                     //casper.wait(2000, function () {
+//                     casper.waitForSelector('.v-table-body', function () {
 
+//                         takeDebugScreenShot('Таблица появилась', vars.counter++);
 
-        if (searchData.region) {
-            //console.log(searchData.region);
+//                         casper.wait(5000, function () {
+//                             var row = casper.evaluate(function (index) {
 
-            casper.evaluate(function (region) {
-                document.querySelectorAll('.v-filterselect-button')[0].click();
-                $(".v-filterselect-input").slice(0, 1).select().val(region).keyup(); // ЗНАЧЕНИЕ СЮДА        
-            }, searchData.region);
+//                                 $('.v-window-modalitycurtain').hide();
+//                                 $('.popupContent').hide();
 
-            //casper.wait(2000, function () {
-            casper.waitForSelector('.v-filterselect-suggestmenu', function () {
+//                                 return $.map($('.v-table-row, .v-table-row-odd'), function (value, key) {
+//                                     var rowObject = {};
 
-                casper.evaluate(function () {
-                    $('.gwt-MenuItem').first().click();
-                });
+//                                     rowObject.number = index + 1;
+//                                     rowObject.cadastralNumber = value.childNodes[0].innerText.replace(/[\r\n]+/g, '');
+//                                     rowObject.address = value.childNodes[1].innerText.replace(/[\r\n]+/g, '');
+//                                     rowObject.objectType = value.childNodes[2].innerText.replace(/[\r\n]+/g, '');
+//                                     rowObject.area = value.childNodes[3].innerText.replace(/[\r\n]+/g, '');
+//                                     rowObject.isLoaded = false;
 
-                casper.wait(5000, function () {
-                    casper.evaluate(function () {
-                        $("span:contains('Найти')").click();
-                    });
+//                                     return rowObject;
+//                                 });
 
-                    takeDebugScreenShot('После нажатия на найти', vars.counter++);
 
-                    //casper.wait(2000, function () {
-                    casper.waitForSelector('.v-table-body', function () {
+//                             }, currentCadastralIndex);
 
-                        takeDebugScreenShot('Таблица появилась', vars.counter++);
+//                             vars.tableRows = vars.tableRows.concat(row);
 
-                        casper.wait(5000, function () {
-                            var row = casper.evaluate(function (index) {
+//                             casper.evaluate(function () {
+//                                 $('.v-table-row, .v-table-row-odd').slice(0, 1).trigger('mouseup');
+//                             });
 
-                                $('.v-window-modalitycurtain').hide();
-                                $('.popupContent').hide();
+//                             casper.waitForSelector('.v-radiobutton', function success() {
 
-                                return $.map($('.v-table-row, .v-table-row-odd'), function (value, key) {
-                                    var rowObject = {};
+//                                 casper.wait(3000, function () {
+//                                     if (casper.exists("body")) {
+//                                         takeDebugScreenShot('Появилась страница с кнопкой на запрос', vars.counter++);
 
-                                    rowObject.number = index + 1;
-                                    rowObject.cadastralNumber = value.childNodes[0].innerText.replace(/[\r\n]+/g, '');
-                                    rowObject.address = value.childNodes[1].innerText.replace(/[\r\n]+/g, '');
-                                    rowObject.objectType = value.childNodes[2].innerText.replace(/[\r\n]+/g, '');
-                                    rowObject.area = value.childNodes[3].innerText.replace(/[\r\n]+/g, '');
-                                    rowObject.isLoaded = false;
+//                                     }
 
-                                    return rowObject;
-                                });
+//                                     casper.wait(2000, function () {
 
+//                                         casper.evaluate(function () {
+//                                             $('span:contains("Отправить запрос")').click();
+//                                         });
 
-                            }, currentCadastralIndex);
+//                                         vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
 
-                            vars.tableRows = vars.tableRows.concat(row);
+//                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
-                            casper.evaluate(function () {
-                                $('.v-table-row, .v-table-row-odd').slice(0, 1).trigger('mouseup');
-                            });
+//                                             if (casper.exists("body")) {
+//                                                 takeDebugScreenShot('Появился попап', vars.counter++);
+//                                                 ////console.log('screenshots/Появился попАп ' + vars.counter++ + '.png');
+//                                             }
 
-                            casper.waitForSelector('.v-radiobutton', function success() {
+//                                             vars.tableRows[vars.currentCadastralIndex].isLoaded = true;
 
-                                casper.wait(3000, function () {
-                                    if (casper.exists("body")) {
-                                        takeDebugScreenShot('Появилась страница с кнопкой на запрос', vars.counter++);
+//                                             casper.wait(5000, function () {
 
-                                    }
+//                                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = casper.evaluate(function () {
+//                                                     return $('.tipFont b').first()[0].innerText;
+//                                                 });
 
-                                    casper.wait(2000, function () {
+//                                                 takeDebugScreenShot('Появился текст', vars.counter++);
 
-                                        casper.evaluate(function () {
-                                            $('span:contains("Отправить запрос")').click();
-                                        });
+//                                                 casper.evaluate(function () {
+//                                                     $('span:contains("Продолжить работу")').click();
+//                                                 });
 
-                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+//                                                 //casper.waitForSelector('.navigationPanel', function () {
+//                                                 casper.wait(5000, function () {
+//                                                     //лcasper.wait(3000, function () {
+//                                                     if (casper.exists("body")) {
+//                                                         takeDebugScreenShot('нажал на продолжить работу', vars.counter++);
+//                                                         ////console.log('screenshots/Нажал на Продолжить работу' + vars.counter++ + '.png');
+//                                                     }
 
-                                        casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
+//                                                     casper.evaluate(function () {
+//                                                         document.querySelector('.v-button-caption').click();
+//                                                     });
 
-                                            if (casper.exists("body")) {
-                                                takeDebugScreenShot('Появился попап', vars.counter++);
-                                                ////console.log('screenshots/Появился попАп ' + vars.counter++ + '.png');
-                                            }
+//                                                     vars.currentCadastralIndex++;
 
-                                            vars.tableRows[vars.currentCadastralIndex].isLoaded = true;
+//                                                     saveToDebugLog('currentCadastralIndex: ' + vars.currentCadastralIndex + " | cadastralArray.length + 1: " + (vars.cadastralArray.length + 1));
+//                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length)
+//                                                         casper.then(iterateCadastralArray);
+//                                                 }, function () {
+//                                                     saveToDebugLog('navigation panel doesnt exist');
+//                                                     takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
+//                                                 }, 15000);
 
-                                            casper.wait(5000, function () {
+//                                             });
+//                                         });
+//                                     });
+//                                 });
 
-                                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = casper.evaluate(function () {
-                                                    return $('.tipFont b').first()[0].innerText;
-                                                });
+//                             }, function () {
 
-                                                takeDebugScreenShot('Появился текст', vars.counter++);
 
-                                                casper.evaluate(function () {
-                                                    $('span:contains("Продолжить работу")').click();
-                                                });
+//                                 casper.evaluate(function () {
+//                                     document.querySelector('.v-button-caption').click();
+//                                 });
+//                                 vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+//                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
+//                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'NULLED';
+//                                 vars.currentCadastralIndex++;
 
-                                                //casper.waitForSelector('.navigationPanel', function () {
-                                                casper.wait(5000, function () {
-                                                    //лcasper.wait(3000, function () {
-                                                    if (casper.exists("body")) {
-                                                        takeDebugScreenShot('нажал на продолжить работу', vars.counter++);
-                                                        ////console.log('screenshots/Нажал на Продолжить работу' + vars.counter++ + '.png');
-                                                    }
+//                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
+//                                 if (vars.currentCadastralIndex < vars.cadastralArray.length)
+//                                     casper.then(iterateCadastralArray);
 
-                                                    casper.evaluate(function () {
-                                                        document.querySelector('.v-button-caption').click();
-                                                    });
+//                             }, 30000);
+//                         });
+//                     });
+//                 });
+//             });
+//         }
+//         //});
 
-                                                    vars.currentCadastralIndex++;
+//         // });
 
-                                                    saveToDebugLog('currentCadastralIndex: ' + vars.currentCadastralIndex + " | cadastralArray.length + 1: " + (vars.cadastralArray.length + 1));
-                                                    if (vars.currentCadastralIndex < vars.cadastralArray.length)
-                                                        casper.then(iterateCadastralArray);
-                                                }, function () {
-                                                    saveToDebugLog('navigation panel doesnt exist');
-                                                    takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
-                                                }, 15000);
+//     }, function () {
 
-                                            });
-                                        });
-                                    });
-                                });
+//         takeDebugScreenShot('BEFORE another time', vars.counter++);
 
-                            }, function () {
+//         afterReloadAuth();
 
+//     }, 30000);
+// }
 
-                                casper.evaluate(function () {
-                                    document.querySelector('.v-button-caption').click();
-                                });
-                                vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
-                                vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
-                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'NULLED';
-                                vars.currentCadastralIndex++;
+// function afterReloadAuth() {
 
-                                takeDebugScreenShot('Поиск в нулевом', vars.counter++);
-                                if (vars.currentCadastralIndex < vars.cadastralArray.length)
-                                    casper.then(iterateCadastralArray);
+//     takeDebugScreenShot('start in afterReloadAuth', vars.counter++);
 
-                            }, 30000);
-                        });
-                    });
-                });
-            });
-        }
-        //});
+//     casper.evaluate(function () {
+//         location.reload();
+//     });
 
-        // });
+//     takeDebugScreenShot('after reload', vars.counter++);
 
-    }, function () {
+//     casper.waitForSelector('.blockGrey', function () {
 
-        takeDebugScreenShot('BEFORE another time', vars.counter++);
+//         casper.wait(5000, function () {
 
-        afterReloadAuth();        
+//             takeDebugScreenShot('greyBlockExist', vars.counter++);
 
-    }, 30000);
-}
+//             var keyParts = vars.accessKey.split('-');
 
-function afterReloadAuth() {
+//             casper.evaluate(function (val) {
 
-    takeDebugScreenShot('start in afterReloadAuth', vars.counter++);
+//                 for (var i = 0; i < 5; i++) {
+//                     document.querySelectorAll('.v-textfield')[i].value = val[i];
+//                     $('.v-textfield').slice(i, i + 1).trigger("change");
+//                 }
 
-    casper.evaluate(function () {
-        location.reload();
-    });
+//                 document.querySelector('.v-button-wrap').click();
 
-    takeDebugScreenShot('after reload', vars.counter++);
+//             }, keyParts);
 
-    casper.waitForSelector('.blockGrey', function () {
 
-        casper.wait(5000, function () {
 
-            takeDebugScreenShot('greyBlockExist', vars.counter++);
+//             casper.wait(5000, function () {
 
-            var keyParts = vars.accessKey.split('-');
+//                 takeDebugScreenShot('keyWriten and accepted', vars.counter++);
 
-            casper.evaluate(function (val) {
+//                 casper.evaluate(function () {
+//                     document.querySelector('.v-button-caption').click();
+//                 });
 
-                for (var i = 0; i < 5; i++) {
-                    document.querySelectorAll('.v-textfield')[i].value = val[i];
-                    $('.v-textfield').slice(i, i + 1).trigger("change");
-                }
+//                 takeDebugScreenShot('AFTER another time', vars.counter++);
 
-                document.querySelector('.v-button-wrap').click();
+//                 casper.then(iterateCadastralArray);
+//             });
+//         });
 
-            }, keyParts);
-
-
-
-            casper.wait(5000, function () {
-
-                takeDebugScreenShot('keyWriten and accepted', vars.counter++);
-
-                casper.evaluate(function () {
-                    document.querySelector('.v-button-caption').click();
-                });
-
-                takeDebugScreenShot('AFTER another time', vars.counter++);
-
-                casper.then(iterateCadastralArray);
-            });
-        });
-
-    }, function () {
-        takeDebugScreenShot('cant find grey block after error', vars.counter++);
-        console.log(JSON.stringify(vars.tableRows, "", 4));
-        casper.exit(1);
-    });
-}
+//     }, function () {
+//         takeDebugScreenShot('cant find grey block after error', vars.counter++);
+//         console.log(JSON.stringify(vars.tableRows, "", 4));
+//         casper.exit(1);
+//     });
+// }

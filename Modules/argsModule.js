@@ -37,8 +37,6 @@ exports.getArgs = function (casper) {
 
     clearSlashes(searchData);
 
-
-
     return searchData;
 }
 
