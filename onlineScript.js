@@ -1,3 +1,4 @@
+var fs = require('fs');
 /** settings */
 var casperSettings = require('./Modules/casperSettingsModule');
 
@@ -13,6 +14,7 @@ casper.on('error', function (msg, backtrace) {
 });
 
 var folders = require('./Modules/foldersModule').getFolders();
+console.log('folders', JSON.stringify(folders, "", 4));
 
 
 
@@ -29,15 +31,8 @@ function saveAnError(errorText, counter) {
         });
 
         afterReloadAuth();
-    }
-    //writeToConsole(errorText, errorTime);        
-
-    //casper.exit(1);
+    }    
 }
-
-// function writeToConsole(text, time) {
-//     console.log(JSON.stringify({errorMessage: text, errorDate: time}, "", 4))
-// }
 
 function logMessage(text, time) {
     fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
@@ -56,26 +51,14 @@ function takeDebugScreenShot(text, counter) {
     casper.capture(screenShotName);
 }
 
-/** arguments processing */
-// casper.echo("Casper CLI passed options:");
-// require("utils").dump(casper.cli.options);
 
-var searchData = require('./Modules/argsModule').getArgs();
+
+var searchData = require('./Modules/argsModule').getArgs(casper);
+console.log('searchData', JSON.stringify(searchData, "", 4));
 
 
 var vars = require('./Modules/varsModule').getVars();
-
-
-
-
-
-
-
-/** variables */
-// var counter = 1; // screenshot index variable
-// var accessKey = undefined;
-
-
+console.log('vars', JSON.stringify(vars, "", 4));
 
 
 casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/');
@@ -187,7 +170,7 @@ function iteratePagination() {
 
         });
 
-        cadastralArray = cadastralArray.concat(newArr);
+        vars.cadastralArray = vars.cadastralArray.concat(newArr);
 
         casper.waitFor(function check() {
             return this.evaluate(function () {
@@ -261,7 +244,7 @@ casper.waitForSelector('.finances', function () {
 // Запоминаем ключ
 casper.waitForSelector('.kadastral-results-search', function () {
 
-    accessKey = casper.evaluate(function () {
+    vars.accessKey = casper.evaluate(function () {
         return document.querySelector('.right-column strong').innerHTML;
     });
 
@@ -311,7 +294,7 @@ casper.waitForSelector('.menu-navigation-list', function () {
 // заполняю ключ для доступа
 casper.waitForSelector('.blockGrey', function () {
 
-    var keyParts = accessKey.split('-');
+    var keyParts = vars.accessKey.split('-');
 
     casper.evaluate(function (val) {
 
@@ -351,7 +334,7 @@ function saveToDebugLog(text) {
 
     var time = new Date();
 
-    fs.write(baseDir + debugLogFileName, text + " " + time + "\n", "a");
+    fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
 }
 
 function iterateCadastralArray() {
@@ -373,14 +356,14 @@ function iterateCadastralArray() {
 
         takeDebugScreenShot('До заполнения данных', vars.counter++);
 
-        saveToDebugLog('search cadastral index ' + currentCadastralIndex + ' ' + cadastralArray[currentCadastralIndex]);
+        saveToDebugLog('search cadastral index ' + vars.currentCadastralIndex + ' ' + vars.cadastralArray[vars.currentCadastralIndex]);
 
         casper.evaluate(function (cadastralNumber) {
 
             if (cadastralNumber)
                 $('.v-textfield').slice(0, 1).focus().val(cadastralNumber);
 
-        }, cadastralArray[currentCadastralIndex]);
+        }, vars.cadastralArray[vars.currentCadastralIndex]);
 
 
         if (searchData.region) {
@@ -432,7 +415,7 @@ function iterateCadastralArray() {
 
                             }, currentCadastralIndex);
 
-                            tableRows = tableRows.concat(row);
+                            vars.tableRows = vars.tableRows.concat(row);
 
                             casper.evaluate(function () {
                                 $('.v-table-row, .v-table-row-odd').slice(0, 1).trigger('mouseup');
@@ -452,7 +435,7 @@ function iterateCadastralArray() {
                                             $('span:contains("Отправить запрос")').click();
                                         });
 
-                                        tableRows[currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
@@ -461,11 +444,11 @@ function iterateCadastralArray() {
                                                 ////console.log('screenshots/Появился попАп ' + vars.counter++ + '.png');
                                             }
 
-                                            tableRows[currentCadastralIndex].isLoaded = true;
+                                            vars.tableRows[vars.currentCadastralIndex].isLoaded = true;
 
                                             casper.wait(5000, function () {
 
-                                                tableRows[currentCadastralIndex].numberOfRequest = casper.evaluate(function () {
+                                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = casper.evaluate(function () {
                                                     return $('.tipFont b').first()[0].innerText;
                                                 });
 
@@ -487,10 +470,10 @@ function iterateCadastralArray() {
                                                         document.querySelector('.v-button-caption').click();
                                                     });
 
-                                                    currentCadastralIndex++;
+                                                    vars.currentCadastralIndex++;
 
-                                                    saveToDebugLog('currentCadastralIndex: ' + currentCadastralIndex + " | cadastralArray.length + 1: " + (cadastralArray.length + 1));
-                                                    if (currentCadastralIndex < cadastralArray.length)
+                                                    saveToDebugLog('currentCadastralIndex: ' + vars.currentCadastralIndex + " | cadastralArray.length + 1: " + (vars.cadastralArray.length + 1));
+                                                    if (vars.currentCadastralIndex < vars.cadastralArray.length)
                                                         casper.then(iterateCadastralArray);
                                                 }, function () {
                                                     saveToDebugLog('navigation panel doesnt exist');
@@ -508,13 +491,13 @@ function iterateCadastralArray() {
                                 casper.evaluate(function () {
                                     document.querySelector('.v-button-caption').click();
                                 });
-                                tableRows[currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
-                                tableRows[currentCadastralIndex].isLoaded = false;
-                                tableRows[currentCadastralIndex].numberOfRequest = 'NULLED';
-                                currentCadastralIndex++;
+                                vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
+                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'NULLED';
+                                vars.currentCadastralIndex++;
 
                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
-                                if (currentCadastralIndex < cadastralArray.length)
+                                if (vars.currentCadastralIndex < vars.cadastralArray.length)
                                     casper.then(iterateCadastralArray);
 
                             }, 30000);
@@ -589,7 +572,7 @@ function afterReloadAuth() {
 
             takeDebugScreenShot('greyBlockExist', vars.counter++);
 
-            var keyParts = accessKey.split('-');
+            var keyParts = vars.accessKey.split('-');
 
             casper.evaluate(function (val) {
 
@@ -620,7 +603,7 @@ function afterReloadAuth() {
 
     }, function () {
         takeDebugScreenShot('cant find grey block after error', vars.counter++);
-        console.log(JSON.stringify(tableRows, "", 4));
+        console.log(JSON.stringify(vars.tableRows, "", 4));
         casper.exit(1);
     });
 }
@@ -630,10 +613,10 @@ casper.wait(5000, function () {
     // console.log("finish");
     // console.log(JSON.stringify(cadastralArray, "", 4));
     // console.log('\n\n\n -------------------- \n\n\n');
-    console.log(JSON.stringify(tableRows, "", 4));
+    console.log(JSON.stringify(vars.tableRows, "", 4));
 
-    saveToDebugLog(JSON.stringify(cadastralArray, "", 4))
-    saveToDebugLog(JSON.stringify(tableRows, "", 4))
+    saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4))
+    saveToDebugLog(JSON.stringify(vars.tableRows, "", 4))
 
     takeDebugScreenShot('Финиш', vars.counter++);
 });

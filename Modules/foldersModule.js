@@ -4,13 +4,14 @@ var fs = require('fs');
 exports.getFolders = function () {
 
     var currentFolder = fs.workingDirectory;
-    var scriptName = currentFolder.split('\\').pop().split('.')[0];
+    var scriptName = currentFolder.split('/').pop().split('.')[0];
+    console.log('scriptName', scriptName);    
 
     var foldersData = {
         baseDir: currentFolder,
         scriptName: scriptName,
-        ErrorFolder: "\\" + scriptName + "Errors\\",
-        DebugFolder: "\\" + scriptName + "Debug\\",
+        ErrorFolder: currentFolder +  "/" + scriptName + "Errors/",
+        DebugFolder: currentFolder +  "/" + scriptName + "Debug/",
         logFile: scriptName + '.log'
     };
    
