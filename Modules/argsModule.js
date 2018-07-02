@@ -25,10 +25,10 @@ exports.getArgs = function (casper) {
         searchData.houseNumber = casper.cli.get("houseNumber");
     }
 
-    if (casper.cli.has("apartmentNumber") && casper.cli.get("apartmentNumber") !== "") {
-        //console.log('in appartment number');
-        searchData.apartmentNumber = casper.cli.get("apartmentNumber");
-    }
+    // if (casper.cli.has("apartmentNumber") && casper.cli.get("apartmentNumber") !== "") {
+    //     //console.log('in appartment number');
+    //     searchData.apartmentNumber = casper.cli.get("apartmentNumber");
+    // }
 
     if (casper.cli.has("building") && casper.cli.get("building") !== "") {
         //console.log('in appartment number');
@@ -37,12 +37,14 @@ exports.getArgs = function (casper) {
 
     clearSlashes(searchData);
 
+
+
     return searchData;
 }
 
 function clearSlashes(searchData) {
     for (var i in searchData) {
         if (typeof searchData[i] === 'string')
-            searchData[i] = searchData[i].replace("\\", " ");
+            searchData[i] = searchData[i].replace("/", " ");
     }
 }

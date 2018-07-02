@@ -13,60 +13,22 @@ casper.on('error', function (msg, backtrace) {
     saveAnError('Непредвиденная ошибка ' + msg, vars.counter++);
 });
 
+
 var folders = require('./Modules/foldersModule').getFolders();
-console.log('folders', JSON.stringify(folders, "", 4));
-
-
-
-function saveAnError(errorText, counter) {
-
-    var errorTime = new Date().toLocaleString("ru");
-
-    logMessage(errorText, errorTime);
-    createErrorScreenShot(errorText, errorTime, vars.counter++);
-
-    if (errorText === "Ошибка по таймауту" && vars.currentCadastralIndex !== 0) {
-        casper.evaluate(function () {
-            $('.v-Notification')[0].click();
-        });
-
-        afterReloadAuth();
-    }    
-}
-
-function logMessage(text, time) {
-    fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
-}
-
-function createErrorScreenShot(screenShotName, time, counter) {
-
-    var screenShotName = folders.baseDir + folders.ErrorFolder + screenShotName + " " + counter + '.png';
-    //console.log(screenShotName);
-    casper.capture(screenShotName);
-}
-
-function takeDebugScreenShot(text, counter) {
-    var screenShotName = folders.baseDir + folders.DebugFolder + counter + " " + text + '.png';
-    //console.log(screenShotName);
-    casper.capture(screenShotName);
-}
-
-
+//console.log('folders', JSON.stringify(folders, "", 4));
 
 var searchData = require('./Modules/argsModule').getArgs(casper);
-console.log('searchData', JSON.stringify(searchData, "", 4));
-
+//console.log('searchData', JSON.stringify(searchData, "", 4));
 
 var vars = require('./Modules/varsModule').getVars();
-console.log('vars', JSON.stringify(vars, "", 4));
+// console.log('vars', JSON.stringify(vars, "", 4));
 
 
 casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/');
 
 // Открываем сайт, переходим по ссылке на личный кабинет
-casper.waitForSelector('.portlet-body', function () {
-
-
+casper.waitForSelector('.portlet-body', function () {  
+    
     casper.evaluate(function (region) {
         document.querySelector('#adress').checked = true;
 
@@ -82,15 +44,12 @@ casper.waitForSelector('.portlet-body', function () {
                     i.selected = true;
                     return true;
                 }
-
             });
 
             regionInput.dispatchEvent(evt);
         }
 
-    }, searchData.region);
-
-
+    }, searchData.region); 
 });
 
 casper.wait(1000, function () {
@@ -120,13 +79,11 @@ casper.wait(1000, function () {
             streetInput.dispatchEvent(evt);
         }
 
-
         if (houseNumber) {
             var houseNumberInput = document.querySelector('input[name="house"]');
             houseNumberInput.value = houseNumber;
             houseNumberInput.dispatchEvent(evt);
         }
-
 
         if (building) {
             var buildingInput = document.querySelector('input[name="building"]');
@@ -152,7 +109,6 @@ casper.waitForSelector(".portlet-title", function () {
     takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++)
 });
 
-//var cadastralArray = [];
 
 casper.then(iteratePagination);
 
@@ -183,7 +139,7 @@ function iteratePagination() {
             });
             casper.then(iteratePagination);
         }, function timeout() { // step to execute if check has failed
-            takeDebugScreenShot("селектор пуст", vars.counter++)
+            takeDebugScreenShot("селектор пуст", vars.counter++)            
         }, 3000);
 
     });
@@ -191,9 +147,7 @@ function iteratePagination() {
 
 }
 
-
 casper.thenOpen('https://rosreestr.ru/site/');
-
 
 // Открываем сайт, переходим по ссылке на личный кабинет
 casper.waitForSelector('#page_header', function () {
@@ -325,10 +279,57 @@ casper.wait(5000, function () {
     casper.then(iterateCadastralArray);
 });
 
-// var currentCadastralIndex = 0;
-// var tableRows = [];
+
+casper.wait(5000, function () {
+
+    // console.log("finish");
+    // console.log(JSON.stringify(cadastralArray, "", 4));
+    // console.log('\n\n\n -------------------- \n\n\n');
+    console.log(JSON.stringify(vars.tableRows, "", 4));
+
+    saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4))
+    saveToDebugLog(JSON.stringify(vars.tableRows, "", 4))
+
+    takeDebugScreenShot('Финиш', vars.counter++);
+});
 
 
+casper.run();
+
+function saveAnError(errorText, counter) {
+
+    var errorTime = new Date().toLocaleString("ru");
+
+    logMessage(errorText, errorTime);
+    createErrorScreenShot(errorText, errorTime, vars.counter);
+
+    if (errorText === "Ошибка по таймауту" && vars.currentCadastralIndex !== 0) {
+        casper.evaluate(function () {
+            $('.v-Notification')[0].click();
+        });
+
+        afterReloadAuth();
+    }    
+}
+
+function logMessage(text, time) {
+    fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
+}
+
+function createErrorScreenShot(screenShotName, time, counter) {
+
+    var screenShotName = folders.ErrorFolder +  screenShotName + " " + counter + '.png'; //folders.baseDir + 
+    
+    casper.capture(screenShotName);
+    //console.log('screenShotName', screenShotName);
+}
+
+function takeDebugScreenShot(text, counter) {
+    var screenShotName = folders.DebugFolder + counter + " " + text + '.png'; //folders.baseDir +  
+    //console.log(screenShotName);
+    casper.capture(screenShotName);
+    //console.log('screenShotName', screenShotName);
+}
 
 function saveToDebugLog(text) {
 
@@ -336,6 +337,12 @@ function saveToDebugLog(text) {
 
     fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
 }
+
+
+
+
+
+
 
 function iterateCadastralArray() {
 
@@ -514,44 +521,7 @@ function iterateCadastralArray() {
 
         takeDebugScreenShot('BEFORE another time', vars.counter++);
 
-        afterReloadAuth();
-
-        // casper.waitForSelector('.blockGrey', function () {
-
-        //     casper.wait(5000, function () {
-
-        //         takeDebugScreenShot('greyBlockExist', vars.counter++);
-
-        //         var keyParts = accessKey.split('-');
-
-        //         casper.evaluate(function (val) {
-
-        //             for (var i = 0; i < 5; i++) {
-        //                 document.querySelectorAll('.v-textfield')[i].value = val[i];
-        //                 $('.v-textfield').slice(i, i + 1).trigger("change");
-        //             }
-
-        //             document.querySelector('.v-button-wrap').click();
-
-        //         }, keyParts);
-
-
-
-        //         casper.wait(5000, function () {
-
-        //             takeDebugScreenShot('keyWriten and accepted', vars.counter++);
-
-        //             casper.evaluate(function () {
-        //                 document.querySelector('.v-button-caption').click();
-        //             });
-
-        //             takeDebugScreenShot('AFTER another time', vars.counter++);
-
-        //             casper.then(iterateCadastralArray);
-        //         });
-        //});
-
-        //});
+        afterReloadAuth();        
 
     }, 30000);
 }
@@ -607,19 +577,3 @@ function afterReloadAuth() {
         casper.exit(1);
     });
 }
-
-casper.wait(5000, function () {
-
-    // console.log("finish");
-    // console.log(JSON.stringify(cadastralArray, "", 4));
-    // console.log('\n\n\n -------------------- \n\n\n');
-    console.log(JSON.stringify(vars.tableRows, "", 4));
-
-    saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4))
-    saveToDebugLog(JSON.stringify(vars.tableRows, "", 4))
-
-    takeDebugScreenShot('Финиш', vars.counter++);
-});
-
-
-casper.run();

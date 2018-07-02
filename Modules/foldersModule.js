@@ -5,10 +5,9 @@ exports.getFolders = function () {
 
     var currentFolder = fs.workingDirectory;
     var scriptName = currentFolder.split('/').pop().split('.')[0];
-    console.log('scriptName', scriptName);    
-
+       
     var foldersData = {
-        baseDir: currentFolder,
+        baseDir: currentFolder + "/",
         scriptName: scriptName,
         ErrorFolder: currentFolder +  "/" + scriptName + "Errors/",
         DebugFolder: currentFolder +  "/" + scriptName + "Debug/",
@@ -22,8 +21,8 @@ exports.getFolders = function () {
 
 function clearFolders(data) {
 
-    // fs.removeTree(data.ErrorFolder);
-    // fs.removeTree(data.DebugFolder);
+    fs.removeTree(data.ErrorFolder);
+    fs.removeTree(data.DebugFolder);
 
 }
 
