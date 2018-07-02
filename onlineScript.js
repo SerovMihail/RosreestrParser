@@ -129,7 +129,10 @@ casper.waitForSelector(".portlet-title", function () {
         return document.querySelector('#pg_stats b:first-child').innerHTML.replace(new RegExp('&nbsp;', 'g'), '');
     });
 
-    takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++)
+    takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++);
+
+    if(!objectsAreFound)
+        saveAnError("Не найдены помещения");
 });
 
 casper.then(iteratePagination);
@@ -270,8 +273,8 @@ casper.wait(5000, function () {
     
     console.log(JSON.stringify(vars.tableRows, "", 4));
 
-    saveToDebugLog(JSON.stringify(vars.cadastralArray, "", 4));
-    saveToDebugLog(JSON.stringify(vars.tableRows, "", 4));
+    logMessage(JSON.stringify(vars.cadastralArray, "", 4));
+    logMessage(JSON.stringify(vars.tableRows, "", 4));
 
     takeDebugScreenShot('Finish', vars.counter++);
 });
@@ -291,9 +294,8 @@ function saveAnError(errorText, message) {
 
     if(vars.env === "DEBUG")
         takeErrorScreenShot(errorText, vars.counter++);
-
-    var errorTime = new Date().toLocaleString("ru");
-    logMessage(errorText + message, errorTime);    
+    
+    logMessage(errorText + message);    
 
     handleError(errorText);
 }
@@ -308,8 +310,11 @@ function newRecordIntoLog(searchData) {
 }
 
 // Сохраняем максимум информации. Проблема + месадж + время
-function logMessage(text, time) {
-    fs.write(folders.baseDir + folders.logFile, text + " " + time + "\n", "a");
+function logMessage(text) {
+
+    var errorTime = new Date().toLocaleString("ru");
+
+    fs.write(folders.baseDir + folders.logFile, text + " " + errorTime + "\n", "a");
 }
 
 // сохраняем только порядковый номер
@@ -331,7 +336,7 @@ function takeDebugScreenShot(text, counter) {
 
 function iterateCadastralArray() {
 
-    saveToDebugLog('nnew iterate cadastral');
+    logMessage('nnew iterate cadastral');
 
     // Выбираю "Поиск объектов недвижимости"
     //casper.waitForSelector('.navigationPanel', function () {
@@ -348,7 +353,7 @@ function iterateCadastralArray() {
 
         takeDebugScreenShot('До заполнения данных', vars.counter++);
 
-        saveToDebugLog('search cadastral index ' + vars.currentCadastralIndex + ' ' + vars.cadastralArray[vars.currentCadastralIndex]);
+        logMessage('\nСadastral number: ' + vars.currentCadastralIndex + ' | Index: ' + vars.cadastralArray[vars.currentCadastralIndex]);
 
         casper.evaluate(function (cadastralNumber) {
 
@@ -405,7 +410,7 @@ function iterateCadastralArray() {
                                 });
 
 
-                            }, currentCadastralIndex);
+                            }, vars.currentCadastralIndex);
 
                             vars.tableRows = vars.tableRows.concat(row);
 
@@ -464,11 +469,11 @@ function iterateCadastralArray() {
 
                                                     vars.currentCadastralIndex++;
 
-                                                    saveToDebugLog('currentCadastralIndex: ' + vars.currentCadastralIndex + " | cadastralArray.length + 1: " + (vars.cadastralArray.length + 1));
+                                                    logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length)
                                                         casper.then(iterateCadastralArray);
                                                 }, function () {
-                                                    saveToDebugLog('navigation panel doesnt exist');
+                                                    logMessage('Cant find naviagation panel');
                                                     takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
                                                 }, 15000);
 
@@ -559,11 +564,10 @@ function afterReloadAuth() {
     }, function () {
         takeDebugScreenShot('cant find grey block after error', vars.counter++);
 
-
         addBadResponseToResults();
 
-
         console.log(JSON.stringify(vars.tableRows, "", 4));
+
         casper.exit(1);
     });
 }
@@ -637,6 +641,10 @@ function handleError(errorText) {
             obj.message = "Произошла непредвиденная ошибка. Перезагрузите задачу.";
         }
 
+        if (errorText === "Не найдены помещения") {
+            obj.message = "Не найдены помещения. Перезагрузите задачу.";
+        }        
+
         console.log(JSON.stringify(obj, "", 4)); 
 
         casper.exit(1);
@@ -651,7 +659,7 @@ function addBadResponseToResults() {
 
         for (var i = vars.currentCadastralIndex; i < vars.cadastralArray.length; i++) {
             vars.tableRows.push({
-                cadastralNumber:  vars.cadastralArray[vars.currentCadastralIndex],
+                cadastralNumber:  vars.cadastralArray[i],
                 isLoaded: false 
             });
         }

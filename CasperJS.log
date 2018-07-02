@@ -1,18 +1,62 @@
 
-
- 
  ------------------------------ 
-2 июля 2018 г., 16:21:50 GMT+3
+2 июля 2018 г., 16:53:30 GMT+3
 region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
 houseNumber: 82 | building: undefined 
  ------------------------------ 
-Непредвиденная ошибка ReferenceError: Can't find variable: iterateCadastralArray 2 июля 2018 г., 16:22:44 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 16:54:23 GMT+3
+search cadastral index 0 61:44:0081905:104 2 июля 2018 г., 16:54:24 GMT+3
 
 
  
  ------------------------------ 
-2 июля 2018 г., 16:23:16 GMT+3
+2 июля 2018 г., 16:55:16 GMT+3
 region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
 houseNumber: 82 | building: undefined 
  ------------------------------ 
-Непредвиденная ошибка ReferenceError: Can't find variable: iterateCadastralArray 2 июля 2018 г., 16:24:11 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 16:56:13 GMT+3
+Сadastral number: 0 | Index: 61:44:0081905:104 2 июля 2018 г., 16:56:14 GMT+3
+currentCadastralIndex: 1 | cadastralArray.length + 1: 253 2 июля 2018 г., 16:56:42 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 16:56:42 GMT+3
+Сadastral number: 1 | Index: 61:44:0081905:105 2 июля 2018 г., 16:56:43 GMT+3
+currentCadastralIndex: 2 | cadastralArray.length + 1: 253 2 июля 2018 г., 16:57:11 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 16:57:11 GMT+3
+Сadastral number: 2 | Index: 61:44:0081905:106 2 июля 2018 г., 16:57:12 GMT+3
+currentCadastralIndex: 3 | cadastralArray.length + 1: 253 2 июля 2018 г., 16:57:40 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 16:57:40 GMT+3
+Сadastral number: 3 | Index: 61:44:0081905:107 2 июля 2018 г., 16:57:41 GMT+3
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 17:51:34 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+nnew iterate cadastral 2 июля 2018 г., 17:52:29 GMT+3
+
+Сadastral number: 0 | Index: 61:44:0081905:104 2 июля 2018 г., 17:52:30 GMT+3
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 17:52:48 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 2 июля 2018 г., 17:52:58 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 17:52:58 GMT+3
+
+Сadastral number: 1 | Index: 61:44:0081905:105 2 июля 2018 г., 17:52:59 GMT+3
+Before next iteration. Current cadastral number: 2 | cadastralArray.length: 252 2 июля 2018 г., 17:53:26 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 17:53:26 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 17:53:40 GMT+3
+
+Сadastral number: 0 | Index: 61:44:0081905:104 2 июля 2018 г., 17:53:40 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 2 июля 2018 г., 17:54:09 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 17:54:09 GMT+3
+
+Сadastral number: 1 | Index: 61:44:0081905:105 2 июля 2018 г., 17:54:09 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 17:54:09 GMT+3
+
+Сadastral number: 2 | Index: 61:44:0081905:106 2 июля 2018 г., 17:54:10 GMT+3
