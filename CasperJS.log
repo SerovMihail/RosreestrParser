@@ -60,3 +60,4501 @@ nnew iterate cadastral 2 июля 2018 г., 17:54:09 GMT+3
 nnew iterate cadastral 2 июля 2018 г., 17:54:09 GMT+3
 
 Сadastral number: 2 | Index: 61:44:0081905:106 2 июля 2018 г., 17:54:10 GMT+3
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 17:54:57 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+nnew iterate cadastral 2 июля 2018 г., 17:55:49 GMT+3
+
+Сadastral number: 0 | Index: 61:44:0081905:104 2 июля 2018 г., 17:55:50 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 2 июля 2018 г., 17:56:18 GMT+3
+nnew iterate cadastral 2 июля 2018 г., 17:56:18 GMT+3
+
+Сadastral number: 1 | Index: 61:44:0081905:105 2 июля 2018 г., 17:56:19 GMT+3
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 17:57:39 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 17:59:29 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 2 июля 2018 г., 18:00:24 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 2 июля 2018 г., 18:00:52 GMT+3
+
+
+ 
+ ------------------------------ 
+2 июля 2018 г., 18:02:32 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 2 июля 2018 г., 18:03:26 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 2 июля 2018 г., 18:03:54 GMT+3
+
+
+ 
+ ------------------------------ 
+3 июля 2018 г., 22:31:13 GMT+3
+region: Ленинградская область | zone: Выборгский | street : Ленина
+houseNumber: 18 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 47:01:1054001:1371 3 июля 2018 г., 22:31:47 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 6 3 июля 2018 г., 22:32:15 GMT+3
+[
+    "47:01:1054001:1371",
+    "47:01:1054001:525",
+    "47:01:1711002:1",
+    "47:02:0000000:2826",
+    "47:02:0000000:2827",
+    "47:02:0000000:394"
+] 3 июля 2018 г., 22:32:15 GMT+3
+[
+    {
+        "address": "OKATO: 41215860001, КЛАДР: 47006000019000200, Ленинградская область, р-н Выборгский, п Первомайское, ул Ленина, д 18, кв 1",
+        "area": "33.6 кв.м",
+        "cadastralNumber": "47:01:1054001:1371",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Помещение",
+        "createDate": "Tue Jul 03 2018 22:32:04 ",
+        "numberOfRequest": "80-44201270"
+    },
+    {
+        "cadastralNumber": "47:01:1054001:525",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "47:01:1711002:1",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "47:02:0000000:2826",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "47:02:0000000:2827",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "47:02:0000000:394",
+        "isLoaded": false
+    }
+] 3 июля 2018 г., 22:32:15 GMT+3
+
+
+ 
+ ------------------------------ 
+3 июля 2018 г., 22:36:21 GMT+3
+region: Ленинградский район | zone: Выборг | street : Ленина
+houseNumber: 18 | building: undefined 
+ ------------------------------ 
+Не найдены помещенияundefined 3 июля 2018 г., 22:36:23 GMT+3
+
+
+ 
+ ------------------------------ 
+3 июля 2018 г., 22:38:41 GMT+3
+region: Ленинградская область | zone: Выборг | street : Ленина
+houseNumber: 18 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index:  3 июля 2018 г., 22:39:21 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 83 3 июля 2018 г., 22:39:57 GMT+3
+
+Сadastral number: 1 | Index: 47:01:0000000:42806 3 июля 2018 г., 22:40:42 GMT+3
+Before next iteration. Current cadastral number: 2 | cadastralArray.length: 83 3 июля 2018 г., 22:41:10 GMT+3
+
+Сadastral number: 2 | Index: 47:01:0107001:1088 3 июля 2018 г., 22:41:53 GMT+3
+Before next iteration. Current cadastral number: 3 | cadastralArray.length: 83 3 июля 2018 г., 22:42:22 GMT+3
+
+Сadastral number: 3 | Index: 47:01:0107001:1089 3 июля 2018 г., 22:42:22 GMT+3
+Before next iteration. Current cadastral number: 4 | cadastralArray.length: 83 3 июля 2018 г., 22:42:50 GMT+3
+
+Сadastral number: 4 | Index: 47:01:0107001:1090 3 июля 2018 г., 22:43:33 GMT+3
+Before next iteration. Current cadastral number: 5 | cadastralArray.length: 83 3 июля 2018 г., 22:44:01 GMT+3
+
+Сadastral number: 5 | Index: 47:01:0107001:1091 3 июля 2018 г., 22:44:02 GMT+3
+Before next iteration. Current cadastral number: 6 | cadastralArray.length: 83 3 июля 2018 г., 22:44:29 GMT+3
+
+Сadastral number: 6 | Index: 47:01:0107001:1092 3 июля 2018 г., 22:45:13 GMT+3
+Before next iteration. Current cadastral number: 7 | cadastralArray.length: 83 3 июля 2018 г., 22:45:41 GMT+3
+
+Сadastral number: 7 | Index: 47:01:0107001:1093 3 июля 2018 г., 22:45:41 GMT+3
+Before next iteration. Current cadastral number: 8 | cadastralArray.length: 83 3 июля 2018 г., 22:46:09 GMT+3
+
+Сadastral number: 8 | Index: 47:01:0107001:1094 3 июля 2018 г., 22:46:53 GMT+3
+Before next iteration. Current cadastral number: 9 | cadastralArray.length: 83 3 июля 2018 г., 22:47:21 GMT+3
+
+Сadastral number: 9 | Index: 47:01:0107001:1095 3 июля 2018 г., 22:47:21 GMT+3
+Before next iteration. Current cadastral number: 10 | cadastralArray.length: 83 3 июля 2018 г., 22:47:49 GMT+3
+
+Сadastral number: 10 | Index: 47:01:0107001:1096 3 июля 2018 г., 22:48:32 GMT+3
+Before next iteration. Current cadastral number: 11 | cadastralArray.length: 83 3 июля 2018 г., 22:49:00 GMT+3
+
+Сadastral number: 11 | Index: 47:01:0107001:1097 3 июля 2018 г., 22:49:01 GMT+3
+Before next iteration. Current cadastral number: 12 | cadastralArray.length: 83 3 июля 2018 г., 22:49:28 GMT+3
+
+Сadastral number: 12 | Index: 47:01:0107001:1098 3 июля 2018 г., 22:50:12 GMT+3
+Before next iteration. Current cadastral number: 13 | cadastralArray.length: 83 3 июля 2018 г., 22:50:40 GMT+3
+
+Сadastral number: 13 | Index: 47:01:0107001:1099 3 июля 2018 г., 22:50:40 GMT+3
+Before next iteration. Current cadastral number: 14 | cadastralArray.length: 83 3 июля 2018 г., 22:51:08 GMT+3
+
+Сadastral number: 14 | Index: 47:01:0107001:1100 3 июля 2018 г., 22:51:51 GMT+3
+Before next iteration. Current cadastral number: 15 | cadastralArray.length: 83 3 июля 2018 г., 22:52:20 GMT+3
+
+Сadastral number: 15 | Index: 47:01:0107001:1101 3 июля 2018 г., 22:52:20 GMT+3
+Before next iteration. Current cadastral number: 16 | cadastralArray.length: 83 3 июля 2018 г., 22:52:48 GMT+3
+
+Сadastral number: 16 | Index: 47:01:0107001:1102 3 июля 2018 г., 22:53:31 GMT+3
+Before next iteration. Current cadastral number: 17 | cadastralArray.length: 83 3 июля 2018 г., 22:54:00 GMT+3
+
+Сadastral number: 17 | Index: 47:01:0107001:1103 3 июля 2018 г., 22:54:00 GMT+3
+Before next iteration. Current cadastral number: 18 | cadastralArray.length: 83 3 июля 2018 г., 22:54:28 GMT+3
+
+Сadastral number: 18 | Index: 47:01:0107001:1104 3 июля 2018 г., 22:55:11 GMT+3
+Before next iteration. Current cadastral number: 19 | cadastralArray.length: 83 3 июля 2018 г., 22:55:39 GMT+3
+
+Сadastral number: 19 | Index: 47:01:0107001:1105 3 июля 2018 г., 22:55:39 GMT+3
+Before next iteration. Current cadastral number: 20 | cadastralArray.length: 83 3 июля 2018 г., 22:56:07 GMT+3
+
+Сadastral number: 20 | Index: 47:01:0107001:1106 3 июля 2018 г., 22:56:51 GMT+3
+Before next iteration. Current cadastral number: 21 | cadastralArray.length: 83 3 июля 2018 г., 22:57:19 GMT+3
+
+Сadastral number: 21 | Index: 47:01:0107001:1107 3 июля 2018 г., 22:57:19 GMT+3
+Before next iteration. Current cadastral number: 22 | cadastralArray.length: 83 3 июля 2018 г., 22:57:47 GMT+3
+
+Сadastral number: 22 | Index: 47:01:0107001:1108 3 июля 2018 г., 22:58:30 GMT+3
+Before next iteration. Current cadastral number: 23 | cadastralArray.length: 83 3 июля 2018 г., 22:58:58 GMT+3
+
+Сadastral number: 23 | Index: 47:01:0107001:1109 3 июля 2018 г., 22:58:59 GMT+3
+Before next iteration. Current cadastral number: 24 | cadastralArray.length: 83 3 июля 2018 г., 22:59:26 GMT+3
+
+Сadastral number: 24 | Index: 47:01:0107001:1110 3 июля 2018 г., 23:00:10 GMT+3
+Before next iteration. Current cadastral number: 25 | cadastralArray.length: 83 3 июля 2018 г., 23:00:38 GMT+3
+
+Сadastral number: 25 | Index: 47:01:0107001:1111 3 июля 2018 г., 23:00:39 GMT+3
+Before next iteration. Current cadastral number: 26 | cadastralArray.length: 83 3 июля 2018 г., 23:01:07 GMT+3
+
+Сadastral number: 26 | Index: 47:01:0107001:1112 3 июля 2018 г., 23:01:07 GMT+3
+Before next iteration. Current cadastral number: 27 | cadastralArray.length: 83 3 июля 2018 г., 23:01:35 GMT+3
+
+Сadastral number: 27 | Index: 47:01:0107001:1113 3 июля 2018 г., 23:02:18 GMT+3
+Before next iteration. Current cadastral number: 28 | cadastralArray.length: 83 3 июля 2018 г., 23:02:46 GMT+3
+
+Сadastral number: 28 | Index: 47:01:0107001:1114 3 июля 2018 г., 23:02:46 GMT+3
+Before next iteration. Current cadastral number: 29 | cadastralArray.length: 83 3 июля 2018 г., 23:03:14 GMT+3
+
+Сadastral number: 29 | Index: 47:01:0107001:1115 3 июля 2018 г., 23:03:57 GMT+3
+Before next iteration. Current cadastral number: 30 | cadastralArray.length: 83 3 июля 2018 г., 23:04:26 GMT+3
+
+Сadastral number: 30 | Index: 47:01:0107001:1116 3 июля 2018 г., 23:04:26 GMT+3
+Before next iteration. Current cadastral number: 31 | cadastralArray.length: 83 3 июля 2018 г., 23:04:54 GMT+3
+
+Сadastral number: 31 | Index: 47:01:0107001:1117 3 июля 2018 г., 23:05:38 GMT+3
+Before next iteration. Current cadastral number: 32 | cadastralArray.length: 83 3 июля 2018 г., 23:06:06 GMT+3
+
+Сadastral number: 32 | Index: 47:01:0107001:1118 3 июля 2018 г., 23:06:06 GMT+3
+Before next iteration. Current cadastral number: 33 | cadastralArray.length: 83 3 июля 2018 г., 23:06:34 GMT+3
+
+Сadastral number: 33 | Index: 47:01:0107001:1119 3 июля 2018 г., 23:07:17 GMT+3
+Before next iteration. Current cadastral number: 34 | cadastralArray.length: 83 3 июля 2018 г., 23:07:45 GMT+3
+
+Сadastral number: 34 | Index: 47:01:0107001:1120 3 июля 2018 г., 23:07:46 GMT+3
+Before next iteration. Current cadastral number: 35 | cadastralArray.length: 83 3 июля 2018 г., 23:08:13 GMT+3
+
+Сadastral number: 35 | Index: 47:01:0107001:1121 3 июля 2018 г., 23:08:57 GMT+3
+Before next iteration. Current cadastral number: 36 | cadastralArray.length: 83 3 июля 2018 г., 23:09:26 GMT+3
+
+Сadastral number: 36 | Index: 47:01:0107001:1122 3 июля 2018 г., 23:09:26 GMT+3
+Before next iteration. Current cadastral number: 37 | cadastralArray.length: 83 3 июля 2018 г., 23:09:54 GMT+3
+
+Сadastral number: 37 | Index: 47:01:0107001:1123 3 июля 2018 г., 23:10:37 GMT+3
+Before next iteration. Current cadastral number: 38 | cadastralArray.length: 83 3 июля 2018 г., 23:11:05 GMT+3
+
+Сadastral number: 38 | Index: 47:01:0107001:1124 3 июля 2018 г., 23:11:05 GMT+3
+Before next iteration. Current cadastral number: 39 | cadastralArray.length: 83 3 июля 2018 г., 23:11:33 GMT+3
+
+Сadastral number: 39 | Index: 47:01:0107001:1125 3 июля 2018 г., 23:12:17 GMT+3
+Before next iteration. Current cadastral number: 40 | cadastralArray.length: 83 3 июля 2018 г., 23:12:45 GMT+3
+
+Сadastral number: 40 | Index: 47:01:0107001:1126 3 июля 2018 г., 23:12:45 GMT+3
+Before next iteration. Current cadastral number: 41 | cadastralArray.length: 83 3 июля 2018 г., 23:13:13 GMT+3
+
+Сadastral number: 41 | Index: 47:01:0107001:1127 3 июля 2018 г., 23:13:56 GMT+3
+Before next iteration. Current cadastral number: 42 | cadastralArray.length: 83 3 июля 2018 г., 23:14:24 GMT+3
+
+Сadastral number: 42 | Index: 47:01:0107001:1128 3 июля 2018 г., 23:14:25 GMT+3
+Before next iteration. Current cadastral number: 43 | cadastralArray.length: 83 3 июля 2018 г., 23:14:52 GMT+3
+
+Сadastral number: 43 | Index: 47:01:0107001:1129 3 июля 2018 г., 23:15:36 GMT+3
+Before next iteration. Current cadastral number: 44 | cadastralArray.length: 83 3 июля 2018 г., 23:16:04 GMT+3
+
+Сadastral number: 44 | Index: 47:01:0107001:1130 3 июля 2018 г., 23:16:04 GMT+3
+Before next iteration. Current cadastral number: 45 | cadastralArray.length: 83 3 июля 2018 г., 23:16:32 GMT+3
+
+Сadastral number: 45 | Index: 47:01:0107001:1131 3 июля 2018 г., 23:17:15 GMT+3
+Before next iteration. Current cadastral number: 46 | cadastralArray.length: 83 3 июля 2018 г., 23:17:43 GMT+3
+
+Сadastral number: 46 | Index: 47:01:0107001:1132 3 июля 2018 г., 23:17:44 GMT+3
+Before next iteration. Current cadastral number: 47 | cadastralArray.length: 83 3 июля 2018 г., 23:18:11 GMT+3
+
+Сadastral number: 47 | Index: 47:01:0107001:1133 3 июля 2018 г., 23:18:55 GMT+3
+Before next iteration. Current cadastral number: 48 | cadastralArray.length: 83 3 июля 2018 г., 23:19:23 GMT+3
+
+Сadastral number: 48 | Index: 47:01:0107001:1134 3 июля 2018 г., 23:19:23 GMT+3
+Before next iteration. Current cadastral number: 49 | cadastralArray.length: 83 3 июля 2018 г., 23:19:51 GMT+3
+
+Сadastral number: 49 | Index: 47:01:0107001:1135 3 июля 2018 г., 23:20:34 GMT+3
+Before next iteration. Current cadastral number: 50 | cadastralArray.length: 83 3 июля 2018 г., 23:21:02 GMT+3
+
+Сadastral number: 50 | Index: 47:01:0107001:1136 3 июля 2018 г., 23:21:03 GMT+3
+Before next iteration. Current cadastral number: 51 | cadastralArray.length: 83 3 июля 2018 г., 23:21:30 GMT+3
+
+Сadastral number: 51 | Index: 47:01:0107001:1137 3 июля 2018 г., 23:22:14 GMT+3
+Before next iteration. Current cadastral number: 52 | cadastralArray.length: 83 3 июля 2018 г., 23:22:43 GMT+3
+
+Сadastral number: 52 | Index: 47:01:0107001:1138 3 июля 2018 г., 23:22:43 GMT+3
+Before next iteration. Current cadastral number: 53 | cadastralArray.length: 83 3 июля 2018 г., 23:23:11 GMT+3
+
+Сadastral number: 53 | Index: 47:01:0107001:1139 3 июля 2018 г., 23:23:54 GMT+3
+Before next iteration. Current cadastral number: 54 | cadastralArray.length: 83 3 июля 2018 г., 23:24:22 GMT+3
+
+Сadastral number: 54 | Index: 47:01:0107001:1140 3 июля 2018 г., 23:24:23 GMT+3
+Before next iteration. Current cadastral number: 55 | cadastralArray.length: 83 3 июля 2018 г., 23:24:50 GMT+3
+
+Сadastral number: 55 | Index: 47:01:0107001:1141 3 июля 2018 г., 23:25:34 GMT+3
+Before next iteration. Current cadastral number: 56 | cadastralArray.length: 83 3 июля 2018 г., 23:26:02 GMT+3
+
+Сadastral number: 56 | Index: 47:01:0107001:1142 3 июля 2018 г., 23:26:02 GMT+3
+Before next iteration. Current cadastral number: 57 | cadastralArray.length: 83 3 июля 2018 г., 23:26:30 GMT+3
+
+Сadastral number: 57 | Index: 47:01:0107001:1143 3 июля 2018 г., 23:27:13 GMT+3
+Before next iteration. Current cadastral number: 58 | cadastralArray.length: 83 3 июля 2018 г., 23:27:41 GMT+3
+
+Сadastral number: 58 | Index: 47:01:0107001:1144 3 июля 2018 г., 23:27:42 GMT+3
+Before next iteration. Current cadastral number: 59 | cadastralArray.length: 83 3 июля 2018 г., 23:28:10 GMT+3
+
+Сadastral number: 59 | Index: 47:01:0107001:1145 3 июля 2018 г., 23:28:11 GMT+3
+Before next iteration. Current cadastral number: 60 | cadastralArray.length: 83 3 июля 2018 г., 23:28:39 GMT+3
+
+Сadastral number: 60 | Index: 47:01:0107001:1146 3 июля 2018 г., 23:28:39 GMT+3
+Before next iteration. Current cadastral number: 61 | cadastralArray.length: 83 3 июля 2018 г., 23:29:07 GMT+3
+
+Сadastral number: 61 | Index: 47:01:0107001:1147 3 июля 2018 г., 23:29:51 GMT+3
+Before next iteration. Current cadastral number: 62 | cadastralArray.length: 83 3 июля 2018 г., 23:30:19 GMT+3
+
+Сadastral number: 62 | Index: 47:01:0107001:278 3 июля 2018 г., 23:30:19 GMT+3
+Before next iteration. Current cadastral number: 63 | cadastralArray.length: 83 3 июля 2018 г., 23:30:47 GMT+3
+
+Сadastral number: 63 | Index: 47:01:0107003:125 3 июля 2018 г., 23:31:30 GMT+3
+Before next iteration. Current cadastral number: 64 | cadastralArray.length: 83 3 июля 2018 г., 23:31:58 GMT+3
+
+Сadastral number: 64 | Index: 47:01:0107003:4385 3 июля 2018 г., 23:32:41 GMT+3
+Before next iteration. Current cadastral number: 65 | cadastralArray.length: 83 3 июля 2018 г., 23:33:09 GMT+3
+
+Сadastral number: 65 | Index: 47:01:0107003:4393 3 июля 2018 г., 23:33:10 GMT+3
+Before next iteration. Current cadastral number: 66 | cadastralArray.length: 83 3 июля 2018 г., 23:33:38 GMT+3
+
+Сadastral number: 66 | Index: 47:01:0107003:4394 3 июля 2018 г., 23:34:21 GMT+3
+Before next iteration. Current cadastral number: 67 | cadastralArray.length: 83 3 июля 2018 г., 23:34:49 GMT+3
+
+Сadastral number: 67 | Index: 47:01:0107003:4397 3 июля 2018 г., 23:35:33 GMT+3
+Before next iteration. Current cadastral number: 68 | cadastralArray.length: 83 3 июля 2018 г., 23:36:01 GMT+3
+
+Сadastral number: 68 | Index: 47:01:0107003:4401 3 июля 2018 г., 23:36:02 GMT+3
+Before next iteration. Current cadastral number: 69 | cadastralArray.length: 83 3 июля 2018 г., 23:36:29 GMT+3
+
+Сadastral number: 69 | Index: 47:01:0107003:4404 3 июля 2018 г., 23:37:12 GMT+3
+Before next iteration. Current cadastral number: 70 | cadastralArray.length: 83 3 июля 2018 г., 23:37:41 GMT+3
+
+Сadastral number: 70 | Index: 47:01:0107003:4416 3 июля 2018 г., 23:37:41 GMT+3
+Before next iteration. Current cadastral number: 71 | cadastralArray.length: 83 3 июля 2018 г., 23:38:09 GMT+3
+
+Сadastral number: 71 | Index: 47:01:0107003:4420 3 июля 2018 г., 23:38:52 GMT+3
+Before next iteration. Current cadastral number: 72 | cadastralArray.length: 83 3 июля 2018 г., 23:39:20 GMT+3
+
+Сadastral number: 72 | Index: 47:01:0107003:4421 3 июля 2018 г., 23:39:21 GMT+3
+Before next iteration. Current cadastral number: 73 | cadastralArray.length: 83 3 июля 2018 г., 23:39:48 GMT+3
+
+Сadastral number: 73 | Index: 47:01:0107003:4431 3 июля 2018 г., 23:40:31 GMT+3
+Before next iteration. Current cadastral number: 74 | cadastralArray.length: 83 3 июля 2018 г., 23:41:00 GMT+3
+
+Сadastral number: 74 | Index: 47:01:0107003:4434 3 июля 2018 г., 23:41:00 GMT+3
+Before next iteration. Current cadastral number: 75 | cadastralArray.length: 83 3 июля 2018 г., 23:41:28 GMT+3
+
+Сadastral number: 75 | Index: 47:01:0107003:4439 3 июля 2018 г., 23:42:11 GMT+3
+Before next iteration. Current cadastral number: 76 | cadastralArray.length: 83 3 июля 2018 г., 23:42:39 GMT+3
+
+Сadastral number: 76 | Index: 47:01:0107003:4455 3 июля 2018 г., 23:42:39 GMT+3
+Before next iteration. Current cadastral number: 77 | cadastralArray.length: 83 3 июля 2018 г., 23:43:07 GMT+3
+
+Сadastral number: 77 | Index: 47:01:0107003:4456 3 июля 2018 г., 23:43:50 GMT+3
+Before next iteration. Current cadastral number: 78 | cadastralArray.length: 83 3 июля 2018 г., 23:44:18 GMT+3
+
+Сadastral number: 78 | Index: 47:01:0107003:4465 3 июля 2018 г., 23:44:19 GMT+3
+Before next iteration. Current cadastral number: 79 | cadastralArray.length: 83 3 июля 2018 г., 23:44:46 GMT+3
+
+Сadastral number: 79 | Index: 47:01:0107003:4478 3 июля 2018 г., 23:45:30 GMT+3
+Before next iteration. Current cadastral number: 80 | cadastralArray.length: 83 3 июля 2018 г., 23:45:58 GMT+3
+
+Сadastral number: 80 | Index: 47:01:0107003:4479 3 июля 2018 г., 23:45:58 GMT+3
+Before next iteration. Current cadastral number: 81 | cadastralArray.length: 83 3 июля 2018 г., 23:46:26 GMT+3
+
+Сadastral number: 81 | Index: 47:01:0107003:4498 3 июля 2018 г., 23:46:27 GMT+3
+Before next iteration. Current cadastral number: 82 | cadastralArray.length: 83 3 июля 2018 г., 23:46:54 GMT+3
+
+Сadastral number: 82 | Index: 47:01:0107003:4636 3 июля 2018 г., 23:47:38 GMT+3
+Before next iteration. Current cadastral number: 83 | cadastralArray.length: 83 3 июля 2018 г., 23:48:06 GMT+3
+[
+    "",
+    "47:01:0000000:42806",
+    "47:01:0107001:1088",
+    "47:01:0107001:1089",
+    "47:01:0107001:1090",
+    "47:01:0107001:1091",
+    "47:01:0107001:1092",
+    "47:01:0107001:1093",
+    "47:01:0107001:1094",
+    "47:01:0107001:1095",
+    "47:01:0107001:1096",
+    "47:01:0107001:1097",
+    "47:01:0107001:1098",
+    "47:01:0107001:1099",
+    "47:01:0107001:1100",
+    "47:01:0107001:1101",
+    "47:01:0107001:1102",
+    "47:01:0107001:1103",
+    "47:01:0107001:1104",
+    "47:01:0107001:1105",
+    "47:01:0107001:1106",
+    "47:01:0107001:1107",
+    "47:01:0107001:1108",
+    "47:01:0107001:1109",
+    "47:01:0107001:1110",
+    "47:01:0107001:1111",
+    "47:01:0107001:1112",
+    "47:01:0107001:1113",
+    "47:01:0107001:1114",
+    "47:01:0107001:1115",
+    "47:01:0107001:1116",
+    "47:01:0107001:1117",
+    "47:01:0107001:1118",
+    "47:01:0107001:1119",
+    "47:01:0107001:1120",
+    "47:01:0107001:1121",
+    "47:01:0107001:1122",
+    "47:01:0107001:1123",
+    "47:01:0107001:1124",
+    "47:01:0107001:1125",
+    "47:01:0107001:1126",
+    "47:01:0107001:1127",
+    "47:01:0107001:1128",
+    "47:01:0107001:1129",
+    "47:01:0107001:1130",
+    "47:01:0107001:1131",
+    "47:01:0107001:1132",
+    "47:01:0107001:1133",
+    "47:01:0107001:1134",
+    "47:01:0107001:1135",
+    "47:01:0107001:1136",
+    "47:01:0107001:1137",
+    "47:01:0107001:1138",
+    "47:01:0107001:1139",
+    "47:01:0107001:1140",
+    "47:01:0107001:1141",
+    "47:01:0107001:1142",
+    "47:01:0107001:1143",
+    "47:01:0107001:1144",
+    "47:01:0107001:1145",
+    "47:01:0107001:1146",
+    "47:01:0107001:1147",
+    "47:01:0107001:278",
+    "47:01:0107003:125",
+    "47:01:0107003:4385",
+    "47:01:0107003:4393",
+    "47:01:0107003:4394",
+    "47:01:0107003:4397",
+    "47:01:0107003:4401",
+    "47:01:0107003:4404",
+    "47:01:0107003:4416",
+    "47:01:0107003:4420",
+    "47:01:0107003:4421",
+    "47:01:0107003:4431",
+    "47:01:0107003:4434",
+    "47:01:0107003:4439",
+    "47:01:0107003:4455",
+    "47:01:0107003:4456",
+    "47:01:0107003:4465",
+    "47:01:0107003:4478",
+    "47:01:0107003:4479",
+    "47:01:0107003:4498",
+    "47:01:0107003:4636"
+] 3 июля 2018 г., 23:48:11 GMT+3
+[
+    {
+        "address": "OKATO: 41209818011, КЛАДР: 4700400015600, Ленинградская область, район Волховский, д Немятово, неопр канал Новоладожский, сооружение 113",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11693",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:39:45 ",
+        "numberOfRequest": "80-44201474"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 4700400001700, Ленинградская область, район Волховский, д Бережки, волость Бережковская",
+        "area": "418.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11691",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:40:59 ",
+        "numberOfRequest": "80-44201514"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 4700400200000, Ленинградская область, район Волховский, г Новая Ладога",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11697",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:42:10 ",
+        "numberOfRequest": "80-44201550"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004006002000100, Ленинградская область, р-н Волховский, снт Энтузиаст, массив Волхов ул.Металлургов 17, ул 1-я дорожка, уч 20",
+        "area": "18.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11695",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:42:39 ",
+        "numberOfRequest": "80-44201562"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 2 гараж 109",
+        "area": "21.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11699",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:43:50 ",
+        "numberOfRequest": "80-44201596"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000003700, Ленинградская область, район Волховский, г Волхов, ул Кирова",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11251",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:44:18 ",
+        "numberOfRequest": "80-44201607"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000010700, Ленинградская область, район Волховский, г Волхов, ул Советская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11680",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:45:30 ",
+        "numberOfRequest": "80-44201637"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, улица Металлургов, 28, СНТ \"Южное\", г Волхов, линия 17, уч 294",
+        "area": "18.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11681",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:45:58 ",
+        "numberOfRequest": "80-44201651"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 1, гараж 15",
+        "area": "28.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11682",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:47:09 ",
+        "numberOfRequest": "80-44201682"
+    },
+    {
+        "address": "OKATO: 41209850013, КЛАДР: 4700400027100, Ленинградская область, район Волховский, д Чуново, волость Потанинская, д 44",
+        "area": "36.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11683",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:47:38 ",
+        "numberOfRequest": "80-44201692"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004011002001600, Ленинградская область, р-н Волховский, снт Строитель-2, массив Волхов ул.Металлургов 26, ул Яблоневая, уч 369",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11684",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:48:49 ",
+        "numberOfRequest": "80-44201725"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004025003000400, Ленинградская область, р-н Волховский, снт Нептун, массив Новая Ладога, ул Центральная, уч 309",
+        "area": "31.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11685",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:49:18 ",
+        "numberOfRequest": "80-44201737"
+    },
+    {
+        "address": "OKATO: 41209844008, КЛАДР: 4700400009400, Ленинградская область, район Волховский, д Карпино, волость Пашская, д 3",
+        "area": "61.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11686",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:50:28 ",
+        "numberOfRequest": "80-44201775"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000014400, Ленинградская область, г Волхов, неопр ул.Маяковского,гараж 3",
+        "area": "18.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11687",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:50:57 ",
+        "numberOfRequest": "80-44201791"
+    },
+    {
+        "address": "OKATO: 41209000000, КЛАДР: 4700400000000, Ленинградская область, р-н Волховский",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:133",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:52:08 ",
+        "numberOfRequest": "80-44201814"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000006200, Ленинградская область, район Волховский, г Волхов, ул Майская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11250",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 22:52:37 ",
+        "numberOfRequest": "80-44201826"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000000100, Ленинградская область, г Волхов, ул Авиационная, д 33",
+        "area": "78.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11240",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:53:48 ",
+        "numberOfRequest": "80-44201857"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, улица Металлургов, 24, СНТ \"Родина\", г Волхов, линия 7, уч 134",
+        "area": "40.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11241",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:54:17 ",
+        "numberOfRequest": "80-44201872"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013500, Ленинградская область, район Волховский, г Волхов, мкр-н Званка, д 45",
+        "area": "139.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11242",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:55:27 ",
+        "numberOfRequest": "80-44201906"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000819000300, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Дом Ученых, ул Майская, д 8, 8а, уч 35, 36",
+        "area": "127.7 кв.м",
+        "cadastralNumber": "47:03:1258001:1149",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:55:56 ",
+        "numberOfRequest": "80-44201921"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013500, Ленинградская область, район Волховский, г Волхов, мкр-н Званка, д 45",
+        "area": "206.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11243",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:57:07 ",
+        "numberOfRequest": "80-44201959"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020500, Ленинградская область, р-н Волховский, г Волхов, тер ГК Железнодорожник",
+        "area": "22.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11244",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:57:36 ",
+        "numberOfRequest": "80-44201976"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013500, Ленинградская область, район Волховский, г Волхов, мкр-н Званка, д 45",
+        "area": "63.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11245",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:58:47 ",
+        "numberOfRequest": "80-44202016"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, 121 км. пк 9+00, г Волхов",
+        "area": "186.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11246",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 22:59:16 ",
+        "numberOfRequest": "80-44202028"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000004600, Ленинградская область, район Волховский, г Волхов, ул Красноармейская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11247",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:00:27 ",
+        "numberOfRequest": "80-44202063"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000008100, Ленинградская область, район Волховский, г Волхов, наб ул.Октябрьская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11248",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:00:55 ",
+        "numberOfRequest": "80-44202074"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020400, Ленинградская область, р-н Волховский, г Волхов, тер ГК Автомобилист",
+        "area": "27.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11249",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:01:24 ",
+        "numberOfRequest": "80-44202088"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 4700400001700, Ленинградская область, район Волховский, д Бережки, волость Бережковская",
+        "area": "2809.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11690",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:02:35 ",
+        "numberOfRequest": "80-44202122"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000000900, Ленинградская область, р-н Бокситогорский, г Пикалево, ул Вокзальная, д 15",
+        "area": "11.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13632",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:03:03 ",
+        "numberOfRequest": "80-44202132"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, неопр ряд 9, сооружение 155",
+        "area": "24.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13631",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:04:14 ",
+        "numberOfRequest": "80-44202163"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №-14, г Пикалево, ул Обринская, сооружение 10",
+        "area": "22.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13634",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:04:43 ",
+        "numberOfRequest": "80-44202177"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №-14, г Пикалево, ул Обринская, сооружение 69",
+        "area": "22.4 кв.м",
+        "cadastralNumber": "47:10:0000000:13633",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:05:54 ",
+        "numberOfRequest": "80-44202208"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 121",
+        "area": "33.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13630",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:06:23 ",
+        "numberOfRequest": "80-44202222"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 422",
+        "area": "23.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13639",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:07:34 ",
+        "numberOfRequest": "80-44202253"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив № 9, г Пикалево, неопр промзона Восточная, сооружение 97",
+        "area": "43.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13636",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:08:03 ",
+        "numberOfRequest": "80-44202261"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив № 7, г Пикалево, микрорайон 1, сооружение 2",
+        "area": "22.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13635",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:09:14 ",
+        "numberOfRequest": "80-44202287"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 5, сооружение 44",
+        "area": "28.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13638",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:09:43 ",
+        "numberOfRequest": "80-44202296"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 7, сооружение 12",
+        "area": "22.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13637",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:10:53 ",
+        "numberOfRequest": "80-44202327"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 0+56",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11239",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:11:22 ",
+        "numberOfRequest": "80-44202337"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001600, Ленинградская область, р-н Волховский, г Сясьстрой, ул Ленина, д 75",
+        "area": "241.3 кв.м",
+        "cadastralNumber": "47:10:0000000:1157",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:12:33 ",
+        "numberOfRequest": "80-44202371"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 6+10",
+        "area": "108.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11238",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:13:02 ",
+        "numberOfRequest": "80-44202389"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001600, Ленинградская область, р-н Волховский, г Сясьстрой, ул Ленина, д 95, корп а",
+        "area": "90.8 кв.м",
+        "cadastralNumber": "47:10:0000000:1158",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:14:13 ",
+        "numberOfRequest": "80-44202424"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК №13, г Пикалево, неопр ш.Спрямленное, сооружение 19",
+        "area": "26.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13622",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:14:41 ",
+        "numberOfRequest": "80-44202432"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 512",
+        "area": "25.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13621",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:15:52 ",
+        "numberOfRequest": "80-44202468"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 1, сооружение 33",
+        "area": "26.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13620",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:16:21 ",
+        "numberOfRequest": "80-44202481"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 14",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13629",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:17:32 ",
+        "numberOfRequest": "80-44202513"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 79",
+        "area": "27.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13628",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:18:00 ",
+        "numberOfRequest": "80-44202530"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, неопр 4 ряд, сооружение 73",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13627",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:19:12 ",
+        "numberOfRequest": "80-44202575"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 5",
+        "area": "25.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13626",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:19:40 ",
+        "numberOfRequest": "80-44202597"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив № 7, г Пикалево, микрорайон 1, сооружение 39",
+        "area": "23.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13624",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:20:51 ",
+        "numberOfRequest": "80-44202636"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000000400, Ленинградская область, р-н Волховский, г Сясьстрой, ул Бумажников, д 37",
+        "area": "400.9 кв.м",
+        "cadastralNumber": "47:10:0000000:1169",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:21:20 ",
+        "numberOfRequest": "80-44202654"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000000400, Ленинградская область, р-н Волховский, г Сясьстрой, ул Бумажников, д 37",
+        "area": "333.5 кв.м",
+        "cadastralNumber": "47:10:0000000:1170",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:22:31 ",
+        "numberOfRequest": "80-44202698"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 8",
+        "area": "246.2 кв.м",
+        "cadastralNumber": "47:10:0000000:1173",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:23:00 ",
+        "numberOfRequest": "80-44202711"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 11",
+        "area": "81.8 кв.м",
+        "cadastralNumber": "47:10:0000000:1174",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:24:11 ",
+        "numberOfRequest": "80-44202743"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000000700, Ленинградская область, р-н Волховский, г Сясьстрой, ул Герцена, д 18",
+        "area": "49.4 кв.м",
+        "cadastralNumber": "47:10:0000000:1171",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:24:39 ",
+        "numberOfRequest": "80-44202755"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 4",
+        "area": "111.1 кв.м",
+        "cadastralNumber": "47:10:0000000:1172",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:25:51 ",
+        "numberOfRequest": "80-44202784"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, неопр 119 км ПК 2+51",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11740",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:26:19 ",
+        "numberOfRequest": "80-44202796"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Пороги, г Волхов, км 4 ПК 2+54",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11742",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:27:30 ",
+        "numberOfRequest": "80-44202818"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 4+64",
+        "area": "1003.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11741",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:27:58 ",
+        "numberOfRequest": "80-44202827"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Пороги, г Волхов, неопр 7 км ПК 4+32",
+        "area": "3.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11744",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:28:27 ",
+        "numberOfRequest": "80-44202840"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 Пк 3+20",
+        "area": "304.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11743",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:28:56 ",
+        "numberOfRequest": "80-44202849"
+    },
+    {
+        "address": "OKATO: 41209860006, КЛАДР: 4700400010600, Ленинградская область, р-н Волховский, д Колголемо, д 27",
+        "area": "68.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11719",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:30:07 ",
+        "numberOfRequest": "80-44202884"
+    },
+    {
+        "address": "Индекс: 187600, OKATO: 41440000000, КЛАДР: 47002002000002000, Ленинградская область, р-н Бокситогорский, г Пикалево, ш Ленинградское, д 114",
+        "area": "70.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13299",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:30:36 ",
+        "numberOfRequest": "80-44202900"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000003400, Ленинградская область, район Волховский, г Новая Ладога, пер Озерный",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11718",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:31:47 ",
+        "numberOfRequest": "80-44202926"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 4, сооружение 17",
+        "area": "22.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13297",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:32:58 ",
+        "numberOfRequest": "80-44202954"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000001500, Ленинградская область, г Пикалево, ул Гузеевская, д 37",
+        "area": "82.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13298",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:33:27 ",
+        "numberOfRequest": "80-44202963"
+    },
+    {
+        "address": "OKATO: 41209827001, КЛАДР: 47004000108000100, Ленинградская область, р-н Волховский, с Колчаново, мкр Алексино, д 22",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11714",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:34:38 ",
+        "numberOfRequest": "80-44202990"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000001300, Ленинградская область, район Волховский, г Волхов, ул Волгоградская, сооружение ряд 5, гараж 26",
+        "area": "20.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11715",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:35:50 ",
+        "numberOfRequest": "80-44203014"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, район Волховский, г Волхов, ул Калинина, 43, гаражный кооператив \"Медик\", сооружение 10",
+        "area": "37.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11716",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:36:18 ",
+        "numberOfRequest": "80-44203029"
+    },
+    {
+        "address": "OKATO: 41209827001, КЛАДР: 47004000108000700, Ленинградская область, район Волховский, с Колчаново, ул Набережная, д 43",
+        "area": "118.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11717",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:37:29 ",
+        "numberOfRequest": "80-44203051"
+    },
+    {
+        "address": "OKATO: 41209818014, КЛАДР: 47004000210000600, Ленинградская область, район Волховский, п Речников, ул Речная, д 38",
+        "area": "34.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11712",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:37:58 ",
+        "numberOfRequest": "80-44203061"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000100, Ленинградская область, район Волховский, г Новая Ладога, проезд К.Маркса",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11713",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:39:09 ",
+        "numberOfRequest": "80-44203087"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001400, Ленинградская область, р-н Волховский, с Паша, ул Павла Нечесанова, д 16",
+        "area": "65.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11580",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:39:37 ",
+        "numberOfRequest": "80-44203096"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 5, сооружение 11",
+        "area": "27.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13286",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:40:48 ",
+        "numberOfRequest": "80-44203116"
+    },
+    {
+        "address": "OKATO: 41209827001, КЛАДР: 47004000108000100, Ленинградская область, р-н Волховский, с Колчаново, мкр Алексино, д Б/Н",
+        "area": "11.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11709",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:41:17 ",
+        "numberOfRequest": "80-44203122"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000004200, Ленинградская область, район Бокситогорский муниципальный, г Пикалево, неопр Гаражный кооператив № 13,шоссе Спрямленное, д 76",
+        "area": "24.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13287",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:42:28 ",
+        "numberOfRequest": "80-44203141"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002600, Ленинградская область, г Пикалево, ул Нагорная, д 4",
+        "area": "31.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13288",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:42:56 ",
+        "numberOfRequest": "80-44203147"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176002700, Ленинградская область, район Волховский, с Паша, ул Солнечная, д 29а",
+        "area": "169.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11705",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:44:07 ",
+        "numberOfRequest": "80-44203164"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006200, Ленинградская область, г Пикалево, неопр ш.Вологодское,Водозаборные сооружения",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13294",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:44:35 ",
+        "numberOfRequest": "80-44203169"
+    },
+    {
+        "address": "OKATO: 41209844002, КЛАДР: 4700400001000, Ленинградская область, район Волховский, д Баландино, ул Радужная, д 1",
+        "area": "50.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11706",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:45:47 ",
+        "numberOfRequest": "80-44203186"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002000, Ленинградская область, г Пикалево, неопр ш.Ленинградское, д 55",
+        "area": "47.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13293",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:46:15 ",
+        "numberOfRequest": "80-44203192"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000016100, Ленинградская область, г Волхов, ул Ленина, д 14",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11703",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Сооружение",
+        "createDate": "Tue Jul 03 2018 23:46:43 ",
+        "numberOfRequest": "80-44203205"
+    },
+    {
+        "address": "OKATO: 41203555000, КЛАДР: 47002000243005000, Ленинградская область, р-н Бокситогорский, пгт Ефимовский, ул Спортивная, д 42",
+        "area": "116.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13296",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Здание",
+        "createDate": "Tue Jul 03 2018 23:47:55 ",
+        "numberOfRequest": "80-44203229"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 10, гараж 7",
+        "area": "27.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11704",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000001500, Ленинградская область, г Пикалево, ул Гузеевская, д 27",
+        "area": "104.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13295",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, неопр мкр-н \"В\",ряд 3, гараж №82",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11701",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000001200, Ленинградская область, район Волховский, неопр сад оводческое некомерческое товарищество \"Нептун\", г Новая Ладога, ул Зеленая, уч 156",
+        "area": "35.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11579",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр гараж ный кооператив 1, г Пикалево, неопр ул.Металлургов,ряд 4, сооружение 42",
+        "area": "24.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13290",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, неопр мкр-н \"В\",у дома №2",
+        "area": "14.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11702",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209850003, КЛАДР: 4700400003800, Ленинградская область, район Волховский, д Весь, волость Потанинская, д 25",
+        "area": "31.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11578",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр гараж ный кооператив 1, г Пикалево, неопр ряд 4, сооружение 41",
+        "area": "21.4 кв.м",
+        "cadastralNumber": "47:10:0000000:13292",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 4700400017600, Ленинградская область, район Волховский, с Паша, волость Пашская, ул Нечесанова, д 73",
+        "area": "44.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11700",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, г Пикалево, неопр ряд 5, сооружение 105",
+        "area": "28.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13291",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871001, КЛАДР: 4700400010200, Ленинградская область, район Волховский, д Кисельня, волость Кисельнинская",
+        "area": "120.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11575",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209860003, КЛАДР: 4700400002200, Ленинградская область, район Волховский, д Большая Весь, волость Рыбежская, д 3",
+        "area": "53.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11574",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871022, КЛАДР: 47004004032000600, Ленинградская область, р-н Волховский, снт Лесное, массив Пупышево, линия 5-я, уч 337",
+        "area": "28.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11577",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209818001, КЛАДР: 47004000092000700, Ленинградская область, район Волховский, д Иссад, волость Иссадская, ул Набережная, д 7",
+        "area": "58.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11576",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209880002, КЛАДР: 4700400023500, Ленинградская область, район Волховский, д Сторожно, волость Свирицкая, д 20",
+        "area": "26.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11570",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209818011, КЛАДР: 4700400015600, Ленинградская область, район Волховский, д Немятово-1, волость Иссадская, д 33",
+        "area": "42.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11573",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827002, КЛАДР: 4700400000400, Ленинградская область, район Волховский, д Андреевщина, волость Колчановская",
+        "area": "17.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11572",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008001300, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, ул Окружная-Южная, д 99А",
+        "area": "30.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13305",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008003400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 16-я, д 1606",
+        "area": "19.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13306",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002900, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 10-я, уч 1030",
+        "area": "32.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13307",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 5-я, уч 548",
+        "area": "22.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13308",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 258",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13309",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002700, Ленинградская область, г Пикалево, пер Новый, д 8",
+        "area": "40.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13300",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003300, Ленинградская область, г Пикалево, ул Полевая, д 13",
+        "area": "50.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13301",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 5, сооружение 23",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13302",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008001800, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, пер 3-й, д 31-Б",
+        "area": "14.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13303",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 5, сооружение 9",
+        "area": "24.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13304",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, неопр ул. Дзержинского, д.15 - ул.Дзержинского, д.5, г Волхов",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11732",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Ю.Гагарина, д.2 - ул.Ю.Гагарина, д.9",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11734",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Дзержинского, д.15 - ул.Борисогорское Поле, д.12",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11735",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, неопр 119км. 5пк + 80",
+        "area": "8.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11736",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, неопр 121км. 1пк + 80",
+        "area": "20.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11737",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000002700, Ленинградская область, район Волховский, г Волхов, ул Дзержинского, д 31",
+        "area": "186.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11738",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 4+76",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11739",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020400, Ленинградская область, р-н Волховский, г Волхов, тер ГК Автомобилист",
+        "area": "29.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11730",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020400, Ленинградская область, р-н Волховский, г Волхов, тер ГК Автомобилист",
+        "area": "23.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11731",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 84",
+        "area": "24.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13318",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002600, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 7-я, уч 743",
+        "area": "14.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13319",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008003400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 16-я, уч 1644",
+        "area": "12.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13316",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 43",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13317",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 56",
+        "area": "26.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13310",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002800, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 9-я, д 948",
+        "area": "17.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13311",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013900, Ленинградская область, микрорайон Пороги, г Волхов",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11729",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 232",
+        "area": "26.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13314",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 160",
+        "area": "24.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13315",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 191",
+        "area": "25.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13312",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 4700400001700, Ленинградская область, р-н Волховский, д Бережки, д Б/Н",
+        "area": "137.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11723",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Маяковского, гараж 1",
+        "area": "107.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11721",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр Шлам-поле,1, г Пикалево",
+        "area": "136.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11456",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004025003000100, Ленинградская область, р-н Волховский, снт Нептун, массив Новая Ладога, ул Зеленая, уч 145",
+        "area": "10.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11722",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000001300, Ленинградская область, г Волхов, неопр ул.Волгоградская,ряд 12, гараж 39",
+        "area": "35.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11727",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 47004000017000200, Ленинградская область, район Волховский, д Бережки, ул Придорожная, д 4а",
+        "area": "116.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11725",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000015400, Ленинградская область, р-н Волховский, г Волхов, ул Металлургов, гараж 59",
+        "area": "35.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11726",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203000000, КЛАДР: 4700200000000, Ленинградская область, район Бокситогорский, ст-ца Подборовье, 295 км, ПК 1+00, волость Подборовская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11458",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209856003, КЛАДР: 4700400014200, Ленинградская область, р-н Волховский, д Матеево, д 17",
+        "area": "34.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11720",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008003400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 16-я, д 1653",
+        "area": "19.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11457",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 440",
+        "area": "18.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13324",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 7, сооружение 7",
+        "area": "25.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13323",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 392",
+        "area": "24.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13326",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 578",
+        "area": "27.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13325",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 489",
+        "area": "29.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13320",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 2, сооружение 24",
+        "area": "25.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13322",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 396",
+        "area": "25.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13321",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 547",
+        "area": "24.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13328",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006200, Ленинградская область, г Пикалево, неопр ш.Вологодское, д б/№",
+        "area": "330.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13327",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 357",
+        "area": "26.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13329",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203828001, КЛАДР: 47002000244000200, Ленинградская область, район Бокситогорский муниципальный, д Журавлево, ул Воскресенская, д 50",
+        "area": "34.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13660",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203816030, КЛАДР: 47002000252000500, Ленинградская область, район Бокситогорский муниципальный, п Ларьян, сельское поселение Борское, ул Связи, д 21",
+        "area": "41.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13661",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, район Бокситогорский муниципальный, г Пикалево",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13662",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000002200, Ленинградская область, район Волховский, г Сясьстрой, ул Набережная, д 73",
+        "area": "34.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13663",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 1, гараж 97",
+        "area": "44.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13664",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 5, сооружение 19",
+        "area": "32.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13334",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК №13, г Пикалево, неопр ш.Спрямленное, сооружение 38",
+        "area": "26.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13333",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 352",
+        "area": "25.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13331",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, территория индивидуальной гаражной застройки, ул Обринская, сооружение 45",
+        "area": "27.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13330",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр 19 а квартал,ряд 2, г Пикалево, сооружение 36",
+        "area": "23.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13276",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 60",
+        "area": "17.3 кв.м",
+        "cadastralNumber": "47:10:0000000:1124",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000001300, Ленинградская область, г Волхов, неопр ул.Волгоградская,ряд 2, гараж 22",
+        "area": "24.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11590",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, горка микрорайон Шкурина, г Волхов, д 25",
+        "area": "25.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11591",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, г Пикалево, неопр ул.Металлургов,к жилому дому 27",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13642",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №14, г Пикалево, ул Обринская, сооружение 243",
+        "area": "24.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13644",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 406",
+        "area": "22.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13645",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 199",
+        "area": "21.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13640",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, г Пикалево, ул Металлургов",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13641",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, район Волховский, г Сясьстрой, ул Кирова",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11584",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209871022, КЛАДР: 47004004016000700, Ленинградская область, р-н Волховский, снт Восход, массив Пупышево, аллея 7-я, уч 345",
+        "area": "37.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11582",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827025, КЛАДР: 4700400025700, Ленинградская область, район Волховский, д Хамонтово, волость Колчановская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11581",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001400, Ленинградская область, р-н Волховский, с Паша, ул Павла Нечесанова, д 2",
+        "area": "67.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11588",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002800, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 9-я, д 13",
+        "area": "25.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13646",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209868001, КЛАДР: 4700400026000, Ленинградская область, район Волховский, д Хвалово, волость Хваловская",
+        "area": "993.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11587",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ряд 6, сооружение 18",
+        "area": "21.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13285",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000001700, Ленинградская область, г Пикалево, ул Заводская, д 8",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13647",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209868001, КЛАДР: 4700400026000, Ленинградская область, район Волховский, д Хвалово, волость Хваловская",
+        "area": "538.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11586",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК № 2, г Пикалево, квартал 4, сооружение 45",
+        "area": "21.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13648",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871001, КЛАДР: 4700400010200, Ленинградская область, район Волховский, д Кисельня, волость Кисельнинская",
+        "area": "11.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11585",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203812004, КЛАДР: 4700200027700, Ленинградская область, район Бокситогорский, д Большой Двор, волость Анисимовская, д 25",
+        "area": "36.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13649",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 6, сооружение 10",
+        "area": "25.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13655",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000005700, Ленинградская область, неопр жилая зона \"Новли\", г Пикалево, ул Средняя, д 3",
+        "area": "44.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13656",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000820000600, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Дружба, ул Южная, д 1а, уч 1",
+        "area": "25.9 кв.м",
+        "cadastralNumber": "47:03:1258001:1151",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 4701500082000, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Дружба, д Б/Н, уч 29",
+        "area": "19.1 кв.м",
+        "cadastralNumber": "47:03:1258001:1152",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №11, г Пикалево, неопр ш.Спрямленное, сооружение 3",
+        "area": "42.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13653",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №14, г Пикалево, ул Обринская, сооружение 141",
+        "area": "40.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13654",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000821000200, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Кировского р, ул 12-я линия, д Б/Н, уч 67",
+        "area": "66.6 кв.м",
+        "cadastralNumber": "47:03:1258001:1154",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, г Пикалево, территория арт.скважин",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13651",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000821000200, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Кировского р, ул 12-я линия, д Б/Н, уч 19",
+        "area": "31.2 кв.м",
+        "cadastralNumber": "47:03:1258001:1155",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 402",
+        "area": "21.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13652",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000821000900, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Кировского р, ул 11-я линия, д 1-3, уч 1",
+        "area": "94.3 кв.м",
+        "cadastralNumber": "47:03:1258001:1157",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "Индекс: 187600, OKATO: 41440000000, КЛАДР: 47002002000004000, Ленинградская область, р-н Бокситогорский, г Пикалево, ул Спортивная, д 4а",
+        "area": "197.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13650",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004016002000600, Ленинградская область, р-н Волховский, снт Строитель-1, массив Волхов ул.Ленинградская 27, ул Яблоневая, уч 115",
+        "area": "22.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11593",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001600, Ленинградская область, р-н Волховский, с Паша, ул Пионерская",
+        "area": "1185067.0 (квадратный метр)",
+        "cadastralNumber": "47:10:0000000:116",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Земельный участок"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000015400, Ленинградская область, р-н Волховский, г Волхов, ул Металлургов, д 15, гараж 21",
+        "area": "26.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11592",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001600, Ленинградская область, р-н Волховский, с Паша, ул Пионерская",
+        "area": "86220.0 (квадратный метр)",
+        "cadastralNumber": "47:10:0000000:117",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Земельный участок"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 2, гараж 69",
+        "area": "23.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11595",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871001, КЛАДР: 4700400010200, Ленинградская область, район Волховский, д Кисельня, волость Кисельнинская",
+        "area": "1256.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11594",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Ю.Гагарина, д 1",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11597",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006200, Ленинградская область, район Бокситогорский муниципальный, г Пикалево, шоссе Вологодское, сооружение в районе дома №1, гараж 10",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13657",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41403000000, КЛАДР: 47002001000001600, Ленинградская область, район Бокситогорский муниципальный, г Бокситогорск, пер Заводской, д 12",
+        "area": "31.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13658",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209818011, КЛАДР: 4700400015600, Ленинградская область, район Волховский, д Немятово, неопр канал Новоладожский, сооружение 113",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11693",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 4700400001700, Ленинградская область, район Волховский, д Бережки, волость Бережковская",
+        "area": "418.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11691",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 4700400200000, Ленинградская область, район Волховский, г Новая Ладога",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11697",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004006002000100, Ленинградская область, р-н Волховский, снт Энтузиаст, массив Волхов ул.Металлургов 17, ул 1-я дорожка, уч 20",
+        "area": "18.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11695",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 2 гараж 109",
+        "area": "21.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11699",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000003700, Ленинградская область, район Волховский, г Волхов, ул Кирова",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11251",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000010700, Ленинградская область, район Волховский, г Волхов, ул Советская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11680",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, улица Металлургов, 28, СНТ \"Южное\", г Волхов, линия 17, уч 294",
+        "area": "18.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11681",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 1, гараж 15",
+        "area": "28.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11682",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209850013, КЛАДР: 4700400027100, Ленинградская область, район Волховский, д Чуново, волость Потанинская, д 44",
+        "area": "36.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11683",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004011002001600, Ленинградская область, р-н Волховский, снт Строитель-2, массив Волхов ул.Металлургов 26, ул Яблоневая, уч 369",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11684",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004025003000400, Ленинградская область, р-н Волховский, снт Нептун, массив Новая Ладога, ул Центральная, уч 309",
+        "area": "31.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11685",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844008, КЛАДР: 4700400009400, Ленинградская область, район Волховский, д Карпино, волость Пашская, д 3",
+        "area": "61.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11686",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000014400, Ленинградская область, г Волхов, неопр ул.Маяковского,гараж 3",
+        "area": "18.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11687",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209000000, КЛАДР: 4700400000000, Ленинградская область, р-н Волховский",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:133",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000006200, Ленинградская область, район Волховский, г Волхов, ул Майская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11250",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000000100, Ленинградская область, г Волхов, ул Авиационная, д 33",
+        "area": "78.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11240",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, улица Металлургов, 24, СНТ \"Родина\", г Волхов, линия 7, уч 134",
+        "area": "40.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11241",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013500, Ленинградская область, район Волховский, г Волхов, мкр-н Званка, д 45",
+        "area": "139.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11242",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000819000300, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Дом Ученых, ул Майская, д 8, 8а, уч 35, 36",
+        "area": "127.7 кв.м",
+        "cadastralNumber": "47:03:1258001:1149",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013500, Ленинградская область, район Волховский, г Волхов, мкр-н Званка, д 45",
+        "area": "206.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11243",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020500, Ленинградская область, р-н Волховский, г Волхов, тер ГК Железнодорожник",
+        "area": "22.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11244",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013500, Ленинградская область, район Волховский, г Волхов, мкр-н Званка, д 45",
+        "area": "63.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11245",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, 121 км. пк 9+00, г Волхов",
+        "area": "186.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11246",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000004600, Ленинградская область, район Волховский, г Волхов, ул Красноармейская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11247",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000008100, Ленинградская область, район Волховский, г Волхов, наб ул.Октябрьская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11248",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020400, Ленинградская область, р-н Волховский, г Волхов, тер ГК Автомобилист",
+        "area": "27.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11249",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 4700400001700, Ленинградская область, район Волховский, д Бережки, волость Бережковская",
+        "area": "2809.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11690",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000000900, Ленинградская область, р-н Бокситогорский, г Пикалево, ул Вокзальная, д 15",
+        "area": "11.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13632",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, неопр ряд 9, сооружение 155",
+        "area": "24.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13631",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №-14, г Пикалево, ул Обринская, сооружение 10",
+        "area": "22.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13634",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №-14, г Пикалево, ул Обринская, сооружение 69",
+        "area": "22.4 кв.м",
+        "cadastralNumber": "47:10:0000000:13633",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 121",
+        "area": "33.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13630",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 422",
+        "area": "23.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13639",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив № 9, г Пикалево, неопр промзона Восточная, сооружение 97",
+        "area": "43.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13636",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив № 7, г Пикалево, микрорайон 1, сооружение 2",
+        "area": "22.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13635",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 5, сооружение 44",
+        "area": "28.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13638",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 7, сооружение 12",
+        "area": "22.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13637",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 0+56",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11239",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001600, Ленинградская область, р-н Волховский, г Сясьстрой, ул Ленина, д 75",
+        "area": "241.3 кв.м",
+        "cadastralNumber": "47:10:0000000:1157",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 6+10",
+        "area": "108.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11238",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001600, Ленинградская область, р-н Волховский, г Сясьстрой, ул Ленина, д 95, корп а",
+        "area": "90.8 кв.м",
+        "cadastralNumber": "47:10:0000000:1158",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК №13, г Пикалево, неопр ш.Спрямленное, сооружение 19",
+        "area": "26.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13622",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 512",
+        "area": "25.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13621",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 1, сооружение 33",
+        "area": "26.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13620",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 14",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13629",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 79",
+        "area": "27.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13628",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, неопр 4 ряд, сооружение 73",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13627",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, квартал 19а, г Пикалево, сооружение 5",
+        "area": "25.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13626",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив № 7, г Пикалево, микрорайон 1, сооружение 39",
+        "area": "23.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13624",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000000400, Ленинградская область, р-н Волховский, г Сясьстрой, ул Бумажников, д 37",
+        "area": "400.9 кв.м",
+        "cadastralNumber": "47:10:0000000:1169",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000000400, Ленинградская область, р-н Волховский, г Сясьстрой, ул Бумажников, д 37",
+        "area": "333.5 кв.м",
+        "cadastralNumber": "47:10:0000000:1170",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 8",
+        "area": "246.2 кв.м",
+        "cadastralNumber": "47:10:0000000:1173",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 11",
+        "area": "81.8 кв.м",
+        "cadastralNumber": "47:10:0000000:1174",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000000700, Ленинградская область, р-н Волховский, г Сясьстрой, ул Герцена, д 18",
+        "area": "49.4 кв.м",
+        "cadastralNumber": "47:10:0000000:1171",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 4",
+        "area": "111.1 кв.м",
+        "cadastralNumber": "47:10:0000000:1172",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, неопр 119 км ПК 2+51",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11740",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Пороги, г Волхов, км 4 ПК 2+54",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11742",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 4+64",
+        "area": "1003.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11741",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Пороги, г Волхов, неопр 7 км ПК 4+32",
+        "area": "3.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11744",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 Пк 3+20",
+        "area": "304.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11743",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209860006, КЛАДР: 4700400010600, Ленинградская область, р-н Волховский, д Колголемо, д 27",
+        "area": "68.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11719",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "Индекс: 187600, OKATO: 41440000000, КЛАДР: 47002002000002000, Ленинградская область, р-н Бокситогорский, г Пикалево, ш Ленинградское, д 114",
+        "area": "70.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13299",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000003400, Ленинградская область, район Волховский, г Новая Ладога, пер Озерный",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11718",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 4, сооружение 17",
+        "area": "22.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13297",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000001500, Ленинградская область, г Пикалево, ул Гузеевская, д 37",
+        "area": "82.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13298",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827001, КЛАДР: 47004000108000100, Ленинградская область, р-н Волховский, с Колчаново, мкр Алексино, д 22",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11714",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000001300, Ленинградская область, район Волховский, г Волхов, ул Волгоградская, сооружение ряд 5, гараж 26",
+        "area": "20.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11715",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, район Волховский, г Волхов, ул Калинина, 43, гаражный кооператив \"Медик\", сооружение 10",
+        "area": "37.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11716",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827001, КЛАДР: 47004000108000700, Ленинградская область, район Волховский, с Колчаново, ул Набережная, д 43",
+        "area": "118.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11717",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209818014, КЛАДР: 47004000210000600, Ленинградская область, район Волховский, п Речников, ул Речная, д 38",
+        "area": "34.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11712",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000100, Ленинградская область, район Волховский, г Новая Ладога, проезд К.Маркса",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11713",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001400, Ленинградская область, р-н Волховский, с Паша, ул Павла Нечесанова, д 16",
+        "area": "65.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11580",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 5, сооружение 11",
+        "area": "27.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13286",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827001, КЛАДР: 47004000108000100, Ленинградская область, р-н Волховский, с Колчаново, мкр Алексино, д Б/Н",
+        "area": "11.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11709",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000004200, Ленинградская область, район Бокситогорский муниципальный, г Пикалево, неопр Гаражный кооператив № 13,шоссе Спрямленное, д 76",
+        "area": "24.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13287",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002600, Ленинградская область, г Пикалево, ул Нагорная, д 4",
+        "area": "31.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13288",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176002700, Ленинградская область, район Волховский, с Паша, ул Солнечная, д 29а",
+        "area": "169.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11705",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006200, Ленинградская область, г Пикалево, неопр ш.Вологодское,Водозаборные сооружения",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13294",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209844002, КЛАДР: 4700400001000, Ленинградская область, район Волховский, д Баландино, ул Радужная, д 1",
+        "area": "50.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11706",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002000, Ленинградская область, г Пикалево, неопр ш.Ленинградское, д 55",
+        "area": "47.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13293",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000016100, Ленинградская область, г Волхов, ул Ленина, д 14",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11703",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41203555000, КЛАДР: 47002000243005000, Ленинградская область, р-н Бокситогорский, пгт Ефимовский, ул Спортивная, д 42",
+        "area": "116.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13296",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 10, гараж 7",
+        "area": "27.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11704",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000001500, Ленинградская область, г Пикалево, ул Гузеевская, д 27",
+        "area": "104.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13295",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, неопр мкр-н \"В\",ряд 3, гараж №82",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11701",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000001200, Ленинградская область, район Волховский, неопр сад оводческое некомерческое товарищество \"Нептун\", г Новая Ладога, ул Зеленая, уч 156",
+        "area": "35.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11579",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр гараж ный кооператив 1, г Пикалево, неопр ул.Металлургов,ряд 4, сооружение 42",
+        "area": "24.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13290",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, неопр мкр-н \"В\",у дома №2",
+        "area": "14.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11702",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209850003, КЛАДР: 4700400003800, Ленинградская область, район Волховский, д Весь, волость Потанинская, д 25",
+        "area": "31.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11578",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр гараж ный кооператив 1, г Пикалево, неопр ряд 4, сооружение 41",
+        "area": "21.4 кв.м",
+        "cadastralNumber": "47:10:0000000:13292",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 4700400017600, Ленинградская область, район Волховский, с Паша, волость Пашская, ул Нечесанова, д 73",
+        "area": "44.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11700",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, г Пикалево, неопр ряд 5, сооружение 105",
+        "area": "28.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13291",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871001, КЛАДР: 4700400010200, Ленинградская область, район Волховский, д Кисельня, волость Кисельнинская",
+        "area": "120.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11575",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209860003, КЛАДР: 4700400002200, Ленинградская область, район Волховский, д Большая Весь, волость Рыбежская, д 3",
+        "area": "53.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11574",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871022, КЛАДР: 47004004032000600, Ленинградская область, р-н Волховский, снт Лесное, массив Пупышево, линия 5-я, уч 337",
+        "area": "28.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11577",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209818001, КЛАДР: 47004000092000700, Ленинградская область, район Волховский, д Иссад, волость Иссадская, ул Набережная, д 7",
+        "area": "58.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11576",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209880002, КЛАДР: 4700400023500, Ленинградская область, район Волховский, д Сторожно, волость Свирицкая, д 20",
+        "area": "26.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11570",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209818011, КЛАДР: 4700400015600, Ленинградская область, район Волховский, д Немятово-1, волость Иссадская, д 33",
+        "area": "42.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11573",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827002, КЛАДР: 4700400000400, Ленинградская область, район Волховский, д Андреевщина, волость Колчановская",
+        "area": "17.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11572",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008001300, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, ул Окружная-Южная, д 99А",
+        "area": "30.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13305",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008003400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 16-я, д 1606",
+        "area": "19.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13306",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002900, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 10-я, уч 1030",
+        "area": "32.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13307",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 5-я, уч 548",
+        "area": "22.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13308",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 258",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13309",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002700, Ленинградская область, г Пикалево, пер Новый, д 8",
+        "area": "40.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13300",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003300, Ленинградская область, г Пикалево, ул Полевая, д 13",
+        "area": "50.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13301",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 5, сооружение 23",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13302",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008001800, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, пер 3-й, д 31-Б",
+        "area": "14.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13303",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 5, сооружение 9",
+        "area": "24.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13304",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, неопр ул. Дзержинского, д.15 - ул.Дзержинского, д.5, г Волхов",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11732",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Ю.Гагарина, д.2 - ул.Ю.Гагарина, д.9",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11734",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Дзержинского, д.15 - ул.Борисогорское Поле, д.12",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11735",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, неопр 119км. 5пк + 80",
+        "area": "8.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11736",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, неопр 121км. 1пк + 80",
+        "area": "20.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11737",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000002700, Ленинградская область, район Волховский, г Волхов, ул Дзержинского, д 31",
+        "area": "186.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11738",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, ст-ца Волховстрой-1, г Волхов, км 122 ПК 4+76",
+        "area": "27.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11739",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020400, Ленинградская область, р-н Волховский, г Волхов, тер ГК Автомобилист",
+        "area": "29.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11730",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000020400, Ленинградская область, р-н Волховский, г Волхов, тер ГК Автомобилист",
+        "area": "23.9 кв.м",
+        "cadastralNumber": "47:10:0000000:11731",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 84",
+        "area": "24.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13318",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002600, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 7-я, уч 743",
+        "area": "14.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13319",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008003400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 16-я, уч 1644",
+        "area": "12.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13316",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 43",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13317",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 56",
+        "area": "26.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13310",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002800, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 9-я, д 948",
+        "area": "17.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13311",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000013900, Ленинградская область, микрорайон Пороги, г Волхов",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11729",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 232",
+        "area": "26.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13314",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 160",
+        "area": "24.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13315",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 191",
+        "area": "25.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13312",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 4700400001700, Ленинградская область, р-н Волховский, д Бережки, д Б/Н",
+        "area": "137.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11723",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Маяковского, гараж 1",
+        "area": "107.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11721",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр Шлам-поле,1, г Пикалево",
+        "area": "136.1 кв.м",
+        "cadastralNumber": "47:10:0000000:11456",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004025003000100, Ленинградская область, р-н Волховский, снт Нептун, массив Новая Ладога, ул Зеленая, уч 145",
+        "area": "10.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11722",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000001300, Ленинградская область, г Волхов, неопр ул.Волгоградская,ряд 12, гараж 39",
+        "area": "35.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11727",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209853001, КЛАДР: 47004000017000200, Ленинградская область, район Волховский, д Бережки, ул Придорожная, д 4а",
+        "area": "116.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11725",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000015400, Ленинградская область, р-н Волховский, г Волхов, ул Металлургов, гараж 59",
+        "area": "35.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11726",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203000000, КЛАДР: 4700200000000, Ленинградская область, район Бокситогорский, ст-ца Подборовье, 295 км, ПК 1+00, волость Подборовская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11458",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209856003, КЛАДР: 4700400014200, Ленинградская область, р-н Волховский, д Матеево, д 17",
+        "area": "34.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11720",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008003400, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 16-я, д 1653",
+        "area": "19.3 кв.м",
+        "cadastralNumber": "47:10:0000000:11457",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 440",
+        "area": "18.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13324",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 7, сооружение 7",
+        "area": "25.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13323",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 392",
+        "area": "24.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13326",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 578",
+        "area": "27.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13325",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 489",
+        "area": "29.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13320",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 2, сооружение 24",
+        "area": "25.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13322",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 396",
+        "area": "25.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13321",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 547",
+        "area": "24.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13328",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006200, Ленинградская область, г Пикалево, неопр ш.Вологодское, д б/№",
+        "area": "330.8 кв.м",
+        "cadastralNumber": "47:10:0000000:13327",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 357",
+        "area": "26.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13329",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203828001, КЛАДР: 47002000244000200, Ленинградская область, район Бокситогорский муниципальный, д Журавлево, ул Воскресенская, д 50",
+        "area": "34.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13660",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203816030, КЛАДР: 47002000252000500, Ленинградская область, район Бокситогорский муниципальный, п Ларьян, сельское поселение Борское, ул Связи, д 21",
+        "area": "41.1 кв.м",
+        "cadastralNumber": "47:10:0000000:13661",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, район Бокситогорский муниципальный, г Пикалево",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13662",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000002200, Ленинградская область, район Волховский, г Сясьстрой, ул Набережная, д 73",
+        "area": "34.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13663",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 1, гараж 97",
+        "area": "44.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13664",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №6, г Пикалево, неопр ш.Ленинградское,ряд 5, сооружение 19",
+        "area": "32.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13334",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК №13, г Пикалево, неопр ш.Спрямленное, сооружение 38",
+        "area": "26.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13333",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 352",
+        "area": "25.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13331",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, территория индивидуальной гаражной застройки, ул Обринская, сооружение 45",
+        "area": "27.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13330",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр 19 а квартал,ряд 2, г Пикалево, сооружение 36",
+        "area": "23.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13276",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, р-н Волховский, г Сясьстрой, ул Кирова, д 60",
+        "area": "17.3 кв.м",
+        "cadastralNumber": "47:10:0000000:1124",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000001300, Ленинградская область, г Волхов, неопр ул.Волгоградская,ряд 2, гараж 22",
+        "area": "24.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11590",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, горка микрорайон Шкурина, г Волхов, д 25",
+        "area": "25.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11591",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, г Пикалево, неопр ул.Металлургов,к жилому дому 27",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13642",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №14, г Пикалево, ул Обринская, сооружение 243",
+        "area": "24.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13644",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 406",
+        "area": "22.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13645",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 199",
+        "area": "21.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13640",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, г Пикалево, ул Металлургов",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13641",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209508000, КЛАДР: 47004003000001000, Ленинградская область, район Волховский, г Сясьстрой, ул Кирова",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11584",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209871022, КЛАДР: 47004004016000700, Ленинградская область, р-н Волховский, снт Восход, массив Пупышево, аллея 7-я, уч 345",
+        "area": "37.8 кв.м",
+        "cadastralNumber": "47:10:0000000:11582",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209827025, КЛАДР: 4700400025700, Ленинградская область, район Волховский, д Хамонтово, волость Колчановская",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11581",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001400, Ленинградская область, р-н Волховский, с Паша, ул Павла Нечесанова, д 2",
+        "area": "67.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11588",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002008002800, Ленинградская область, р-н Бокситогорский, снт Металлург-1, г Пикалево, линия 9-я, д 13",
+        "area": "25.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13646",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209868001, КЛАДР: 4700400026000, Ленинградская область, район Волховский, д Хвалово, волость Хваловская",
+        "area": "993.0 кв.м",
+        "cadastralNumber": "47:10:0000000:11587",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ряд 6, сооружение 18",
+        "area": "21.5 кв.м",
+        "cadastralNumber": "47:10:0000000:13285",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000001700, Ленинградская область, г Пикалево, ул Заводская, д 8",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13647",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41209868001, КЛАДР: 4700400026000, Ленинградская область, район Волховский, д Хвалово, волость Хваловская",
+        "area": "538.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11586",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, неопр ГСК № 2, г Пикалево, квартал 4, сооружение 45",
+        "area": "21.3 кв.м",
+        "cadastralNumber": "47:10:0000000:13648",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871001, КЛАДР: 4700400010200, Ленинградская область, район Волховский, д Кисельня, волость Кисельнинская",
+        "area": "11.2 кв.м",
+        "cadastralNumber": "47:10:0000000:11585",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41203812004, КЛАДР: 4700200027700, Ленинградская область, район Бокситогорский, д Большой Двор, волость Анисимовская, д 25",
+        "area": "36.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13649",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000002300, Ленинградская область, неопр ГСК №1, г Пикалево, неопр ул.Металлургов,ряд 6, сооружение 10",
+        "area": "25.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13655",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000005700, Ленинградская область, неопр жилая зона \"Новли\", г Пикалево, ул Средняя, д 3",
+        "area": "44.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13656",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000820000600, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Дружба, ул Южная, д 1а, уч 1",
+        "area": "25.9 кв.м",
+        "cadastralNumber": "47:03:1258001:1151",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 4701500082000, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Дружба, д Б/Н, уч 29",
+        "area": "19.1 кв.м",
+        "cadastralNumber": "47:03:1258001:1152",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, гаражно-строительный кооператив №11, г Пикалево, неопр ш.Спрямленное, сооружение 3",
+        "area": "42.0 кв.м",
+        "cadastralNumber": "47:10:0000000:13653",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006400, Ленинградская область, гаражно-строительный кооператив №14, г Пикалево, ул Обринская, сооружение 141",
+        "area": "40.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13654",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000821000200, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Кировского р, ул 12-я линия, д Б/Н, уч 67",
+        "area": "66.6 кв.м",
+        "cadastralNumber": "47:03:1258001:1154",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 4700200200000, Ленинградская область, г Пикалево, территория арт.скважин",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:13651",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000821000200, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Кировского р, ул 12-я линия, д Б/Н, уч 19",
+        "area": "31.2 кв.м",
+        "cadastralNumber": "47:03:1258001:1155",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000003200, Ленинградская область, неопр ГСК №3, г Пикалево, ул Подлипская, сооружение 402",
+        "area": "21.9 кв.м",
+        "cadastralNumber": "47:10:0000000:13652",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41239844006, КЛАДР: 47015000821000900, Ленинградская область, р-н Приозерский, дп Массив Орехово-Северное ДПК Кировского р, ул 11-я линия, д 1-3, уч 1",
+        "area": "94.3 кв.м",
+        "cadastralNumber": "47:03:1258001:1157",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "Индекс: 187600, OKATO: 41440000000, КЛАДР: 47002002000004000, Ленинградская область, р-н Бокситогорский, г Пикалево, ул Спортивная, д 4а",
+        "area": "197.6 кв.м",
+        "cadastralNumber": "47:10:0000000:13650",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004016002000600, Ленинградская область, р-н Волховский, снт Строитель-1, массив Волхов ул.Ленинградская 27, ул Яблоневая, уч 115",
+        "area": "22.7 кв.м",
+        "cadastralNumber": "47:10:0000000:11593",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001600, Ленинградская область, р-н Волховский, с Паша, ул Пионерская",
+        "area": "1185067.0 (квадратный метр)",
+        "cadastralNumber": "47:10:0000000:116",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Земельный участок"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 47004001000015400, Ленинградская область, р-н Волховский, г Волхов, ул Металлургов, д 15, гараж 21",
+        "area": "26.6 кв.м",
+        "cadastralNumber": "47:10:0000000:11592",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209844001, КЛАДР: 47004000176001600, Ленинградская область, р-н Волховский, с Паша, ул Пионерская",
+        "area": "86220.0 (квадратный метр)",
+        "cadastralNumber": "47:10:0000000:117",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Земельный участок"
+    },
+    {
+        "address": "OKATO: 41209504000, КЛАДР: 47004002000000200, Ленинградская область, район Волховский, г Новая Ладога, мкр-н \"В\", сооружение ряд 2, гараж 69",
+        "area": "23.5 кв.м",
+        "cadastralNumber": "47:10:0000000:11595",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41209871001, КЛАДР: 4700400010200, Ленинградская область, район Волховский, д Кисельня, волость Кисельнинская",
+        "area": "1256.4 кв.м",
+        "cadastralNumber": "47:10:0000000:11594",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41408000000, КЛАДР: 4700400100000, Ленинградская область, г Волхов, ул Ю.Гагарина, д 1",
+        "area": "",
+        "cadastralNumber": "47:10:0000000:11597",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Сооружение"
+    },
+    {
+        "address": "OKATO: 41440000000, КЛАДР: 47002002000006200, Ленинградская область, район Бокситогорский муниципальный, г Пикалево, шоссе Вологодское, сооружение в районе дома №1, гараж 10",
+        "area": "25.2 кв.м",
+        "cadastralNumber": "47:10:0000000:13657",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41403000000, КЛАДР: 47002001000001600, Ленинградская область, район Бокситогорский муниципальный, г Бокситогорск, пер Заводской, д 12",
+        "area": "31.7 кв.м",
+        "cadastralNumber": "47:10:0000000:13658",
+        "isLoaded": false,
+        "number": 1,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 1,2,3,4,5",
+        "area": "34.1 кв.м",
+        "cadastralNumber": "47:01:0000000:42806",
+        "isLoaded": false,
+        "number": 2,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 43",
+        "area": "64.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1088",
+        "isLoaded": false,
+        "number": 3,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 44",
+        "area": "29.7 кв.м",
+        "cadastralNumber": "47:01:0107001:1089",
+        "isLoaded": false,
+        "number": 4,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 45",
+        "area": "64.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1090",
+        "isLoaded": false,
+        "number": 5,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 46",
+        "area": "33.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1091",
+        "isLoaded": false,
+        "number": 6,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 62",
+        "area": "60.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1092",
+        "isLoaded": false,
+        "number": 7,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 63",
+        "area": "52.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1093",
+        "isLoaded": false,
+        "number": 8,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 35а",
+        "area": "110.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1094",
+        "isLoaded": false,
+        "number": 9,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 29",
+        "area": "64.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1095",
+        "isLoaded": false,
+        "number": 10,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 24а",
+        "area": "77.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1096",
+        "isLoaded": false,
+        "number": 11,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 24",
+        "area": "51.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1097",
+        "isLoaded": false,
+        "number": 12,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 30",
+        "area": "65.8 кв.м",
+        "cadastralNumber": "47:01:0107001:1098",
+        "isLoaded": false,
+        "number": 13,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 25",
+        "area": "73.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1099",
+        "isLoaded": false,
+        "number": 14,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 25а",
+        "area": "114.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1100",
+        "isLoaded": false,
+        "number": 15,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 17",
+        "area": "68.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1101",
+        "isLoaded": false,
+        "number": 16,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 17а",
+        "area": "50.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1102",
+        "isLoaded": false,
+        "number": 17,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 16",
+        "area": "124.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1103",
+        "isLoaded": false,
+        "number": 18,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 4",
+        "area": "80.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1104",
+        "isLoaded": false,
+        "number": 19,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 37а",
+        "area": "30.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1105",
+        "isLoaded": false,
+        "number": 20,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 37",
+        "area": "104.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1106",
+        "isLoaded": false,
+        "number": 21,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 36",
+        "area": "168.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1107",
+        "isLoaded": false,
+        "number": 22,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 49",
+        "area": "47.8 кв.м",
+        "cadastralNumber": "47:01:0107001:1108",
+        "isLoaded": false,
+        "number": 23,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 50",
+        "area": "33.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1109",
+        "isLoaded": false,
+        "number": 24,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 39",
+        "area": "137.0 кв.м",
+        "cadastralNumber": "47:01:0107001:1110",
+        "isLoaded": false,
+        "number": 25,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 38",
+        "area": "174.9 кв.м",
+        "cadastralNumber": "47:01:0107001:1111",
+        "isLoaded": false,
+        "number": 26,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 51",
+        "area": "46.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1112",
+        "isLoaded": false,
+        "number": 27,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 52",
+        "area": "53.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1113",
+        "isLoaded": false,
+        "number": 28,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 53",
+        "area": "44.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1114",
+        "isLoaded": false,
+        "number": 29,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 54",
+        "area": "37.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1115",
+        "isLoaded": false,
+        "number": 30,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 31",
+        "area": "65.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1116",
+        "isLoaded": false,
+        "number": 31,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 26",
+        "area": "74.7 кв.м",
+        "cadastralNumber": "47:01:0107001:1117",
+        "isLoaded": false,
+        "number": 32,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 19",
+        "area": "181.7 кв.м",
+        "cadastralNumber": "47:01:0107001:1118",
+        "isLoaded": false,
+        "number": 33,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 18а",
+        "area": "27.4 кв.м",
+        "cadastralNumber": "47:01:0107001:1119",
+        "isLoaded": false,
+        "number": 34,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 18",
+        "area": "148.0 кв.м",
+        "cadastralNumber": "47:01:0107001:1120",
+        "isLoaded": false,
+        "number": 35,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 6",
+        "area": "78.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1121",
+        "isLoaded": false,
+        "number": 36,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 5",
+        "area": "101.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1122",
+        "isLoaded": false,
+        "number": 37,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 3",
+        "area": "138.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1123",
+        "isLoaded": false,
+        "number": 38,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 40",
+        "area": "32.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1124",
+        "isLoaded": false,
+        "number": 39,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 40а",
+        "area": "74.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1125",
+        "isLoaded": false,
+        "number": 40,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 41",
+        "area": "83.0 кв.м",
+        "cadastralNumber": "47:01:0107001:1126",
+        "isLoaded": false,
+        "number": 41,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 42",
+        "area": "87.4 кв.м",
+        "cadastralNumber": "47:01:0107001:1127",
+        "isLoaded": false,
+        "number": 42,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 55",
+        "area": "47.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1128",
+        "isLoaded": false,
+        "number": 43,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 56",
+        "area": "77.9 кв.м",
+        "cadastralNumber": "47:01:0107001:1129",
+        "isLoaded": false,
+        "number": 44,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 57",
+        "area": "43.4 кв.м",
+        "cadastralNumber": "47:01:0107001:1130",
+        "isLoaded": false,
+        "number": 45,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 58",
+        "area": "37.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1131",
+        "isLoaded": false,
+        "number": 46,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 32",
+        "area": "64.8 кв.м",
+        "cadastralNumber": "47:01:0107001:1132",
+        "isLoaded": false,
+        "number": 47,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 27",
+        "area": "72.7 кв.м",
+        "cadastralNumber": "47:01:0107001:1133",
+        "isLoaded": false,
+        "number": 48,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 21а",
+        "area": "112.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1134",
+        "isLoaded": false,
+        "number": 49,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 21",
+        "area": "67.8 кв.м",
+        "cadastralNumber": "47:01:0107001:1135",
+        "isLoaded": false,
+        "number": 50,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 20",
+        "area": "149.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1136",
+        "isLoaded": false,
+        "number": 51,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 8",
+        "area": "58.4 кв.м",
+        "cadastralNumber": "47:01:0107001:1137",
+        "isLoaded": false,
+        "number": 52,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 8а",
+        "area": "45.4 кв.м",
+        "cadastralNumber": "47:01:0107001:1138",
+        "isLoaded": false,
+        "number": 53,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 7",
+        "area": "171.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1139",
+        "isLoaded": false,
+        "number": 54,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 34",
+        "area": "178.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1140",
+        "isLoaded": false,
+        "number": 55,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 33",
+        "area": "64.8 кв.м",
+        "cadastralNumber": "47:01:0107001:1141",
+        "isLoaded": false,
+        "number": 56,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 28",
+        "area": "68.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1142",
+        "isLoaded": false,
+        "number": 57,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 22",
+        "area": "150.1 кв.м",
+        "cadastralNumber": "47:01:0107001:1143",
+        "isLoaded": false,
+        "number": 58,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 10",
+        "area": "34.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1144",
+        "isLoaded": false,
+        "number": 59,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 64",
+        "area": "70.5 кв.м",
+        "cadastralNumber": "47:01:0107001:1145",
+        "isLoaded": false,
+        "number": 60,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 9",
+        "area": "105.9 кв.м",
+        "cadastralNumber": "47:01:0107001:1146",
+        "isLoaded": false,
+        "number": 61,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 60",
+        "area": "60.8 кв.м",
+        "cadastralNumber": "47:01:0107001:1147",
+        "isLoaded": false,
+        "number": 62,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18",
+        "area": "6942.8 кв.м",
+        "cadastralNumber": "47:01:0107001:278",
+        "isLoaded": false,
+        "number": 63,
+        "objectType": "Здание"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18",
+        "area": "2327.0 (квадратный метр)",
+        "cadastralNumber": "47:01:0107003:125",
+        "isLoaded": false,
+        "number": 64,
+        "objectType": "Земельный участок"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 23",
+        "area": "74.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4385",
+        "isLoaded": false,
+        "number": 65,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, кв №№ 1-16",
+        "area": "169.8 кв.м",
+        "cadastralNumber": "47:01:0107003:4393",
+        "isLoaded": false,
+        "number": 66,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, пом 6",
+        "area": "692.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4394",
+        "isLoaded": false,
+        "number": 67,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18",
+        "area": "138.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4397",
+        "isLoaded": false,
+        "number": 68,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18, кв 3",
+        "area": "276.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4401",
+        "isLoaded": false,
+        "number": 69,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18",
+        "area": "83.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4404",
+        "isLoaded": false,
+        "number": 70,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18",
+        "area": "41.8 кв.м",
+        "cadastralNumber": "47:01:0107003:4416",
+        "isLoaded": false,
+        "number": 71,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, пом 10",
+        "area": "111.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4420",
+        "isLoaded": false,
+        "number": 72,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, пом 6",
+        "area": "692.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4421",
+        "isLoaded": false,
+        "number": 73,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 23а",
+        "area": "95.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4431",
+        "isLoaded": false,
+        "number": 74,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18",
+        "area": "136.6 кв.м",
+        "cadastralNumber": "47:01:0107003:4434",
+        "isLoaded": false,
+        "number": 75,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, пр-кт Ленина, д 18, пом 8",
+        "area": "199.3 кв.м",
+        "cadastralNumber": "47:01:0107003:4439",
+        "isLoaded": false,
+        "number": 76,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, пом 11",
+        "area": "72.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4455",
+        "isLoaded": false,
+        "number": 77,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, пом 9",
+        "area": "132.2 кв.м",
+        "cadastralNumber": "47:01:0107003:4456",
+        "isLoaded": false,
+        "number": 78,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18",
+        "area": "222.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4465",
+        "isLoaded": false,
+        "number": 79,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, пом 7",
+        "area": "52.4 кв.м",
+        "cadastralNumber": "47:01:0107003:4478",
+        "isLoaded": false,
+        "number": 80,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский район, г Выборг, пр-кт Ленина, д 18, кв №№ 1-8",
+        "area": "87.9 кв.м",
+        "cadastralNumber": "47:01:0107003:4479",
+        "isLoaded": false,
+        "number": 81,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, к Б/Н",
+        "area": "62.0 кв.м",
+        "cadastralNumber": "47:01:0107003:4498",
+        "isLoaded": false,
+        "number": 82,
+        "objectType": "Помещение"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, г Выборг, проезд Ленина, д 18",
+        "area": "44.5 кв.м",
+        "cadastralNumber": "47:01:0107003:4636",
+        "isLoaded": false,
+        "number": 83,
+        "objectType": "Помещение"
+    }
+] 3 июля 2018 г., 23:48:11 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 14:30:02 GMT+3
+region: Ленинградская область | zone: Выборг | street : Ленина
+houseNumber: 18 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index:  4 июля 2018 г., 14:31:06 GMT+3
+
+По данному помещению не найден кадастровый номер | Номер ->  4 июля 2018 г., 14:31:06 GMT+3
+Непредвиденная ошибкаReferenceError: Can't find variable: index 4 июля 2018 г., 14:31:06 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 14:32:58 GMT+3
+region: Ленинградская область | zone: Выборг | street : Ленина
+houseNumber: 18 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index:  4 июля 2018 г., 14:33:49 GMT+3
+
+По данному помещению не найден кадастровый номер | Номер ->  4 июля 2018 г., 14:33:50 GMT+3
+
+Сadastral number: 1 | Index: 47:01:0000000:42806 4 июля 2018 г., 14:33:50 GMT+3

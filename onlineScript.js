@@ -45,7 +45,7 @@ var vars = require('./Modules/varsModule').getVars();
 // --------------------------------------------------------------------------------
 
 // casper SCRIPT
-casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/', function() {
+casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/', function () {
     newRecordIntoLog(searchData);
 });
 
@@ -131,7 +131,7 @@ casper.waitForSelector(".portlet-title", function () {
 
     takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++);
 
-    if(!objectsAreFound)
+    if (!objectsAreFound)
         saveAnError("Не найдены помещения");
 });
 
@@ -176,7 +176,7 @@ casper.waitForSelector('.datalist-wrap', function () {
 // Идём в "Мои ключи"
 casper.waitForSelector('.finances', function () {
 
-    
+
 
     casper.evaluate(function () {
         $("div:contains('Мои ключи')").click();
@@ -201,7 +201,7 @@ casper.waitForSelector('.kadastral-results-search', function () {
 
 
 // Переходим на сайт реестра
-casper.waitForSelector('.view-all', function () {   
+casper.waitForSelector('.view-all', function () {
 
     casper.evaluate(function () {
         document.querySelector('.view-all').removeAttribute("target");
@@ -270,7 +270,7 @@ casper.wait(5000, function () {
 
 casper.wait(5000, function () {
 
-    
+
     console.log(JSON.stringify(vars.tableRows, "", 4));
 
     logMessage(JSON.stringify(vars.cadastralArray, "", 4));
@@ -292,10 +292,10 @@ casper.run();
 
 function saveAnError(errorText, message) {
 
-    if(vars.env === "DEBUG")
+    if (vars.env === "DEBUG")
         takeErrorScreenShot(errorText, vars.counter++);
-    
-    logMessage(errorText + message);    
+
+    logMessage(errorText + message);
 
     handleError(errorText);
 }
@@ -304,7 +304,7 @@ function newRecordIntoLog(searchData) {
 
     var twoLine = " \n ------------------------------ \n";
     var fullAddress = "region: " + searchData.region + " | zone: " + searchData.zone + " | street : " + searchData.street + "\nhouseNumber: " + searchData.houseNumber + " | building: " + searchData.building;
-    var text = "\n\n" +  twoLine + new Date().toLocaleString("ru") + "\n"  + fullAddress + twoLine;   
+    var text = "\n\n" + twoLine + new Date().toLocaleString("ru") + "\n" + fullAddress + twoLine;
 
     fs.write(folders.baseDir + folders.logFile, text, "a");
 }
@@ -320,7 +320,7 @@ function logMessage(text) {
 // сохраняем только порядковый номер
 function takeErrorScreenShot(screenShotName, counter) {
 
-    var screenShotName = folders.ErrorFolder + screenShotName + " " + counter + '.png'; 
+    var screenShotName = folders.ErrorFolder + screenShotName + " " + counter + '.png';
     casper.capture(screenShotName);
 
     //console.log('screenShotName', screenShotName);
@@ -336,7 +336,7 @@ function takeDebugScreenShot(text, counter) {
 
 function iterateCadastralArray() {
 
-    logMessage('nnew iterate cadastral');
+    //logMessage('new iterate cadastral');
 
     // Выбираю "Поиск объектов недвижимости"
     //casper.waitForSelector('.navigationPanel', function () {
@@ -354,6 +354,32 @@ function iterateCadastralArray() {
         takeDebugScreenShot('До заполнения данных', vars.counter++);
 
         logMessage('\nСadastral number: ' + vars.currentCadastralIndex + ' | Index: ' + vars.cadastralArray[vars.currentCadastralIndex]);
+
+        if (!vars.cadastralArray[vars.currentCadastralIndex]) {
+            takeDebugScreenShot('По данному помещению не найден кадастровый номер', vars.counter++);
+            logMessage('\nПо данному помещению не найден кадастровый номер ' + '| Номер -> ' + vars.cadastralArray[vars.currentCadastralIndex]);
+
+            var row = {};
+            row.number = vars.currentCadastralIndex + 1;
+            row.cadastralNumber = "Не имеет кадастрового номера";    
+            row.isLoaded = false;
+            vars.tableRows = vars.tableRows.concat(row);
+
+            vars.currentCadastralIndex++;
+
+            if (vars.currentCadastralIndex < vars.cadastralArray.length) {
+
+                casper.then(iterateCadastralArray);
+
+            } else {
+                console.log(JSON.stringify(vars.tableRows, "", 4));
+
+                logMessage(JSON.stringify(vars.cadastralArray, "", 4));
+                logMessage(JSON.stringify(vars.tableRows, "", 4));
+
+                casper.exit(1);
+            }
+        }
 
         casper.evaluate(function (cadastralNumber) {
 
@@ -470,8 +496,15 @@ function iterateCadastralArray() {
                                                     vars.currentCadastralIndex++;
 
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
-                                                    if (vars.currentCadastralIndex < vars.cadastralArray.length)
+                                                    if (vars.currentCadastralIndex < vars.cadastralArray.length) {
                                                         casper.then(iterateCadastralArray);
+                                                        // addBadResponseToResults();
+                                                        // console.log(JSON.stringify(vars.tableRows, "", 4));
+                                                        // logMessage(JSON.stringify(vars.cadastralArray, "", 4));
+                                                        // logMessage(JSON.stringify(vars.tableRows, "", 4));
+                                                        // casper.exit(1);
+                                                    }
+
                                                 }, function () {
                                                     logMessage('Cant find naviagation panel');
                                                     takeDebugScreenShot('Панель навигации не найдена', vars.counter++);
@@ -568,6 +601,9 @@ function afterReloadAuth() {
 
         console.log(JSON.stringify(vars.tableRows, "", 4));
 
+        logMessage(JSON.stringify(vars.cadastralArray, "", 4));
+        logMessage(JSON.stringify(vars.tableRows, "", 4));
+
         casper.exit(1);
     });
 }
@@ -594,7 +630,7 @@ function iteratePagination() {
                 return document.querySelectorAll('.brdnav0')[3].onclick !== null;
             });
         }, function then() {    // step to execute when check() is ok
-            
+
             casper.evaluate(function () {
                 document.querySelectorAll('.brdnav0')[2].click();
             });
@@ -608,14 +644,14 @@ function iteratePagination() {
 }
 
 function debugConsoleLog(text) {
-    if(vars.env === "DEBUG")
+    if (vars.env === "DEBUG")
         console.log(text);
-} 
+}
 
 function debugConsoleLogStringify(text) {
-    if(vars.env === "DEBUG")
-        console.log(JSON.stringify(text, "", 4));        
-} 
+    if (vars.env === "DEBUG")
+        console.log(JSON.stringify(text, "", 4));
+}
 
 function handleError(errorText) {
 
@@ -626,9 +662,9 @@ function handleError(errorText) {
             $('.v-Notification').click();
         });
 
-        casper.wait(5000, function() {
+        casper.wait(5000, function () {
             afterReloadAuth();
-        });        
+        });
 
     } else {
         obj = {};
@@ -636,31 +672,31 @@ function handleError(errorText) {
         if (errorText === "Ошибка по таймауту") {
             obj.message = "Ошибка произошла на этапе аунтентификации. Перезагрузите задачу.";
         }
-    
+
         if (errorText === "Непредвиденная ошибка") {
             obj.message = "Произошла непредвиденная ошибка. Перезагрузите задачу.";
         }
 
         if (errorText === "Не найдены помещения") {
             obj.message = "Не найдены помещения. Перезагрузите задачу.";
-        }        
+        }
 
-        console.log(JSON.stringify(obj, "", 4)); 
+        console.log(JSON.stringify(obj, "", 4));
 
         casper.exit(1);
     }
 
-   
+
 }
 
 function addBadResponseToResults() {
 
-    if(vars.cadastralArray.length > vars.tableRows.length) {
+    if (vars.cadastralArray.length > vars.tableRows.length) {
 
         for (var i = vars.currentCadastralIndex; i < vars.cadastralArray.length; i++) {
             vars.tableRows.push({
-                cadastralNumber:  vars.cadastralArray[i],
-                isLoaded: false 
+                cadastralNumber: vars.cadastralArray[i],
+                isLoaded: false
             });
         }
     }
