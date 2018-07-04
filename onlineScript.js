@@ -495,6 +495,7 @@ function iterateCadastralArray() {
 
                                                     vars.currentCadastralIndex++;
 
+                                                    logMessage('NumberOfRequest: ' + vars.tableRows[vars.currentCadastralIndex].numberOfRequest);
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
                                                         casper.then(iterateCadastralArray);
