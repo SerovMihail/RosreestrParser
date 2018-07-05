@@ -5751,3 +5751,1648 @@ Before next iteration. Current cadastral number: 83 | cadastralArray.length: 83 
         "isLoaded": false
     }
 ] 4 июля 2018 г., 16:05:30 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 16:33:42 GMT+3
+region:  | zone: undefined | street : undefined
+houseNumber: undefined | building: undefined 
+ ------------------------------ 
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 16:38:26 GMT+3
+region: Ленинградская область | zone: undefined | street : undefined
+houseNumber: undefined | building: undefined 
+ ------------------------------ 
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 16:47:24 GMT+3
+region: Ленинградская областьCadastralArray from arguments47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 16:48:20 GMT+3
+region: Ленинградская область
+CadastralArray from arguments47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 47:01:0107001:1112 4 июля 2018 г., 16:48:54 GMT+3
+Непредвиденная ошибкаTypeError: undefined is not an object (evaluating 'vars.tableRows[vars.currentCadastralIndex].numberOfRequest') 4 июля 2018 г., 16:49:23 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 16:58:00 GMT+3
+region: Ленинградская область
+CadastralArray from arguments47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 47:01:0107001:1112 4 июля 2018 г., 16:58:28 GMT+3
+Непредвиденная ошибкаTypeError: undefined is not an object (evaluating 'vars.tableRows[vars.currentCadastralIndex].numberOfRequest') 4 июля 2018 г., 16:58:57 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 16:59:37 GMT+3
+region: Ленинградская область
+CadastralArray from arguments47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 47:01:0107001:1112 4 июля 2018 г., 17:00:04 GMT+3
+Непредвиденная ошибкаTypeError: undefined is not an object (evaluating 'vars.tableRows[vars.currentCadastralIndex].numberOfRequest') 4 июля 2018 г., 17:00:34 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 17:01:25 GMT+3
+region: Ленинградская область
+CadastralArray from arguments47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 47:01:0107001:1112 4 июля 2018 г., 17:01:55 GMT+3
+NumberOfRequest: 80-44339877 4 июля 2018 г., 17:02:23 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 5 4 июля 2018 г., 17:02:23 GMT+3
+
+Сadastral number: 1 | Index: 47:01:0107001:1114 4 июля 2018 г., 17:02:24 GMT+3
+NumberOfRequest: 80-44339977 4 июля 2018 г., 17:02:52 GMT+3
+Before next iteration. Current cadastral number: 2 | cadastralArray.length: 5 4 июля 2018 г., 17:02:52 GMT+3
+
+Сadastral number: 2 | Index: 47:01:0107001:1116 4 июля 2018 г., 17:02:53 GMT+3
+NumberOfRequest: 80-44340070 4 июля 2018 г., 17:03:21 GMT+3
+Before next iteration. Current cadastral number: 3 | cadastralArray.length: 5 4 июля 2018 г., 17:03:21 GMT+3
+
+Сadastral number: 3 | Index: 47:01:0107001:1120 4 июля 2018 г., 17:04:05 GMT+3
+NumberOfRequest: 80-44340280 4 июля 2018 г., 17:04:34 GMT+3
+Before next iteration. Current cadastral number: 4 | cadastralArray.length: 5 4 июля 2018 г., 17:04:34 GMT+3
+
+Сadastral number: 4 | Index: 47:01:0107001:1121 4 июля 2018 г., 17:04:34 GMT+3
+NumberOfRequest: 80-44340363 4 июля 2018 г., 17:05:03 GMT+3
+Before next iteration. Current cadastral number: 5 | cadastralArray.length: 5 4 июля 2018 г., 17:05:03 GMT+3
+[
+    "47:01:0107001:1112",
+    "47:01:0107001:1114",
+    "47:01:0107001:1116",
+    "47:01:0107001:1120",
+    "47:01:0107001:1121"
+] 4 июля 2018 г., 17:05:08 GMT+3
+[
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 51",
+        "area": "46.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1112",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:02:12 ",
+        "numberOfRequest": "80-44339877"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 53",
+        "area": "44.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1114",
+        "isLoaded": true,
+        "number": 2,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:02:41 ",
+        "numberOfRequest": "80-44339977"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 31",
+        "area": "65.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1116",
+        "isLoaded": true,
+        "number": 3,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:03:10 ",
+        "numberOfRequest": "80-44340070"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 18",
+        "area": "148.0 кв.м",
+        "cadastralNumber": "47:01:0107001:1120",
+        "isLoaded": true,
+        "number": 4,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:04:22 ",
+        "numberOfRequest": "80-44340280"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 6",
+        "area": "78.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1121",
+        "isLoaded": true,
+        "number": 5,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:04:51 ",
+        "numberOfRequest": "80-44340363"
+    }
+] 4 июля 2018 г., 17:05:08 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 17:08:58 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 4 июля 2018 г., 17:10:07 GMT+3
+Непредвиденная ошибкаTypeError: undefined is not an object (evaluating 'vars.tableRows[vars.currentCadastralIndex].numberOfRequest') 4 июля 2018 г., 17:10:34 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 17:26:47 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 4 июля 2018 г., 17:27:53 GMT+3
+Непредвиденная ошибкаTypeError: undefined is not an object (evaluating 'vars.tableRows[vars.currentCadastralIndex].numberOfRequest') 4 июля 2018 г., 17:28:22 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 17:30:07 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 4 июля 2018 г., 17:31:04 GMT+3
+Непредвиденная ошибкаTypeError: undefined is not an object (evaluating 'vars.tableRows[vars.currentCadastralIndex].numberOfRequest') 4 июля 2018 г., 17:31:33 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 17:33:19 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 4 июля 2018 г., 17:34:18 GMT+3
+NumberOfRequest: 80-44345396 4 июля 2018 г., 17:34:46 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 4 июля 2018 г., 17:34:46 GMT+3
+
+Сadastral number: 1 | Index: 61:44:0081905:105 4 июля 2018 г., 17:34:47 GMT+3
+
+
+ 
+ ------------------------------ 
+4 июля 2018 г., 17:36:48 GMT+3
+region: Ростовская область | zone: Ростов-на-Дону | street : Соборный
+houseNumber: 82 | building: undefined 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 61:44:0081905:104 4 июля 2018 г., 17:37:46 GMT+3
+NumberOfRequest: 80-44345858 4 июля 2018 г., 17:38:15 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 252 4 июля 2018 г., 17:38:15 GMT+3
+
+Сadastral number: 1 | Index: 61:44:0081905:105 4 июля 2018 г., 17:38:15 GMT+3
+NumberOfRequest: 80-44345923 4 июля 2018 г., 17:38:43 GMT+3
+Before next iteration. Current cadastral number: 2 | cadastralArray.length: 252 4 июля 2018 г., 17:38:43 GMT+3
+
+Сadastral number: 2 | Index: 61:44:0081905:106 4 июля 2018 г., 17:38:44 GMT+3
+NumberOfRequest: 80-44345996 4 июля 2018 г., 17:39:12 GMT+3
+Before next iteration. Current cadastral number: 3 | cadastralArray.length: 252 4 июля 2018 г., 17:39:12 GMT+3
+
+Сadastral number: 3 | Index: 61:44:0081905:107 4 июля 2018 г., 17:39:56 GMT+3
+NumberOfRequest: 80-44346166 4 июля 2018 г., 17:40:25 GMT+3
+Before next iteration. Current cadastral number: 4 | cadastralArray.length: 252 4 июля 2018 г., 17:40:25 GMT+3
+
+Сadastral number: 4 | Index: 61:44:0081905:108 4 июля 2018 г., 17:40:25 GMT+3
+NumberOfRequest: 80-44346243 4 июля 2018 г., 17:40:53 GMT+3
+Before next iteration. Current cadastral number: 5 | cadastralArray.length: 252 4 июля 2018 г., 17:40:53 GMT+3
+[
+    "61:44:0081905:104",
+    "61:44:0081905:105",
+    "61:44:0081905:106",
+    "61:44:0081905:107",
+    "61:44:0081905:108",
+    "61:44:0081905:109",
+    "61:44:0081905:110",
+    "61:44:0081905:111",
+    "61:44:0081905:112",
+    "61:44:0081905:113",
+    "61:44:0081905:114",
+    "61:44:0081905:115",
+    "61:44:0081905:116",
+    "61:44:0081905:117",
+    "61:44:0081905:118",
+    "61:44:0081905:119",
+    "61:44:0081905:120",
+    "61:44:0081905:121",
+    "61:44:0081905:122",
+    "61:44:0081905:123",
+    "61:44:0081905:124",
+    "61:44:0081905:125",
+    "61:44:0081905:126",
+    "61:44:0081905:127",
+    "61:44:0081905:128",
+    "61:44:0081905:129",
+    "61:44:0081905:130",
+    "61:44:0081905:131",
+    "61:44:0081905:132",
+    "61:44:0081905:133",
+    "61:44:0081905:134",
+    "61:44:0081905:135",
+    "61:44:0081905:136",
+    "61:44:0081905:137",
+    "61:44:0081905:138",
+    "61:44:0081905:139",
+    "61:44:0081905:140",
+    "61:44:0081905:141",
+    "61:44:0081905:142",
+    "61:44:0081905:143",
+    "61:44:0081905:144",
+    "61:44:0081905:145",
+    "61:44:0081905:146",
+    "61:44:0081905:147",
+    "61:44:0081905:148",
+    "61:44:0081905:149",
+    "61:44:0081905:150",
+    "61:44:0081905:151",
+    "61:44:0081905:152",
+    "61:44:0081905:153",
+    "61:44:0081905:154",
+    "61:44:0081905:155",
+    "61:44:0081905:156",
+    "61:44:0081905:157",
+    "61:44:0081905:158",
+    "61:44:0081905:159",
+    "61:44:0081905:160",
+    "61:44:0081905:161",
+    "61:44:0081905:162",
+    "61:44:0081905:163",
+    "61:44:0081905:164",
+    "61:44:0081905:165",
+    "61:44:0081905:166",
+    "61:44:0081905:167",
+    "61:44:0081905:168",
+    "61:44:0081905:169",
+    "61:44:0081905:170",
+    "61:44:0081905:171",
+    "61:44:0081905:172",
+    "61:44:0081905:173",
+    "61:44:0081905:174",
+    "61:44:0081905:175",
+    "61:44:0081905:176",
+    "61:44:0081905:177",
+    "61:44:0081905:178",
+    "61:44:0081905:179",
+    "61:44:0081905:18",
+    "61:44:0081905:180",
+    "61:44:0081905:181",
+    "61:44:0081905:182",
+    "61:44:0081905:183",
+    "61:44:0081905:184",
+    "61:44:0081905:185",
+    "61:44:0081905:186",
+    "61:44:0081905:187",
+    "61:44:0081905:188",
+    "61:44:0081905:189",
+    "61:44:0081905:190",
+    "61:44:0081905:191",
+    "61:44:0081905:192",
+    "61:44:0081905:193",
+    "61:44:0081905:194",
+    "61:44:0081905:195",
+    "61:44:0081905:196",
+    "61:44:0081905:197",
+    "61:44:0081905:198",
+    "61:44:0081905:199",
+    "61:44:0081905:200",
+    "61:44:0081905:201",
+    "61:44:0081905:202",
+    "61:44:0081905:203",
+    "61:44:0081905:204",
+    "61:44:0081905:205",
+    "61:44:0081905:206",
+    "61:44:0081905:207",
+    "61:44:0081905:208",
+    "61:44:0081905:209",
+    "61:44:0081905:210",
+    "61:44:0081905:211",
+    "61:44:0081905:212",
+    "61:44:0081905:213",
+    "61:44:0081905:214",
+    "61:44:0081905:215",
+    "61:44:0081905:216",
+    "61:44:0081905:217",
+    "61:44:0081905:218",
+    "61:44:0081905:219",
+    "61:44:0081905:220",
+    "61:44:0081905:221",
+    "61:44:0081905:222",
+    "61:44:0081905:223",
+    "61:44:0081905:224",
+    "61:44:0081905:225",
+    "61:44:0081905:226",
+    "61:44:0081905:227",
+    "61:44:0081905:228",
+    "61:44:0081905:229",
+    "61:44:0081905:230",
+    "61:44:0081905:231",
+    "61:44:0081905:232",
+    "61:44:0081905:233",
+    "61:44:0081905:234",
+    "61:44:0081905:235",
+    "61:44:0081905:236",
+    "61:44:0081905:237",
+    "61:44:0081905:238",
+    "61:44:0081905:239",
+    "61:44:0081905:240",
+    "61:44:0081905:241",
+    "61:44:0081905:242",
+    "61:44:0081905:243",
+    "61:44:0081905:244",
+    "61:44:0081905:245",
+    "61:44:0081905:246",
+    "61:44:0081905:247",
+    "61:44:0081905:248",
+    "61:44:0081905:249",
+    "61:44:0081905:250",
+    "61:44:0081905:251",
+    "61:44:0081905:252",
+    "61:44:0081905:253",
+    "61:44:0081905:254",
+    "61:44:0081905:255",
+    "61:44:0081905:256",
+    "61:44:0081905:257",
+    "61:44:0081905:258",
+    "61:44:0081905:259",
+    "61:44:0081905:260",
+    "61:44:0081905:261",
+    "61:44:0081905:262",
+    "61:44:0081905:263",
+    "61:44:0081905:264",
+    "61:44:0081905:265",
+    "61:44:0081905:266",
+    "61:44:0081905:267",
+    "61:44:0081905:268",
+    "61:44:0081905:269",
+    "61:44:0081905:270",
+    "61:44:0081905:271",
+    "61:44:0081905:272",
+    "61:44:0081905:273",
+    "61:44:0081905:274",
+    "61:44:0081905:275",
+    "61:44:0081905:276",
+    "61:44:0081905:277",
+    "61:44:0081905:278",
+    "61:44:0081905:279",
+    "61:44:0081905:280",
+    "61:44:0081905:281",
+    "61:44:0081905:282",
+    "61:44:0081905:283",
+    "61:44:0081905:284",
+    "61:44:0081905:285",
+    "61:44:0081905:286",
+    "61:44:0081905:287",
+    "61:44:0081905:288",
+    "61:44:0081905:289",
+    "61:44:0081905:290",
+    "61:44:0081905:291",
+    "61:44:0081905:292",
+    "61:44:0081905:293",
+    "61:44:0081905:294",
+    "61:44:0081905:295",
+    "61:44:0081905:296",
+    "61:44:0081905:297",
+    "61:44:0081905:298",
+    "61:44:0081905:299",
+    "61:44:0081905:300",
+    "61:44:0081905:301",
+    "61:44:0081905:302",
+    "61:44:0081905:303",
+    "61:44:0081905:304",
+    "61:44:0081905:305",
+    "61:44:0081905:306",
+    "61:44:0081905:31",
+    "61:44:0081905:312",
+    "61:44:0081905:313",
+    "61:44:0081905:314",
+    "61:44:0081905:315",
+    "61:44:0081905:316",
+    "61:44:0081905:317",
+    "61:44:0081905:318",
+    "61:44:0081905:319",
+    "61:44:0081905:320",
+    "61:44:0081905:321",
+    "61:44:0081905:322",
+    "61:44:0081905:323",
+    "61:44:0081905:324",
+    "61:44:0081905:325",
+    "61:44:0081905:328",
+    "61:44:0081905:329",
+    "61:44:0081905:344",
+    "61:44:0081905:345",
+    "61:44:0081905:361",
+    "61:44:0081905:38",
+    "61:44:0081905:380",
+    "61:44:0081905:388",
+    "61:44:0081905:389",
+    "61:44:0081905:390",
+    "61:44:0081905:47",
+    "61:44:0081905:53",
+    "61:44:0081905:54",
+    "61:44:0081905:55",
+    "61:44:0081905:56",
+    "61:44:0081905:57",
+    "61:44:0081905:58",
+    "61:44:0081905:59",
+    "61:44:0081905:70",
+    "61:44:0081905:79",
+    "61:44:0081905:80",
+    "61:44:0081905:81",
+    "61:44:0081905:82",
+    "61:44:0081905:83",
+    "61:44:0081905:84",
+    "61:44:0081905:85",
+    "61:44:0081905:86",
+    "61:44:0081905:87",
+    "61:44:0081905:88",
+    "61:44:0081905:89",
+    "61:44:0081905:90",
+    "61:44:0081905:91",
+    "61:44:0081908:33"
+] 4 июля 2018 г., 17:44:07 GMT+3
+[
+    {
+        "address": "OKATO: 60401000000, КЛАДР: 61000001000145100, Ростовская область, г Ростов-на-Дону, пер Соборный, д 82, кв 94",
+        "area": "43.9 кв.м",
+        "cadastralNumber": "61:44:0081905:104",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:38:03 ",
+        "numberOfRequest": "80-44345858"
+    },
+    {
+        "address": "OKATO: 60401000000, КЛАДР: 61000001000145100, Ростовская область, г Ростов-на-Дону, пер Соборный, д 82, кв 58",
+        "area": "43.8 кв.м",
+        "cadastralNumber": "61:44:0081905:105",
+        "isLoaded": true,
+        "number": 2,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:38:32 ",
+        "numberOfRequest": "80-44345923"
+    },
+    {
+        "address": "OKATO: 60401000000, КЛАДР: 61000001000145100, Ростовская область, г Ростов-на-Дону, пер Соборный, д 82, кв 167",
+        "area": "43.9 кв.м",
+        "cadastralNumber": "61:44:0081905:106",
+        "isLoaded": true,
+        "number": 3,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:39:01 ",
+        "numberOfRequest": "80-44345996"
+    },
+    {
+        "address": "OKATO: 60401000000, КЛАДР: 61000001000145100, Ростовская область, г Ростов-на-Дону, пер Соборный, д 82, кв 21",
+        "area": "57.8 кв.м",
+        "cadastralNumber": "61:44:0081905:107",
+        "isLoaded": true,
+        "number": 4,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:40:13 ",
+        "numberOfRequest": "80-44346166"
+    },
+    {
+        "address": "OKATO: 60401000000, КЛАДР: 61000001000145100, Ростовская область, г Ростов-на-Дону, пер Соборный, д 82, кв 59",
+        "area": "46.3 кв.м",
+        "cadastralNumber": "61:44:0081905:108",
+        "isLoaded": true,
+        "number": 5,
+        "objectType": "Помещение",
+        "createDate": "Wed Jul 04 2018 17:40:42 ",
+        "numberOfRequest": "80-44346243"
+    },
+    {
+        "cadastralNumber": "61:44:0081905:109",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:110",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:111",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:112",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:113",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:114",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:115",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:116",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:117",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:118",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:119",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:120",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:121",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:122",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:123",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:124",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:125",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:126",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:127",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:128",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:129",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:130",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:131",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:132",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:133",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:134",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:135",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:136",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:137",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:138",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:139",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:140",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:141",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:142",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:143",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:144",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:145",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:146",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:147",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:148",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:149",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:150",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:151",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:152",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:153",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:154",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:155",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:156",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:157",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:158",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:159",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:160",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:161",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:162",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:163",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:164",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:165",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:166",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:167",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:168",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:169",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:170",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:171",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:172",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:173",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:174",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:175",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:176",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:177",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:178",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:179",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:18",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:180",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:181",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:182",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:183",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:184",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:185",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:186",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:187",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:188",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:189",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:190",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:191",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:192",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:193",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:194",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:195",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:196",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:197",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:198",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:199",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:200",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:201",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:202",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:203",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:204",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:205",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:206",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:207",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:208",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:209",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:210",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:211",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:212",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:213",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:214",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:215",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:216",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:217",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:218",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:219",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:220",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:221",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:222",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:223",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:224",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:225",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:226",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:227",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:228",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:229",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:230",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:231",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:232",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:233",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:234",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:235",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:236",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:237",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:238",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:239",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:240",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:241",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:242",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:243",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:244",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:245",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:246",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:247",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:248",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:249",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:250",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:251",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:252",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:253",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:254",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:255",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:256",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:257",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:258",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:259",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:260",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:261",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:262",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:263",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:264",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:265",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:266",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:267",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:268",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:269",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:270",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:271",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:272",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:273",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:274",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:275",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:276",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:277",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:278",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:279",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:280",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:281",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:282",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:283",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:284",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:285",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:286",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:287",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:288",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:289",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:290",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:291",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:292",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:293",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:294",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:295",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:296",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:297",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:298",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:299",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:300",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:301",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:302",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:303",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:304",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:305",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:306",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:31",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:312",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:313",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:314",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:315",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:316",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:317",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:318",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:319",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:320",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:321",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:322",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:323",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:324",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:325",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:328",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:329",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:344",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:345",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:361",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:38",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:380",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:388",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:389",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:390",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:47",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:53",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:54",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:55",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:56",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:57",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:58",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:59",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:70",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:79",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:80",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:81",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:82",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:83",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:84",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:85",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:86",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:87",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:88",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:89",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:90",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081905:91",
+        "isLoaded": false
+    },
+    {
+        "cadastralNumber": "61:44:0081908:33",
+        "isLoaded": false
+    }
+] 4 июля 2018 г., 17:44:07 GMT+3
+
+
+ 
+ ------------------------------ 
+5 июля 2018 г., 11:34:09 GMT+3
+region: 
+CadastralArray from argumentsЛенинградская/область Не имеет кадастрового номера 47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 Не имеет кадастрового номера 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: Ленинградская/область 5 июля 2018 г., 11:34:35 GMT+3
+[
+    "Ленинградская/область",
+    "Не",
+    "имеет",
+    "кадастрового",
+    "номера",
+    "47:01:0107001:1112",
+    "47:01:0107001:1114",
+    "47:01:0107001:1116",
+    "47:01:0107001:1120",
+    "47:01:0107001:1121",
+    "Не",
+    "имеет",
+    "кадастрового",
+    "номера"
+] 5 июля 2018 г., 11:34:40 GMT+3
+[] 5 июля 2018 г., 11:34:40 GMT+3
+
+
+ 
+ ------------------------------ 
+5 июля 2018 г., 11:34:43 GMT+3
+region: 
+CadastralArray from argumentsЛенинградская/область 47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: Ленинградская/область 5 июля 2018 г., 11:35:07 GMT+3
+[
+    "Ленинградская/область",
+    "47:01:0107001:1112",
+    "47:01:0107001:1114",
+    "47:01:0107001:1116",
+    "47:01:0107001:1120",
+    "47:01:0107001:1121"
+] 5 июля 2018 г., 11:35:12 GMT+3
+[] 5 июля 2018 г., 11:35:12 GMT+3
+
+
+ 
+ ------------------------------ 
+5 июля 2018 г., 11:37:07 GMT+3
+region: Ленинградская область
+CadastralArray from arguments47:01:0107001:1112 47:01:0107001:1114 47:01:0107001:1116 47:01:0107001:1120 47:01:0107001:1121 
+ ------------------------------ 
+
+Сadastral number: 0 | Index: 47:01:0107001:1112 5 июля 2018 г., 11:37:58 GMT+3
+NumberOfRequest: 80-44455081 5 июля 2018 г., 11:38:26 GMT+3
+Before next iteration. Current cadastral number: 1 | cadastralArray.length: 5 5 июля 2018 г., 11:38:26 GMT+3
+
+Сadastral number: 1 | Index: 47:01:0107001:1114 5 июля 2018 г., 11:38:27 GMT+3
+NumberOfRequest: 80-44455166 5 июля 2018 г., 11:38:55 GMT+3
+Before next iteration. Current cadastral number: 2 | cadastralArray.length: 5 5 июля 2018 г., 11:38:55 GMT+3
+
+Сadastral number: 2 | Index: 47:01:0107001:1116 5 июля 2018 г., 11:39:39 GMT+3
+NumberOfRequest: 80-44455440 5 июля 2018 г., 11:40:08 GMT+3
+Before next iteration. Current cadastral number: 3 | cadastralArray.length: 5 5 июля 2018 г., 11:40:08 GMT+3
+
+Сadastral number: 3 | Index: 47:01:0107001:1120 5 июля 2018 г., 11:40:10 GMT+3
+NumberOfRequest: 80-44455575 5 июля 2018 г., 11:40:37 GMT+3
+Before next iteration. Current cadastral number: 4 | cadastralArray.length: 5 5 июля 2018 г., 11:40:37 GMT+3
+
+Сadastral number: 4 | Index: 47:01:0107001:1121 5 июля 2018 г., 11:41:21 GMT+3
+NumberOfRequest: 80-44455842 5 июля 2018 г., 11:41:50 GMT+3
+Before next iteration. Current cadastral number: 5 | cadastralArray.length: 5 5 июля 2018 г., 11:41:50 GMT+3
+[
+    "47:01:0107001:1112",
+    "47:01:0107001:1114",
+    "47:01:0107001:1116",
+    "47:01:0107001:1120",
+    "47:01:0107001:1121"
+] 5 июля 2018 г., 11:41:55 GMT+3
+[
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 51",
+        "area": "46.6 кв.м",
+        "cadastralNumber": "47:01:0107001:1112",
+        "isLoaded": true,
+        "number": 1,
+        "objectType": "Помещение",
+        "createDate": "Thu Jul 05 2018 11:38:15 ",
+        "numberOfRequest": "80-44455081"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 53",
+        "area": "44.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1114",
+        "isLoaded": true,
+        "number": 2,
+        "objectType": "Помещение",
+        "createDate": "Thu Jul 05 2018 11:38:44 ",
+        "numberOfRequest": "80-44455166"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 31",
+        "area": "65.2 кв.м",
+        "cadastralNumber": "47:01:0107001:1116",
+        "isLoaded": true,
+        "number": 3,
+        "objectType": "Помещение",
+        "createDate": "Thu Jul 05 2018 11:39:57 ",
+        "numberOfRequest": "80-44455440"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 18",
+        "area": "148.0 кв.м",
+        "cadastralNumber": "47:01:0107001:1120",
+        "isLoaded": true,
+        "number": 4,
+        "objectType": "Помещение",
+        "createDate": "Thu Jul 05 2018 11:40:27 ",
+        "numberOfRequest": "80-44455575"
+    },
+    {
+        "address": "OKATO: 41417000000, КЛАДР: 47006001000007600, Ленинградская область, р-н Выборгский, г Выборг, пр-кт Ленина, д 18, кв 6",
+        "area": "78.3 кв.м",
+        "cadastralNumber": "47:01:0107001:1121",
+        "isLoaded": true,
+        "number": 5,
+        "objectType": "Помещение",
+        "createDate": "Thu Jul 05 2018 11:41:38 ",
+        "numberOfRequest": "80-44455842"
+    }
+] 5 июля 2018 г., 11:41:55 GMT+3

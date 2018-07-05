@@ -35,109 +35,20 @@ casper.on('error', function (msg, backtrace) {
 
 var folders = require('./Modules/foldersModule').getFolders();
 
-var searchData = require('./Modules/argsOnlineModule').getArgs(casper);
+var searchData = require('./Modules/argsRepeatModule').getArgs(casper);
 
 var vars = require('./Modules/varsModule').getVars();
 
+vars.cadastralArray = searchData.cadastralNumbers;
 
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------
 
-// casper SCRIPT
-casper.start('https://rosreestr.ru/wps/portal/p/cc_ib_portal_services/online_request/', function () {
-    newRecordIntoLog(searchData);
-});
-
-// Открываем сайт, переходим по ссылке на личный кабинет
-casper.waitForSelector('.portlet-body', function () {
-
-    casper.evaluate(function (region) {
-        document.querySelector('#adress').checked = true;
-
-        var evt = document.createEvent("HTMLEvents");
-        evt.initEvent("change", true, true);
-
-        if (region) {
-            var regionInput = document.getElementById("subjectId");
-
-            [].some.call(regionInput.options, function (i) {
-                // do whatever
-                if (i.text.match(region)) {
-                    i.selected = true;
-                    return true;
-                }
-            });
-
-            regionInput.dispatchEvent(evt);
-        }
-
-    }, searchData.region);
-});
-
-casper.wait(1000, function () {
-
-    casper.evaluate(function (zone, street, houseNumber, building) {
-
-        var evt = document.createEvent("HTMLEvents");
-        evt.initEvent("change", true, true);
-
-        if (zone) {
-            var zoneInput = document.getElementById("regionId");
-
-            [].some.call(zoneInput.options, function (i) {
-                // do whatever
-                if (i.text.match(zone)) {
-                    i.selected = true;
-                    return true;
-                }
-            });
-
-            zoneInput.dispatchEvent(evt);
-        }
-
-        if (street) {
-            var streetInput = document.querySelector('input[name="street"]');
-            streetInput.value = street;
-            streetInput.dispatchEvent(evt);
-        }
-
-        if (houseNumber) {
-            var houseNumberInput = document.querySelector('input[name="house"]');
-            houseNumberInput.value = houseNumber;
-            houseNumberInput.dispatchEvent(evt);
-        }
-
-        if (building) {
-            var buildingInput = document.querySelector('input[name="building"]');
-            buildingInput.value = building;
-            buildingInput.dispatchEvent(evt);
-        }
-
-        document.querySelector('#submit-button').click()
-
-    }, searchData.zone, searchData.street, searchData.houseNumber, searchData.building);
-
-    takeDebugScreenShot("После заполнения поисковых данных", vars.counter++)
-
-});
+newRecordIntoLog(searchData);
 
 
-casper.waitForSelector(".portlet-title", function () {
-
-    var objectsAreFound = casper.evaluate(function () {
-        return document.querySelector('#pg_stats b:first-child').innerHTML.replace(new RegExp('&nbsp;', 'g'), '');
-    });
-
-    takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++);
-
-    if (!objectsAreFound)
-        saveAnError("Не найдены помещения");
-});
-
-casper.then(iteratePagination);
-
-casper.thenOpen('https://rosreestr.ru/site/');
+casper.start('https://rosreestr.ru/site/');
 
 // Открываем сайт, переходим по ссылке на личный кабинет
 casper.waitForSelector('#page_header', function () {
@@ -303,8 +214,8 @@ function saveAnError(errorText, message) {
 function newRecordIntoLog(searchData) {
 
     var twoLine = " \n ------------------------------ \n";
-    var fullAddress = "region: " + searchData.region + " | zone: " + searchData.zone + " | street : " + searchData.street + "\nhouseNumber: " + searchData.houseNumber + " | building: " + searchData.building;
-    var text = "\n\n" + twoLine + new Date().toLocaleString("ru") + "\n" + fullAddress + twoLine;
+    var fullInfo = "region: " + searchData.region + "\nCadastralArray from arguments -> " + searchData.cadastralNumbers.join(' ');
+    var text = "\n\n" + twoLine + new Date().toLocaleString("ru") + "\n" + fullInfo + twoLine;
 
     fs.write(folders.baseDir + folders.logFile, text, "a");
 }
@@ -495,8 +406,8 @@ function iterateCadastralArray() {
 
                                                     logMessage('NumberOfRequest: ' + vars.tableRows[vars.currentCadastralIndex].numberOfRequest);
 
-                                                    vars.currentCadastralIndex++;
-                                                   
+                                                    vars.currentCadastralIndex++;                                                    
+                                                    
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
                                                         casper.then(iterateCadastralArray);
