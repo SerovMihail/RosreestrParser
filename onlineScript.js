@@ -328,8 +328,11 @@ function takeErrorScreenShot(screenShotName, counter) {
 
 function takeDebugScreenShot(text, counter) {
 
-    var screenShotName = folders.DebugFolder + counter + " " + text + '.png'; //folders.baseDir +      
-    casper.capture(screenShotName);
+    if (vars.env === "DEBUG") {
+        var screenShotName = folders.DebugFolder + counter + " " + text + '.png'; //folders.baseDir +      
+        casper.capture(screenShotName);
+    }
+
     //console.log('screenShotName', screenShotName);
 }
 
@@ -361,7 +364,7 @@ function iterateCadastralArray() {
 
             var row = {};
             row.number = vars.currentCadastralIndex + 1;
-            row.cadastralNumber = "Не имеет кадастрового номера";    
+            row.cadastralNumber = "Не имеет кадастрового номера";
             row.isLoaded = false;
             vars.tableRows = vars.tableRows.concat(row);
 
@@ -459,7 +462,7 @@ function iterateCadastralArray() {
                                         });
 
                                         var d = new Date();
-                                        vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) +   "-"  + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
+                                        vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
@@ -497,7 +500,7 @@ function iterateCadastralArray() {
                                                     logMessage('NumberOfRequest: ' + vars.tableRows[vars.currentCadastralIndex].numberOfRequest);
 
                                                     vars.currentCadastralIndex++;
-                                                   
+
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
                                                         casper.then(iterateCadastralArray);
@@ -568,7 +571,7 @@ function afterReloadAuth() {
 
             takeDebugScreenShot('greyBlockExist', vars.counter++);
 
-            if(!vars.accessKey)
+            if (!vars.accessKey)
                 saveAnError('Не удалось получить ключ', msg);
 
             var keyParts = vars.accessKey.split('-');
