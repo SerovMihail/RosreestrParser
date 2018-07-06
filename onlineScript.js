@@ -461,8 +461,9 @@ function iterateCadastralArray() {
                                             $('span:contains("Отправить запрос")').click();
                                         });
 
-                                        var d = new Date();
-                                        vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
+                                       // var d = new Date();
+                                        //vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
+                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toJSON();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
