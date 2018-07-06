@@ -458,7 +458,8 @@ function iterateCadastralArray() {
                                             $('span:contains("Отправить запрос")').click();
                                         });
 
-                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                        var d = new Date();
+                                        vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) +   "-"  + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
@@ -566,6 +567,9 @@ function afterReloadAuth() {
         casper.wait(5000, function () {
 
             takeDebugScreenShot('greyBlockExist', vars.counter++);
+
+            if(!vars.accessKey)
+                saveAnError('Не удалось получить ключ', msg);
 
             var keyParts = vars.accessKey.split('-');
 

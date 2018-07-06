@@ -367,9 +367,10 @@ function iterateCadastralArray() {
 
                                         casper.evaluate(function () {
                                             $('span:contains("Отправить запрос")').click();
-                                        });
+                                        });                                       
 
-                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                        var d = new Date();
+                                        vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) +   "-"  + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
