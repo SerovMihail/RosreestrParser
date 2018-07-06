@@ -526,7 +526,7 @@ function iterateCadastralArray() {
                                 });
                                 vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
-                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'NULLED';
+                                vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'Аннулированный объект';
                                 vars.currentCadastralIndex++;
 
                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
