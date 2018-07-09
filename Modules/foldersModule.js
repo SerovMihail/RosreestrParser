@@ -3,7 +3,7 @@ var fs = require('fs');
 
 exports.getFolders = function () {
 
-    var currentFolder = "C:\\Users\\roskvartal-pc\\Documents\\SourceTree\\CasperJS";//fs.workingDirectory;
+    var currentFolder = "C:\\Users\\roskvartal-pc\\Documents\\SourceTree\\CasperJS";
     var scriptName = "\\" + currentFolder.split('\\').pop().split('.')[0];
        
     var foldersData = {

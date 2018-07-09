@@ -246,20 +246,7 @@ function takeDebugScreenShot(text, counter) {
 
 
 function iterateCadastralArray() {
-
-    //logMessage('new iterate cadastral');
-
-    // Выбираю "Поиск объектов недвижимости"
-    //casper.waitForSelector('.navigationPanel', function () {
-    //casper.wait(7000, function () {
-
-    //console.log('navigationPanek');
-    // casper.evaluate(function () {
-    //     document.querySelector('.v-button-caption').click();
-    // });
-
-    //casper.waitForSelector('.v-filterselect-button', function () {
-    //casper.wait(15000, function () {
+    
     casper.waitForSelector('.v-embedded', function () {
 
         takeDebugScreenShot('До заполнения данных', vars.counter++);
@@ -367,10 +354,8 @@ function iterateCadastralArray() {
 
                                         casper.evaluate(function () {
                                             $('span:contains("Отправить запрос")').click();
-                                        });                                       
-
-                                        //var d = new Date();
-                                        //vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) +   "-"  + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
+                                        });   
+                                       
                                         vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toJSON();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
@@ -412,12 +397,7 @@ function iterateCadastralArray() {
                                                     
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
-                                                        casper.then(iterateCadastralArray);
-                                                        // addBadResponseToResults();
-                                                        // console.log(JSON.stringify(vars.tableRows, "", 4));
-                                                        // logMessage(JSON.stringify(vars.cadastralArray, "", 4));
-                                                        // logMessage(JSON.stringify(vars.tableRows, "", 4));
-                                                        // casper.exit(1);
+                                                        casper.then(iterateCadastralArray);                                                       
                                                     }
 
                                                 }, function () {
@@ -439,6 +419,9 @@ function iterateCadastralArray() {
                                 vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'Аннулированный объект';
+
+                                logMessage('Найден аннулированный объект для кадастрового номера: ' + vars.cadastralArray[vars.currentCadastralIndex] + " | cadastralArrayIndex: " +  vars.currentCadastralIndex);
+
                                 vars.currentCadastralIndex++;
 
                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
@@ -521,41 +504,6 @@ function afterReloadAuth() {
 
         casper.exit(1);
     });
-}
-
-// должна быть после casper.then(iteratePagination);
-function iteratePagination() {
-
-    casper.wait(1000, function () {
-
-        takeDebugScreenShot("В итерации страниц с данными", vars.counter++)
-
-        var newArr = casper.evaluate(function () {
-
-            return [].map.call(__utils__.findAll('tbody td.td:nth-child(2)'), function (node) {
-                return node.innerText;
-            });
-
-        });
-
-        vars.cadastralArray = vars.cadastralArray.concat(newArr);
-
-        casper.waitFor(function check() {
-            return this.evaluate(function () {
-                return document.querySelectorAll('.brdnav0')[3].onclick !== null;
-            });
-        }, function then() {    // step to execute when check() is ok
-
-            casper.evaluate(function () {
-                document.querySelectorAll('.brdnav0')[2].click();
-            });
-            casper.then(iteratePagination);
-        }, function timeout() { // step to execute if check has failed
-            takeDebugScreenShot("селектор пуст", vars.counter++)
-        }, 3000);
-
-    });
-
 }
 
 function debugConsoleLog(text) {

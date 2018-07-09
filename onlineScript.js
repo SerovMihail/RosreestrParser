@@ -132,7 +132,7 @@ casper.waitForSelector(".portlet-title", function () {
     takeDebugScreenShot("Найдено " + objectsAreFound + " объектов", vars.counter++);
 
     if (!objectsAreFound)
-        saveAnError("Не найдены помещения");
+        saveAnError("Не найдены помещения. Перезагрузите задачу");
 });
 
 casper.then(iteratePagination);
@@ -175,8 +175,6 @@ casper.waitForSelector('.datalist-wrap', function () {
 
 // Идём в "Мои ключи"
 casper.waitForSelector('.finances', function () {
-
-
 
     casper.evaluate(function () {
         $("div:contains('Мои ключи')").click();
@@ -338,20 +336,7 @@ function takeDebugScreenShot(text, counter) {
 
 
 function iterateCadastralArray() {
-
-    //logMessage('new iterate cadastral');
-
-    // Выбираю "Поиск объектов недвижимости"
-    //casper.waitForSelector('.navigationPanel', function () {
-    //casper.wait(7000, function () {
-
-    //console.log('navigationPanek');
-    // casper.evaluate(function () {
-    //     document.querySelector('.v-button-caption').click();
-    // });
-
-    //casper.waitForSelector('.v-filterselect-button', function () {
-    //casper.wait(15000, function () {
+   
     casper.waitForSelector('.v-embedded', function () {
 
         takeDebugScreenShot('До заполнения данных', vars.counter++);
@@ -461,8 +446,6 @@ function iterateCadastralArray() {
                                             $('span:contains("Отправить запрос")').click();
                                         });
 
-                                       // var d = new Date();
-                                        //vars.tableRows[vars.currentCadastralIndex].createDate = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
                                         vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toJSON();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
@@ -504,12 +487,7 @@ function iterateCadastralArray() {
 
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
-                                                        casper.then(iterateCadastralArray);
-                                                        // addBadResponseToResults();
-                                                        // console.log(JSON.stringify(vars.tableRows, "", 4));
-                                                        // logMessage(JSON.stringify(vars.cadastralArray, "", 4));
-                                                        // logMessage(JSON.stringify(vars.tableRows, "", 4));
-                                                        // casper.exit(1);
+                                                        casper.then(iterateCadastralArray);                                                        
                                                     }
 
                                                 }, function () {
@@ -531,8 +509,11 @@ function iterateCadastralArray() {
                                 vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'Аннулированный объект';
-                                vars.currentCadastralIndex++;
 
+                                logMessage('Найден аннулированный объект для кадастрового номера: ' + vars.cadastralArray[vars.currentCadastralIndex] + " | cadastralArrayIndex: " +  vars.currentCadastralIndex);
+
+                                vars.currentCadastralIndex++;                               
+                                                    
                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
                                 if (vars.currentCadastralIndex < vars.cadastralArray.length)
                                     casper.then(iterateCadastralArray);
@@ -653,15 +634,15 @@ function iteratePagination() {
 
 }
 
-function debugConsoleLog(text) {
-    if (vars.env === "DEBUG")
-        console.log(text);
-}
+// function debugConsoleLog(text) {
+//     if (vars.env === "DEBUG")
+//         console.log(text);
+// }
 
-function debugConsoleLogStringify(text) {
-    if (vars.env === "DEBUG")
-        console.log(JSON.stringify(text, "", 4));
-}
+// function debugConsoleLogStringify(text) {
+//     if (vars.env === "DEBUG")
+//         console.log(JSON.stringify(text, "", 4));
+// }
 
 function handleError(errorText) {
 
@@ -677,6 +658,7 @@ function handleError(errorText) {
         });
 
     } else {
+
         obj = {};
 
         if (errorText === "Ошибка по таймауту") {
