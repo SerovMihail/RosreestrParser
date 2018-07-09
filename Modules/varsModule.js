@@ -11,6 +11,6 @@ exports.getVars = function () {
         
         accessKey: undefined,              
         
-        env: "PROD" // "DEBUG" 
+        env: "DEBUG"  // "PROD"
     }
 };

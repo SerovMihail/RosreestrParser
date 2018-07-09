@@ -356,7 +356,7 @@ function iterateCadastralArray() {
                                             $('span:contains("Отправить запрос")').click();
                                         });
 
-                                        vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toJSON();
+                                        vars.tableRows[vars.currentCadastralIndex].requestCreateDate = new Date().toJSON();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
 
@@ -416,7 +416,7 @@ function iterateCadastralArray() {
                                 casper.evaluate(function () {
                                     document.querySelector('.v-button-caption').click();
                                 });
-                                vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toString().split('GMT')[0];
+                                vars.tableRows[vars.currentCadastralIndex].requestCreateDate = new Date().toString().split('GMT')[0];
                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'Аннулированный объект';
 
