@@ -246,7 +246,7 @@ function takeDebugScreenShot(text, counter) {
 
 
 function iterateCadastralArray() {
-    
+
     casper.waitForSelector('.v-embedded', function () {
 
         takeDebugScreenShot('До заполнения данных', vars.counter++);
@@ -259,7 +259,7 @@ function iterateCadastralArray() {
 
             var row = {};
             row.number = vars.currentCadastralIndex + 1;
-            row.cadastralNumber = "Не имеет кадастрового номера";    
+            row.cadastralNumber = "Не имеет кадастрового номера";
             row.isLoaded = false;
             vars.tableRows = vars.tableRows.concat(row);
 
@@ -354,8 +354,8 @@ function iterateCadastralArray() {
 
                                         casper.evaluate(function () {
                                             $('span:contains("Отправить запрос")').click();
-                                        });   
-                                       
+                                        });
+
                                         vars.tableRows[vars.currentCadastralIndex].createDate = new Date().toJSON();
 
                                         casper.waitForSelector('.popupContent .v-window-wrap .v-window-contents', function () {
@@ -393,11 +393,11 @@ function iterateCadastralArray() {
 
                                                     logMessage('NumberOfRequest: ' + vars.tableRows[vars.currentCadastralIndex].numberOfRequest);
 
-                                                    vars.currentCadastralIndex++;                                                    
-                                                    
+                                                    vars.currentCadastralIndex++;
+
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
-                                                        casper.then(iterateCadastralArray);                                                       
+                                                        casper.then(iterateCadastralArray);
                                                     }
 
                                                 }, function () {
@@ -420,7 +420,7 @@ function iterateCadastralArray() {
                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'Аннулированный объект';
 
-                                logMessage('Найден аннулированный объект для кадастрового номера: ' + vars.cadastralArray[vars.currentCadastralIndex] + " | cadastralArrayIndex: " +  vars.currentCadastralIndex);
+                                logMessage('Найден аннулированный объект для кадастрового номера: ' + vars.cadastralArray[vars.currentCadastralIndex] + " | cadastralArrayIndex: " + vars.currentCadastralIndex);
 
                                 vars.currentCadastralIndex++;
 

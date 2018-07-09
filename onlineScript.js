@@ -336,7 +336,7 @@ function takeDebugScreenShot(text, counter) {
 
 
 function iterateCadastralArray() {
-   
+
     casper.waitForSelector('.v-embedded', function () {
 
         takeDebugScreenShot('До заполнения данных', vars.counter++);
@@ -487,7 +487,7 @@ function iterateCadastralArray() {
 
                                                     logMessage('Before next iteration. Current cadastral number: ' + vars.currentCadastralIndex + " | cadastralArray.length: " + vars.cadastralArray.length);
                                                     if (vars.currentCadastralIndex < vars.cadastralArray.length) {
-                                                        casper.then(iterateCadastralArray);                                                        
+                                                        casper.then(iterateCadastralArray);
                                                     }
 
                                                 }, function () {
@@ -510,10 +510,10 @@ function iterateCadastralArray() {
                                 vars.tableRows[vars.currentCadastralIndex].isLoaded = false;
                                 vars.tableRows[vars.currentCadastralIndex].numberOfRequest = 'Аннулированный объект';
 
-                                logMessage('Найден аннулированный объект для кадастрового номера: ' + vars.cadastralArray[vars.currentCadastralIndex] + " | cadastralArrayIndex: " +  vars.currentCadastralIndex);
+                                logMessage('Найден аннулированный объект для кадастрового номера: ' + vars.cadastralArray[vars.currentCadastralIndex] + " | cadastralArrayIndex: " + vars.currentCadastralIndex);
 
-                                vars.currentCadastralIndex++;                               
-                                                    
+                                vars.currentCadastralIndex++;
+
                                 takeDebugScreenShot('Поиск в нулевом', vars.counter++);
                                 if (vars.currentCadastralIndex < vars.cadastralArray.length)
                                     casper.then(iterateCadastralArray);
@@ -677,6 +677,7 @@ function handleError(errorText) {
 
         casper.exit(1);
     }
+    
 
 
 }
